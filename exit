@@ -1,0 +1,32 @@
+[33mcommit 1f4fd0dc2fefa496e61cad53666f3cd65ad24ad3[m[33m ([m[1;36mHEAD -> [m[1;32muserManagement[m[33m)[m
+Author: Nicolás Rodríguez <nicrodriguezval@unal.edu.co>
+Date:   Fri Apr 10 20:55:07 2020 -0500
+
+    user sign up is stored in memory (for the moment), validation if user
+    exist on memory for log in, and create wallet with it initial design
+
+[33mcommit f78a92c6029c1e9ad1f6adc16765ea3be2d6c2d3[m[33m ([m[1;31morigin/userManagement[m[33m)[m
+Author: Nicolás Rodríguez <nicrodriguezval@unal.edu.co>
+Date:   Thu Apr 9 21:34:16 2020 -0500
+
+    Forward the content of the input fields to server and validate that
+    password and confirm password are equals, also change the navigation bar
+
+[33mcommit 5d711956ac3f38f374432fb6ca9b4aab793ded77[m
+Author: Nicolás Rodríguez <nicrodriguezval@unal.edu.co>
+Date:   Wed Apr 8 17:19:16 2020 -0500
+
+    Fields for Log in and Sign up
+
+[33mcommit adea2f150a5d13b90df1e64da601676fd7ea7109[m
+Author: Nicolás Rodríguez <nicrodriguezval@unal.edu.co>
+Date:   Tue Apr 7 19:34:37 2020 -0500
+
+    Start to desing GUI and route to Log in and sign up
+
+[33mcommit 4aeb6285f0e20611e72c07208bf7f865ba21a56d[m
+Author: Nicolás Rodríguez <nicrodriguezval@unal.edu.co>
+Date:   Tue Apr 7 18:03:58 2020 -0500
+
+    Begin of the project, inicialize backend frameworks and firts page
+    ease enter the commit message for your changes. Lines

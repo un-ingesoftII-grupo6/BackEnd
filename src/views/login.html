@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in for UN Wallet</title>
+    <%- include('partials/head.html'); %>  
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <div class="col">
+        <h2>
+            <a href="/"><i class="fas fa-wallet"></i> UN Wallet</a>
+        </h2>
+        </div>
+    </div>
+</nav>
+<body>
+<br>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col -md-3">
+                <div class="card animated flipInY">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h3>
+                            Log in
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="inputEmail">Email address</label>
+                                <input name="email" id="inputEmail" type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword">Password</label>
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password" required>
+                            </div>
+                            <div class="form-group">
+                                <br>
+                                <div style="text-align: center">
+                                    <input type="submit" value="Submit" class="btn btn-primary">
+                                    <input type="button" value="Go Back" onclick="history.back()" class="btn btn-primary">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div> 
+         
+    <%- include('partials/footer.html'); %>
+</body>
+</html>
