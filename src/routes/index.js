@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const uuid = require('uuid');
 
+const pool = require('../database');
+
 var users = [];
 
 router.get('/', (req, res) => {
@@ -36,31 +38,47 @@ router.post('/login', (req, res) => {
     if(flag) {
         res.render('wallet.html', user);
     } else {
-        res.send(400).send('El ususario no existe');
+        res.send(400).send('El usuario no existe');
     }  
 });
 
-router.post('/signup', (req, res) => {
+router.post('/signup', async (req, res) => {
     // Acá va la validación con la base de datos 
     if(req.body.password != req.body.confirmPassword  || req.body.email != req.body.confirmEmail) {
         res.send(400).send("Las contraseñas y los emails deben ser iguales");
     } else {
-        let wallet = { // Se debe agregar la wallet a la base de datos
-            id_wallet : uuid.v4(),
-            balance : 0.0,
-            state : true
+
+        const count = await pool.query('SELECT * FROM user;'); //Temporal, se quitará cuando ponga los autoincrementales
+        
+        let newUser = {
+            USR_ID: count.length + 1,
+            USR_NAME: req.body.name,
+            USR_SURNAME: req.body.lastName,
+            USR_EMAIL: req.body.email,
+            USR_USERNAME: req.body.email,
+            USR_PASSWORD: req.body.password
         };
 
-        let user = { // El usuario debe ser guardado en la base de datos si todo está correcto
-            name : req.body.name,
-            lastName : req.body.lastName,
-            email : req.body.email,
-            password : req.body.password,
-            wallet_user : wallet
+        console.log(newUser.USR_ID);            
+
+        await pool.query('INSERT INTO user set ?', [newUser]);
+        
+        let newWallet = { 
+            WAL_ID : uuid.v4(),
+            USR_ID : newUser.USR_ID,
+            WTYP_ID : 1, //Por ahora 1 representa una wallet personal 
+            WAL_BALANCE : 0.0,
+            WAL_STATE : "Active"
         };
 
-        users.push(user);
-        res.render('wallet.html', user);
+        await pool.query('INSERT INTO wallet set ?', [newWallet]);
+
+        let data = {
+            name: newUser.USR_NAME,
+            lastName: newUser.USR_SURNAME,
+            id_wallet: newWallet.WAL_ID
+        }
+        res.render('wallet.html', data);
     }
 });
 

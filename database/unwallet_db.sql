@@ -3,6 +3,7 @@
 Ejecutar este código en el cliente de MySQL antes de usar la base de datos!
 
 */
+DROP DATABASE IF EXISTS unwallet_db;
 
 CREATE DATABASE unwallet_db;
 
@@ -60,7 +61,7 @@ create table ENTERPRISE
 create table MOVEMENT
 (
    TRA_ID               int not null,
-   WAL__ID              char(32) not null,
+   WAL_ID              char(32) not null,
    MOV_SENDER           char(25) not null,
    MOV_RECIPIENT        char(25) not null,
    MOV_TOTAL_AMOUNT     double not null,
@@ -68,7 +69,7 @@ create table MOVEMENT
    MOV_TIME             varchar(5) not null,
    MOV_IS_SUCCESSFUL    tinyint not null,
    MOV_TIMESTAMP        timestamp,
-   primary key (TRA_ID, WAL__ID)
+   primary key (TRA_ID, WAL_ID)
 );
 
 /*==============================================================*/
@@ -103,13 +104,13 @@ create table USER
 /*==============================================================*/
 create table WALLET
 (
-   WAL__ID              char(32) not null,
+   WAL_ID              char(40) not null,
    USR_ID               bigint not null,
    WTYP_ID              int not null,
    ENT_NIT              char(25),
    WAL_BALANCE          double not null,
    WAL_STATE            varchar(10) not null,
-   primary key (WAL__ID)
+   primary key (WAL_ID)
 );
 
 /*==============================================================*/
@@ -125,11 +126,18 @@ create table WALLET_TYPE
    primary key (WTYP_ID)
 );
 
+/* ADICIONALES*/
+/*
+ALTER TABLE USER
+    MODIFY USR_ID BIGINT NOT NULL AUTO_INCREMENT;
+
+/*------------*/
+
 alter table MOVEMENT add constraint FK_IS_GIVEN foreign key (TRA_ID)
       references TRANSFER (TRA_ID) on delete restrict on update restrict;
 
-alter table MOVEMENT add constraint FK_MODIFIES foreign key (WAL__ID)
-      references WALLET (WAL__ID) on delete restrict on update restrict;
+alter table MOVEMENT add constraint FK_MODIFIES foreign key (WAL_ID)
+      references WALLET (WAL_ID) on delete restrict on update restrict;
 
 alter table TRANSFER add constraint FK_IS_AUTHORIZED foreign key (BANK_NAME)
       references BANK (BANK_NAME) on delete restrict on update restrict;
@@ -143,3 +151,6 @@ alter table WALLET add constraint FK_MANAGES foreign key (ENT_NIT)
 alter table WALLET add constraint FK_POSSESS foreign key (USR_ID)
       references USER (USR_ID) on delete restrict on update restrict;
 
+INSERT INTO WALLET_TYPE (WTYP_ID, WTYP_NAME, WTYP_DESCRIPTION,WTYP_MOVEMENT_LIMIT, WTYP_MONTH_LIMIT)
+   VALUES (1,"Personal Wallet","This is a personal wallet",16000000.0,8000000.0);
+   
