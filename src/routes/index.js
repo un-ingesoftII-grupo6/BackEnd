@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const uuid = require('uuid');
 
-var users = [];
+const pool = require('../database');
 
 router.get('/', (req, res) => {
     res.render('index.html', { title : 'UN Wallet' });
@@ -17,50 +17,72 @@ router.get('/signup', (req, res) => {
 });
 
 router.get('/wallet', (req, res) => {
-    res.render('/wallet.html');
+    res.render('wallet.html');
 });
 
-router.post('/login', (req, res) => {
-    // Acá va la validación con la base de datos
-    var flag = false;
-    var user = null;
+router.post('/login', async (req, res) => {
 
-    for(var i = 0; i < users.length; i++) { //búsqueda de la existencia de un usuario (por el momento se trabaja en memoria)
-        if(req.body.email == users[i].email && req.body.password == users[i].password) {
-            user = users[i];
-            flag = true;
-            break;
+    const { email, password } = req.body;
+    console.log(email,'asd ', password);
+    var users = await pool.query('SELECT * FROM user WHERE USR_USERNAME = ? AND USR_PASSWORD = ?',[email,password]);
+    // Es necesario definir un usename en el sign up, para ponerlo en el query
+    var wallets = await pool.query('SELECT * FROM wallet WHERE USR_ID = ?', [users[0].USR_ID]);
+    
+    if(users.length == 1) {
+        let user = {
+            name: users[0].USR_NAME,
+            lastName: users[0].USR_SURNAME,
+            id_wallet: wallets[0].WAL_ID
         }
-    }
-
-    if(flag) {
         res.render('wallet.html', user);
     } else {
-        res.send(400).send('El ususario no existe');
+        res.send("El usuario o contraseña ingresados son incorrectos");
+        res.status(400);
     }  
 });
 
-router.post('/signup', (req, res) => {
-    // Acá va la validación con la base de datos 
-    if(req.body.password != req.body.confirmPassword  || req.body.email != req.body.confirmEmail) {
-        res.send(400).send("Las contraseñas y los emails deben ser iguales");
-    } else {
-        let wallet = { // Se debe agregar la wallet a la base de datos
-            id_wallet : uuid.v4(),
-            balance : 0.0,
-            state : true
+router.post('/signup', async (req, res) => {
+    const {password, confirmPassword, email, confirmEmail} = req.body;
+    const count = await pool.query('SELECT * FROM user;'); //Temporal, se quitará cuando ponga los autoincrementales
+    const diff = await pool.query('SELECT * FROM user WHERE USR_EMAIL = ?',[email]); // por ahora valida sólo que el email sea distinto
+    if(password != confirmPassword  || email != confirmEmail) {
+        res.send("Las contraseñas y los emails deben ser iguales");
+        res.status(400);
+    } else if (diff.length != 0) {
+        res.send("El correo seleccionado ya se encuentra registrado");
+        res.status(400);
+    } else{
+        
+        
+        let newUser = {
+            USR_ID: count.length + 1,
+            USR_NAME: req.body.name,
+            USR_SURNAME: req.body.lastName,
+            USR_EMAIL: req.body.email,
+            USR_USERNAME: req.body.email,
+            USR_PASSWORD: req.body.password
         };
 
-        let user = { // El usuario debe ser guardado en la base de datos si todo está correcto
-            name : req.body.name,
-            lastName : req.body.lastName,
-            email : req.body.email,
-            password : req.body.password,
-            wallet_user : wallet
+        console.log(newUser.USR_ID);            
+
+        await pool.query('INSERT INTO user set ?', [newUser]);
+        
+        let newWallet = { 
+            WAL_ID : uuid.v4(),
+            USR_ID : newUser.USR_ID,
+            WTYP_ID : 1, //Por ahora 1 representa una wallet personal 
+            WAL_BALANCE : 0.0,
+            WAL_STATE : "Active"
         };
 
-        users.push(user);
-        res.render('wallet.html', user);
+        await pool.query('INSERT INTO wallet set ?', [newWallet]);
+
+        let data = {
+            name: newUser.USR_NAME,
+            lastName: newUser.USR_SURNAME,
+            id_wallet: newWallet.WAL_ID
+        }
+        res.render('wallet.html', data);
     }
 });
 
