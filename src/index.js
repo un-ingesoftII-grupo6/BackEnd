@@ -29,7 +29,8 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
 // routes
-app.use(require('./routes/index'));
+app.use(require('./routes/'));
+app.use('/index',require('./routes/index'));
 
 // static files
 app.use(express.static(path.join(__dirname, 'public')));
