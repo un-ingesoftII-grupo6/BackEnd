@@ -28,6 +28,10 @@ app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
+//DB Connection
+require("./database/connection");
+require("./bootstrap")();
+
 // routes
 app.use(require('./routes/'));
 app.use('/index',require('./routes/index'));
