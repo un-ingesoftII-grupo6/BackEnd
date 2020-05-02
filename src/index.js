@@ -25,7 +25,7 @@ app.use(session({
 
 // view petitions
 app.use(morgan('dev'));
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 //DB Connection
@@ -34,7 +34,23 @@ require("./bootstrap")();
 
 // routes
 app.use(require('./routes/'));
-app.use('/index',require('./routes/index'));
+app.use('/index', require('./routes/index'));
+
+//Routes Handler
+app.use((req, res, next) => { //In case of a unknown route
+    const error = new Error("Resource not found :(");
+    error.status = 404;
+    next(error);
+});
+
+app.use((error, req, res, next) =>{
+    res.status(error.status || 500);
+    res.json({
+        error: {
+            message: error.message
+        }
+    });
+});
 
 // static files
 app.use(express.static(path.join(__dirname, 'public')));
@@ -43,3 +59,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.listen(app.get('port'), () => {
     console.log('Server on port', app.get('port'));
 });
+
+module.exports = app;
