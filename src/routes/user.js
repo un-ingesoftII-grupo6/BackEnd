@@ -1,10 +1,18 @@
 const express = require("express");
 const router = express.Router();
-const controllers = require("../controllers/user");
+const userController = require("../controllers/user");
 
 //Creates a new user
-router.post("/signup", controllers.createUser);
+router.post("/signup", userController.createUser);
+//Finds all users, with wallets and movements
+router.get("/find/all",userController.getAllUsers);
 //Find user by username
-router.get('/find/:username', controllers.getUserByUsername);
+router.get('/find/:username', userController.getUserByUsername);
+//Deletes user by username
+router.delete('/delete/:username', userController.deleteUser);
+//Updates the user by username
+router.put("/edit/:username",userController.updateUser);
+//Validate user in db
+router.get('/login', userController.validateUser);
 
 module.exports = router;
