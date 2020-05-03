@@ -1,3 +1,5 @@
+const helpers = require("./lib/helpers");
+
 module.exports = async () => {
 
     const Bank = require("./models/Bank");
@@ -36,13 +38,14 @@ module.exports = async () => {
     //Inserting data
 
     //Local created instances
+    const pass = await helpers.encryptPassword("Abcd1234");
     const user = await User.build({
-        Usr_id: 12345,
+        Usr_id: 1,
         Usr_name: "Miguel",
         Usr_surname: "Peña",
         Usr_email: "miapenahu@unal.edu.co",
         Usr_username: "miapenahu",
-        Usr_password: 12345
+        Usr_password: pass
     })//.catch(errHandler);
 
     const walletType = await WalletType.build({
