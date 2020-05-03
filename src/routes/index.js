@@ -2,25 +2,8 @@ const express = require('express');
 const router = express.Router();
 const uuid = require('uuid');
 
-const pool = require('../database');
 
-router.get('/', (req, res) => {
-    res.render('index.html', { title : 'UN Wallet' });
-});
-
-router.get('/login', (req, res) => {
-    res.render('login.html', { title : 'Log in' });
-});
-
-router.get('/signup', (req, res) => {
-    res.render('signup.html', { title : 'Sign up' });
-});
-
-router.get('/wallet', (req, res) => {
-    res.render('wallet.html');
-});
-
-router.post('/login', async (req, res) => {
+/*router.post('/login', async (req, res) => {
 
     const { email, password } = req.body;
     console.log(email,'asd ', password);
@@ -39,9 +22,9 @@ router.post('/login', async (req, res) => {
         res.send("El usuario o contraseña ingresados son incorrectos");
         res.status(400);
     }  
-});
+});*/
 
-router.post('/signup', async (req, res) => {
+/*router.post('/signup', async (req, res) => {
     const {password, confirmPassword, email, confirmEmail} = req.body;
     const count = await pool.query('SELECT * FROM user;'); //Temporal, se quitará cuando ponga los autoincrementales
     const diff = await pool.query('SELECT * FROM user WHERE USR_EMAIL = ?',[email]); // por ahora valida sólo que el email sea distinto
@@ -84,7 +67,7 @@ router.post('/signup', async (req, res) => {
         }
         res.render('wallet.html', data);
     }
-});
+});*/
 
 // Export module
 module.exports = router;
