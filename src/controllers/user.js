@@ -2,6 +2,7 @@ const User = require('../models/User');
 const Wallet = require('../models/Wallet');
 const Movement = require('../models/Movement');
 const helpers = require("../lib/helpers");
+const uuid = require('uuid');
 
 const createUser = async (req, res) => {
     console.log(req.body);
@@ -10,7 +11,7 @@ const createUser = async (req, res) => {
     const email = req.body.email;
     const username = req.body.username;
     const password = await helpers.encryptPassword(req.body.password);
- 
+
     console.log(password);
     try {
     const post = await User.create({
@@ -20,6 +21,15 @@ const createUser = async (req, res) => {
         Usr_username: username,
         Usr_password: password
     });
+
+    const wallet = await Wallet.create({
+        Wal_id: uuid.v4(),
+        Usr_id: post.Usr_id,
+        Wtyp_id: 1,
+        Wal_balance: 0.00,
+        Wal_state: "Active"
+    });
+
     return res.status(201).json({
       post,
     });

@@ -13,6 +13,6 @@ router.delete('/delete/:username', userController.deleteUser);
 //Updates the user by username
 router.put("/edit/:username",userController.updateUser);
 //Validate user in db
-router.get('/login', userController.validateUser);
+router.post('/login', userController.validateUser);
 
 module.exports = router;

@@ -1,4 +1,5 @@
 const helpers = require("./lib/helpers");
+const uuid = require('uuid');
 
 module.exports = async () => {
 
@@ -48,6 +49,16 @@ module.exports = async () => {
         Usr_password: pass
     })//.catch(errHandler);
 
+    const pass2 = await helpers.encryptPassword("123123");
+    const user2 = await User.build({
+        Usr_id: 2,
+        Usr_name: "Nicolás",
+        Usr_surname: "Rodríguez",
+        Usr_email: "nicrodriguezval@unal.edu.co",
+        Usr_username: "nicrodriguezval",
+        Usr_password: pass2
+    })//.catch(errHandler);
+
     const walletType = await WalletType.build({
         Wtyp_id: 1,
         Wtyp_name: "Personal",
@@ -65,11 +76,19 @@ module.exports = async () => {
     })//.catch(errHandler);
 
     const wallet = await Wallet.build({
-        Wal_id: "abcd1234",
+        Wal_id: uuid.v4(),
         Usr_id: user.Usr_id,
         Wtyp_id: walletType.Wtyp_id,
         Ent_NIT: enterprise.Ent_NIT,
         Wal_balance: 500000.00,
+        Wal_state: "Active"
+    })//.catch(errHandler);
+
+    const wallet2 = await Wallet.build({
+        Wal_id: uuid.v4(),
+        Usr_id: user2.Usr_id,
+        Wtyp_id: walletType.Wtyp_id,
+        Wal_balance: 400000.00,
         Wal_state: "Active"
     })//.catch(errHandler);
 
@@ -111,6 +130,15 @@ module.exports = async () => {
         Usr_password: user.Usr_password
     }}).catch(errHandler);
 
+    const user_arr2 = await User.findOrCreate({where: {
+            Usr_id: user2.Usr_id,
+            Usr_name: user2.Usr_name,
+            Usr_surname: user2.Usr_surname,
+            Usr_email: user2.Usr_email,
+            Usr_username: user2.Usr_username,
+            Usr_password: user2.Usr_password
+        }}).catch(errHandler);
+
     const walletType_arr = await WalletType.findOrCreate({where: {
         Wtyp_id: walletType.Wtyp_id,
         Wtyp_name: walletType.Wtyp_name,
@@ -135,6 +163,14 @@ module.exports = async () => {
         Wal_balance: wallet.Wal_balance,
         Wal_state: wallet.Wal_state
     }}).catch(errHandler);
+
+    const wallet_arr2 = await Wallet.findOrCreate({ where: {
+            Wal_id: wallet2.Wal_id,
+            Usr_id: wallet2.Usr_id,
+            Wtyp_id: wallet2.Wtyp_id,
+            Wal_balance: wallet2.Wal_balance,
+            Wal_state: wallet2.Wal_state
+        }}).catch(errHandler);
 
     const bank_arr = await Bank.findOrCreate({ where: {
         Bank_name: bank.Bank_name,
