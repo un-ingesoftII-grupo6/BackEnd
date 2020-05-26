@@ -1,20 +1,16 @@
-const User = require('../models/User');
-const Wallet = require('../models/Wallet');
-const Movement = require('../models/Movement');
 const helpers = require("../lib/helpers");
 const uuid = require('uuid');
+const models = require("../../models");
 
 const createUser = async (req, res) => {
-    console.log(req.body);
     const name = req.body.name;
     const surname = req.body.surname;
     const email = req.body.email;
     const username = req.body.username;
     const password = await helpers.encryptPassword(req.body.password);
 
-    console.log(password);
     try {
-    const post = await User.create({
+    const post = await models.User.create({
         Usr_name: name,
         Usr_surname: surname,
         Usr_email: email,
@@ -22,7 +18,7 @@ const createUser = async (req, res) => {
         Usr_password: password
     });
 
-    const wallet = await Wallet.create({
+    const wallet = await models.Wallet.create({
         Wal_id: uuid.v4(),
         Usr_id: post.Usr_id,
         Wtyp_id: 1,
@@ -40,14 +36,14 @@ const createUser = async (req, res) => {
 
 const getAllUsers = async (req, res) => {
   try {
-    const posts = await User.findAll({
+    const posts = await models.User.findAll({
       include: [
         {
-          model: Wallet,
+          model: models.Wallet,
           as: 'possess',
         include: [
           {
-           model: Movement,
+           model: models.Movement,
            as: 'modifies',
           }
          ]
@@ -63,15 +59,15 @@ const getAllUsers = async (req, res) => {
 const getUserByUsername = async (req, res) => {
   try {
     const { username } = req.params;
-    const post = await User.findOne({
+    const post = await models.User.findOne({
       where: { Usr_username: username },
       include: [
         {
-          model: Wallet,
+          model: models.Wallet,
           as: 'possess',
           include: [
            {
-            model: Movement,
+            model: models.Movement,
             as: 'modifies',
            }
           ]
@@ -96,7 +92,7 @@ const updateUser = async (req, res) => {
     const email = req.body.email;
     const password = await helpers.encryptPassword(req.body.password);
 
-    const [ updated ] = await User.update({
+    const [ updated ] = await models.User.update({
         Usr_name: name,
         Usr_surname: surname,
         Usr_email: email,
@@ -106,7 +102,7 @@ const updateUser = async (req, res) => {
       where: { Usr_username: username }
     });
     if (updated) {
-      const updatedUser = await User.findOne({ where: { Usr_username: usrname } });
+      const updatedUser = await models.User.findOne({ where: { Usr_username: usrname } });
       return res.status(200).json({ user: updatedUser });
     }
     throw new Error('User not found');
@@ -118,7 +114,7 @@ const updateUser = async (req, res) => {
 const deleteUser = async (req, res) => {
   try {
     const { username } = req.params;
-    const deleted = await User.destroy({
+    const deleted = await models.User.destroy({
       where: { Usr_username: username }
     });
     if (deleted) {
@@ -133,16 +129,16 @@ const deleteUser = async (req, res) => {
 const validateUser = async (req, res) => {
   try {
     const { username, password } = req.body;
-    const post = await User.findOne({
+    const post = await models.User.findOne({
       where: { Usr_username: username },
       include: [
         {
-          model: Wallet,
+          model: models.Wallet,
           as: 'possess',
           include: [
            {
-            model: User,
-            as: 'possess',
+            model: models.Movement,
+            as: 'modifies',
            }
           ]
         }
