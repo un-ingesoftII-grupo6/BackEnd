@@ -25,7 +25,6 @@ app.listen(app.get('port'), () => {
 
 //DB Connection
 require("./database/connection");
-require("./bootstrap")();
 
 //Routes Instanciation
 app.use(require('./routes/'));
