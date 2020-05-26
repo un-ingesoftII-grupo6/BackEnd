@@ -5,7 +5,7 @@ module.exports = {
     return queryInterface.createTable("WALLETTYPE", {
       Wtyp_id: {
         type: Sequelize.INTEGER, 
-        allowNull: false,
+        autoIncrement: true,
         primaryKey:true
         },
         Wtyp_name: {

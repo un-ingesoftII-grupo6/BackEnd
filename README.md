@@ -15,8 +15,16 @@ Y también instalar la cli:
 
 npm install sequelize-cli -g
 
-Por último se entra a mysql por cmd, se crea la base
-con el nombre "db_unwallet" y se ejecuta el comando:
+Ahora se inicia el servidor de mysql en el localhost,
+se entra a mysql por la consola, y se crea la base
+con el nombre "db_unwallet":
+
+> mysql -u root -p
+> *Se pone la contraseña que se tenga para root*
+> create database db_unwallet;
+
+Pro último se ejecuta el comando, en cmd (powershell
+puede causa más problemas al ejecutarlo):
 
 >sequelize db:migrate
 

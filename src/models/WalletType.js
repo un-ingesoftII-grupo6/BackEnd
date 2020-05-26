@@ -3,7 +3,7 @@ const Sequelize = require("sequelize");
 module.exports = sequelize.define("WalletType", {
     Wtyp_id: {
     type: Sequelize.INTEGER, 
-    allowNull: false,
+    autoIncrement: true,
     primaryKey:true
     },
     Wtyp_name: {
