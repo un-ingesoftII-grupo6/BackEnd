@@ -30,10 +30,14 @@ require("./database/connection");
 app.use(require('./routes/'));
 app.use('/index',require('./routes/index'));
 const userRoutes = require("./routes/user");
+const walletRoutes = require("./routes/wallet");
+const movementRoutes = require("./routes/movement");
 const managementRoutes = require("./routes/management");
 
 //Routes Handler
 app.use("/user",userRoutes);
+app.use("/wallet",walletRoutes);
+app.use("/movement",movementRoutes);
 app.use("/management",managementRoutes);
 
 //middlewares

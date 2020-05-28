@@ -17,6 +17,11 @@ module.exports = {
             type: Sequelize.STRING(30),
             allowNull: false
         },
+        Tra_route: {
+          type: Sequelize.STRING(30),
+          allowNull: false,
+          unique: true
+        },
         Tra_description: {
             type: Sequelize.TEXT,
             allowNull: false
