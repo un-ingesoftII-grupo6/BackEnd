@@ -1,7 +1,7 @@
 {
   "name": "UNWallet",
   "version": "1.0.0",
-  "description": "",
+  "description": "==================================================",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
@@ -20,10 +20,21 @@
     "express-session": "^1.17.1",
     "morgan": "^1.10.0",
     "mysql2": "^2.1.0",
-    "sequelize": "^5.21.10",
-    "uuid": "^7.0.3"
+    "sequelize": "^5.21.11",
+    "sequelize-cli": "^5.5.1",
+    "sqlite3": "^4.2.0",
+    "uuid": "^7.0.3",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/un-ingesoftII-grupo6/BackEnd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/un-ingesoftII-grupo6/BackEnd/issues"
+  },
+  "homepage": "https://github.com/un-ingesoftII-grupo6/BackEnd#readme"
 }

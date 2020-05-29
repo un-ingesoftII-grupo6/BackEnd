@@ -4,7 +4,8 @@ const app = express();
 const path = require('path');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-const cors = require('cors')
+const cors = require('cors');
+const logger = require('./controllers/logger');
 
 // Settings 
 app.set('port', process.env.PORT || 8000)
@@ -18,17 +19,42 @@ app.use(bodyParser.urlencoded({extended: false})); //Just url encoded data
 app.use(bodyParser.json());
 app.use(cors());
 
-// listening the server 
-app.listen(app.get('port'), () => {
-    console.log('Server on port', app.get('port'));
+app.route('/').get((req,res)=>{
+    logger.info('Validación Usuario');
+    res.send('perfil de usuario');
 });
+
+/*
+app.get("/", (req, res) => {
+    logger.info("/ query", { query: req.query });
+  
+    logger.info("Finding user", { q: req.query.q });
+    //const foundUser = User.findUser(req.query.q);
+    const foundUser = User.validateUser(req.query.q);
+    logger.info("User found", { foundUser });
+  
+    const msg = {
+      username: foundUser && foundUser.username,
+      foundUser: !!foundUser
+    };
+    logger.info("/ response", msg);
+    res.json(msg);
+  });
+*/
+
+// listening the server 
+/*app.listen(app.get('port'), () => {
+    logger.info('Server on port:'+ app.get('port'))
+});
+*/
+app.listen(8080, () => logger.info('server running 8080'));
 
 //DB Connection
 require("./database/connection");
 
 //Routes Instanciation
-app.use(require('./routes/'));
-app.use('/index',require('./routes/index'));
+app.use(require('./routes/index1'));
+app.use('/index',require('./routes/index1'));
 const userRoutes = require("./routes/user");
 const managementRoutes = require("./routes/management");
 
@@ -79,5 +105,6 @@ app.use((error, req, res, next) =>{
         }
     });
 });
+
 
 module.exports = app;

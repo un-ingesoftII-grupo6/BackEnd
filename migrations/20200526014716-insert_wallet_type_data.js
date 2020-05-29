@@ -3,6 +3,7 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert("WALLETTYPE", [{
+      Wtyp_id: 1,
       Wtyp_name: "Personal",
       Wtyp_description: "This is a personal wallet",
       Wtyp_movement_limit: 4000000.00,
