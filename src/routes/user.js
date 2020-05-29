@@ -4,7 +4,7 @@ const userController = require("../controllers/user");
 
 //Creates a new user
 router.post("/signup", userController.createUser);
-//Finds all users, with wallets and movements
+//Finds all users in the database
 router.get("/find/all",userController.getAllUsers);
 //Find user by username
 router.get('/find/:username', userController.getUserByUsername);

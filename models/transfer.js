@@ -7,9 +7,9 @@ module.exports = (sequelize, DataTypes) => {
             autoIncrement: true,
             primaryKey: true
         },
-        Bank_name: {
-            type: DataTypes.CHAR(60),
-            allowNull: true
+        Bank_id: {
+            type: DataTypes.BIGINT,
+            allowNull: true,
         },
         Tra_name: {
             type: DataTypes.STRING(30),
@@ -34,7 +34,7 @@ module.exports = (sequelize, DataTypes) => {
     });
     Transfer.associate = function (models) {
         Transfer.hasMany(models.Movement, { as: "is given", foreignKey: "Tra_id" });
-        Transfer.belongsTo(models.Bank, { as: "is authorized", foreignKey: "Bank_name" });
+        Transfer.belongsTo(models.Bank, { as: "is authorized", foreignKey: "Bank_id" });
     };
     return Transfer;
 }

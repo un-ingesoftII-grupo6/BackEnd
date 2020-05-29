@@ -33,7 +33,7 @@ const Wallet = sequelize.define("Wallet", {
     Wallet.associate = function(models) {
         Wallet.belongsTo(models.User, { as: "possess", foreignKey: "Usr_id" });
         Wallet.belongsTo(models.WalletType, { as: "give roles", foreignKey: "Wtyp_id" });
-        Wallet.belongsTo(models.Enterprise, { as: "manages", foreignKey: "Ent_NIT" });
+        Wallet.belongsTo(models.Enterprise, { as: "manages", foreignKey: "Ent_id" });
         Wallet.hasMany(models.Movement, { as: "modifies sender", foreignKey: "Wal_id_sender" });
         Wallet.hasMany(models.Movement, { as: "modifies recipient", foreignKey: "Wal_id_recipient" });
         //Temporary: Its necesary to create migrations that do this on database level

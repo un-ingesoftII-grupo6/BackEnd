@@ -27,20 +27,24 @@ app.listen(app.get('port'), () => {
 require("./database/connection");
 
 //Routes Instanciation
-app.use(require('./routes/'));
-app.use('/index',require('./routes/index'));
 const userRoutes = require("./routes/user");
 const walletRoutes = require("./routes/wallet");
 const movementRoutes = require("./routes/movement");
-const managementRoutes = require("./routes/management");
+const bankRoutes = require("./routes/bank");
+const transferRoutes = require("./routes/transfer");
+const enterpriseRoutes = require("./routes/enterprise");
+const wtypRoutes = require("./routes/wallettype");
 
 //Routes Handler
 app.use("/user",userRoutes);
 app.use("/wallet",walletRoutes);
 app.use("/movement",movementRoutes);
-app.use("/management",managementRoutes);
+app.use("/bank",bankRoutes);
+app.use("/transfer",transferRoutes);
+app.use("/enterprise",enterpriseRoutes);
+app.use("/wallet-type",wtypRoutes);
 
-//middlewares
+//CORS configuration
 
 var whitelist = ['http://localhost:8080']
 
@@ -53,19 +57,6 @@ var corsOptions = {
         }
     }
 }
-
-/*
-//CORS configuration
-app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin","*");
-    //res.header("Access-Control-Allow-Origin","http://this-is-example.com"); //For an specific address
-    res.header("Access-Control-Allow-Headers','Origin, X-Requested-With, Content-Type, Accept, Authorization");
-    if(req.method === 'OPTIONS'){
-        res.header("Access-Control-Allow-Methods","PUT, POST, PATCH, DELETE, GET");
-        return res.status(200).json({});
-    }
-    next();
-});*/
 
 //Unknown Routes Handler
 

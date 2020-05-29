@@ -9,6 +9,7 @@ const WalletType = sequelize.define("WalletType", {
     Wtyp_name: {
         type: DataTypes.STRING(30),
         allowNull: false,
+        unique: true
     },
     Wtyp_description: {
         type: DataTypes.TEXT,
