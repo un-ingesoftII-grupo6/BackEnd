@@ -14,8 +14,8 @@ const Wallet = sequelize.define("Wallet", {
         type: DataTypes.INTEGER,
         allowNull: false
     },
-    Ent_NIT: {
-        type: DataTypes.CHAR(25),
+    Ent_id: {
+        type: DataTypes.BIGINT,
         allowNull: true
     },
     Wal_balance: {
