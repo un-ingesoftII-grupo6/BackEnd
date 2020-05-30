@@ -1,6 +1,6 @@
 const Sequelize = require("sequelize");
 
-const sequelize = new Sequelize("db_unwallet",'root','root', {
+const sequelize = new Sequelize("db_unwallet",'root','MIbase', {
      host: '127.0.0.1', 
      dialect: "mysql", 
      operatorsAliases: false

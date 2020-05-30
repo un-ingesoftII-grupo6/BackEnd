@@ -6,6 +6,8 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const logger = require('./controllers/logger');
+const sequelizeConnection = require('./database/connection');
+const user = require('./controllers/user');
 
 // Settings 
 app.set('port', process.env.PORT || 8000)
@@ -20,10 +22,18 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.route('/').get((req,res)=>{
+    const foundUser = user.validateUser(req.query);
     logger.info('Validación Usuario');
-    res.send('perfil de usuario');
+    res.send('Perfil de usuario',{ foundUser });
+    //res.send("User found", { foundUser });
 });
-
+/*
+app.get('/',(req, res) => {
+    logger.info("lo del get");
+    const foundUser = user.validateUser(req,res);
+    res.send("User found", { foundUser });
+});
+*/
 /*
 app.get("/", (req, res) => {
     logger.info("/ query", { query: req.query });
@@ -42,15 +52,19 @@ app.get("/", (req, res) => {
   });
 */
 
+
 // listening the server 
-/*app.listen(app.get('port'), () => {
+app.listen(app.get('port'), () => {
     logger.info('Server on port:'+ app.get('port'))
 });
-*/
-app.listen(8080, () => logger.info('server running 8080'));
 
 //DB Connection
-require("./database/connection");
+//require("./database/connection");
+sequelizeConnection.authenticate().then(() => {
+    logger.info('Connection has been established successfully!');
+  }).catch((err) => {
+    logger.info('Can\'t establish database connection:\n' + err);
+  });
 
 //Routes Instanciation
 app.use(require('./routes/index1'));
@@ -64,7 +78,7 @@ app.use("/management",managementRoutes);
 
 //middlewares
 
-var whitelist = ['http://localhost:8080']
+var whitelist = ['http://localhost:8000']
 
 var corsOptions = {
     origin: function (origin, callback) {

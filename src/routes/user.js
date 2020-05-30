@@ -15,4 +15,5 @@ router.put("/edit/:username",userController.updateUser);
 //Validate user in db
 router.post('/login', userController.validateUser);
 
+
 module.exports = router;
