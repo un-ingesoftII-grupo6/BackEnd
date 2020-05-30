@@ -14,8 +14,8 @@ const Wallet = sequelize.define("Wallet", {
         type: DataTypes.INTEGER,
         allowNull: false
     },
-    Ent_NIT: {
-        type: DataTypes.CHAR(25),
+    Ent_id: {
+        type: DataTypes.BIGINT,
         allowNull: true
     },
     Wal_balance: {
@@ -32,9 +32,10 @@ const Wallet = sequelize.define("Wallet", {
 });
     Wallet.associate = function(models) {
         Wallet.belongsTo(models.User, { as: "possess", foreignKey: "Usr_id" });
-        Wallet.belongsTo(models.WalletType, { as: "give roles", foreignKey: "Wtyp_id" });
-        Wallet.belongsTo(models.Enterprise, { as: "manages", foreignKey: "Ent_NIT" });
-        Wallet.hasMany(models.Movement, { as: "modifies", foreignKey: "Wal_id" });
+        Wallet.belongsTo(models.WalletType, { as: "give_roles", foreignKey: "Wtyp_id" });
+        Wallet.belongsTo(models.Enterprise, { as: "manages", foreignKey: "Ent_id" });
+        Wallet.hasMany(models.Movement, { as: "modifies_sender", foreignKey: "Wal_id_sender" });
+        Wallet.hasMany(models.Movement, { as: "modifies_recipient", foreignKey: "Wal_id_recipient" });
         //Temporary: Its necesary to create migrations that do this on database level
     };
     return Wallet;

@@ -3,14 +3,24 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable("ENTERPRISE", {
+      Ent_id: {
+        type: Sequelize.BIGINT, 
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey:true
+        },
       Ent_NIT: {
         type: Sequelize.CHAR(25), 
         allowNull: false,
-        primaryKey:true
+        unique: true
         },
         Ent_name: {
             type: Sequelize.STRING(50),
             allowNull: false
+        },
+        Ent_description: {
+          type: Sequelize.TEXT,
+          allowNull: false
         },
         Ent_budget: {
             type: Sequelize.DOUBLE(20,2),

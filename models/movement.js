@@ -1,36 +1,27 @@
 'use strict';
 module.exports = (sequelize,DataTypes) => {
 const Movement = sequelize.define("Movement", {
+    Mov_id: {
+        type: DataTypes.BIGINT, 
+        //allowNull: false,
+        autoIncrement: true,
+        primaryKey:true
+        },
     Tra_id: {
         type: DataTypes.INTEGER, 
         allowNull: false,
-        unique: true,
-        primaryKey:true
+        unique: true
     },
-    Wal_id: {
-        type: DataTypes.CHAR(36),
-        allowNull: false,
-        unique: true,
-        primaryKey:true
-    },
-    Mov_sender: {
-        type: DataTypes.CHAR(25),
+    Wal_id_sender: {
+        type: DataTypes.CHAR(36), 
         allowNull: false
     },
-    Mov_recipient: {
-        type: DataTypes.CHAR(25),
+    Wal_id_recipient: {
+        type: DataTypes.CHAR(36), 
         allowNull: false
     },
     Mov_total_amount: {
         type: DataTypes.DOUBLE(20,2),
-        allowNull: false
-    },
-    Mov_date: {
-        type: DataTypes.STRING(10),
-        allowNull: false
-    },
-    Mov_time: {
-        type: DataTypes.STRING(5),
         allowNull: false
     },
     Mov_is_successful: {
@@ -46,8 +37,9 @@ const Movement = sequelize.define("Movement", {
     freezeTableName: true       
 });
     Movement.associate = function(models) {
-        Movement.belongsTo(models.Wallet, { as: "modifies", foreignKey: "Wal_id" });
-        Movement.belongsTo(models.Transfer, { as: "is given", foreignKey: "Tra_id" });
+        Movement.belongsTo(models.Wallet, { as: "modifies_sender", foreignKey: "Wal_id_sender" });
+        Movement.belongsTo(models.Wallet, { as: "modifies_recipient", foreignKey: "Wal_id_recipient" });
+        Movement.belongsTo(models.Transfer, { as: "is_given", foreignKey: "Tra_id" });
     };
     return Movement;
 }

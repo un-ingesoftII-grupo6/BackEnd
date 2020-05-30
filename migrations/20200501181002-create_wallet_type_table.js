@@ -11,6 +11,7 @@ module.exports = {
         Wtyp_name: {
             type: Sequelize.STRING(30),
             allowNull: false,
+            unique: true
         },
         Wtyp_description: {
             type: Sequelize.TEXT,

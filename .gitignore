@@ -1,4 +1,9 @@
-*.iml
-*.class
+# Editor directories and files
+node_modules
 .idea
-node_modules/
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

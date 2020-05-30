@@ -16,8 +16,8 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false
       },
-      Ent_NIT: {
-        type: Sequelize.CHAR(25),
+      Ent_id: {
+        type: Sequelize.INTEGER,
         allowNull: true
       },
       Wal_balance: {
