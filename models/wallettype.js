@@ -28,7 +28,7 @@ const WalletType = sequelize.define("WalletType", {
     freezeTableName: true    
 });
     WalletType.associate = function(models) {
-        WalletType.hasMany(models.Wallet, { as: "give roles", foreignKey: "Wtyp_id" });
+        WalletType.hasMany(models.Wallet, { as: "give_roles", foreignKey: "Wtyp_id" });
     };
     return WalletType;
 }

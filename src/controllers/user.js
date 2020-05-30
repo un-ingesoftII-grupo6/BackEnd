@@ -125,11 +125,11 @@ const validateUser = async (req, res) => {
           include: [
             {
               model: models.Movement,
-              as: 'modifies sender',
+              as: 'modifies_sender',
             },
             {
               model: models.Movement,
-              as: 'modifies recipient', 
+              as: 'modifies_recipient', 
             }
           ]
         }

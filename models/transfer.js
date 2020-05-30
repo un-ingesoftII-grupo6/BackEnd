@@ -33,8 +33,8 @@ module.exports = (sequelize, DataTypes) => {
         freezeTableName: true
     });
     Transfer.associate = function (models) {
-        Transfer.hasMany(models.Movement, { as: "is given", foreignKey: "Tra_id" });
-        Transfer.belongsTo(models.Bank, { as: "is authorized", foreignKey: "Bank_id" });
+        Transfer.hasMany(models.Movement, { as: "is_given", foreignKey: "Tra_id" });
+        Transfer.belongsTo(models.Bank, { as: "is_authorized", foreignKey: "Bank_id" });
     };
     return Transfer;
 }

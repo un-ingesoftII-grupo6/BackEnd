@@ -3,7 +3,7 @@ const router = express.Router();
 const movementController = require("../controllers/movement");
 
 //Creates a new movement set for one transaction
-router.post("/:transfer_type/:username_sender/:username_recipient", movementController.createMovement);
+router.post("/:transfer_type", movementController.createMovement);
 //Finds all movements for one user
 router.get("/find/all/:username", movementController.getAllMovementsByUsername);
 //Finds all movements, sorted by user and wallet

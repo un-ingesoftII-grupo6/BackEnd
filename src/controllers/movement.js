@@ -5,13 +5,29 @@ const models = require("../../models");
 const createMovement = async (req, res) => {
     try {
 
-        const { transfer_type, username_sender, username_recipient } = req.params;
+        const { transfer_type } = req.params;
 
         const { wal_id_sender, wal_id_recipient, amount } = req.body;
-        const findSender = await models.User.findOne({ where: { Usr_username: username_sender } });
-        const findRecipient = await models.User.findOne({ where: { Usr_username: username_recipient } });
         const findSenderWallet = await models.Wallet.findOne({ where: { Wal_id: wal_id_sender } });
         const findRecipientWallet = await models.Wallet.findOne({ where: { Wal_id: wal_id_recipient } });
+        const findSender = await models.User.findOne({ 
+            include: [
+                {
+                    model: models.Wallet,
+                    as: "possess",
+                    where: { Wal_id: wal_id_sender }
+                }
+            ]
+         });
+        const findRecipient = await models.User.findOne({ 
+            include: [
+                {
+                    model: models.Wallet,
+                    as: "possess",
+                    where: { Wal_id: wal_id_recipient }
+                }
+            ]
+         });
         const findTransfer = await models.Transfer.findOne({ where: { Tra_route: transfer_type } });
 
         //Note: This function would be customized depending of transfer_type, possible dessign pattern application
@@ -61,11 +77,11 @@ const getAllMovementsByUsername = async (req, res) => {
             include: [
                 {
                     model: models.Movement,
-                    as: 'modifies sender',
+                    as: 'modifies_sender',
                 },
                 {
                     model: models.Movement,
-                    as: 'modifies recipient',
+                    as: 'modifies_recipient',
 
                 }
             ]
@@ -86,11 +102,11 @@ const getAllMovements = async (req, res) => {
             include: [
               {
                model: models.Movement,
-               as: 'modifies sender'
+               as: 'modifies_sender'
               },
               {
                 model: models.Movement,
-                as: 'modifies recipient'
+                as: 'modifies_recipient'
               }
              ]
             },

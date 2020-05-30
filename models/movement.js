@@ -37,9 +37,9 @@ const Movement = sequelize.define("Movement", {
     freezeTableName: true       
 });
     Movement.associate = function(models) {
-        Movement.belongsTo(models.Wallet, { as: "modifies sender", foreignKey: "Wal_id_sender" });
-        Movement.belongsTo(models.Wallet, { as: "modifies recipient", foreignKey: "Wal_id_recipient" });
-        Movement.belongsTo(models.Transfer, { as: "is given", foreignKey: "Tra_id" });
+        Movement.belongsTo(models.Wallet, { as: "modifies_sender", foreignKey: "Wal_id_sender" });
+        Movement.belongsTo(models.Wallet, { as: "modifies_recipient", foreignKey: "Wal_id_recipient" });
+        Movement.belongsTo(models.Transfer, { as: "is_given", foreignKey: "Tra_id" });
     };
     return Movement;
 }
