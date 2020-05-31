@@ -23,11 +23,19 @@ app.use(cors());
 
 app.route('/').get((req,res)=>{
     //const foundUser = user.validateUser(null);
-    logger.info('Validación Usuario');
-    logger.debug('Validación Usuario')
-    res.send('Perfil de usuario');
+    logger.info('User validation');
+    res.send('User profile');//send localhost
     //res.send("User found", { foundUser });
 });
+
+//example test logger
+logger.silly("127.0.0.1 - there's no place like silly");
+logger.debug("127.0.0.1 - there's no place like debug");
+logger.verbose("127.0.0.1 - there's no place like verbose");
+logger.info("127.0.0.1 - there's no place like info");
+logger.warn("127.0.0.1 - there's no place like warn");
+logger.error("127.0.0.1 - there's no place like error");
+
 /*
 app.get('/',(req, res) => {
     logger.info("lo del get");

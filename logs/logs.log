@@ -1,0 +1,9 @@
+{"message":"Server on port:8000","level":"info"}
+{"message":"Connection has been established successfully!","level":"info"}
+{"message":"Validación Usuario","level":"info"}
+[2020-05-31T04:44:23.924Z] info 127.0.0.1 - there's no place like home
+[2020-05-31T04:44:23.954Z] warn 127.0.0.1 - there's no place like home
+[2020-05-31T04:44:24.094Z] error 127.0.0.1 - there's no place like home
+[2020-05-31T04:44:24.402Z] info Server on port:8000
+[2020-05-31T04:44:24.940Z] info Connection has been established successfully!
+[2020-05-31T04:45:39.494Z] info Validación Usuario

@@ -1,0 +1,23 @@
+[2020-05-31T05:38:10.175Z] debug 127.0.0.1 - there's no place like debug
+[2020-05-31T05:38:10.179Z] verbose 127.0.0.1 - there's no place like verbose
+[2020-05-31T05:38:10.180Z] info 127.0.0.1 - there's no place like info
+[2020-05-31T05:38:10.269Z] warn 127.0.0.1 - there's no place like warn
+[2020-05-31T05:38:10.299Z] error 127.0.0.1 - there's no place like error
+[2020-05-31T05:38:10.487Z] info Server on port:8000
+[2020-05-31T05:38:11.314Z] info Connection has been established successfully!
+[2020-05-31T05:38:34.526Z] debug 127.0.0.1 - there's no place like debug
+[2020-05-31T05:38:34.530Z] verbose 127.0.0.1 - there's no place like verbose
+[2020-05-31T05:38:34.531Z] info 127.0.0.1 - there's no place like info
+[2020-05-31T05:38:34.567Z] warn 127.0.0.1 - there's no place like warn
+[2020-05-31T05:38:34.605Z] error 127.0.0.1 - there's no place like error
+[2020-05-31T05:38:34.890Z] info Server on port:8000
+[2020-05-31T05:38:35.649Z] info Connection has been established successfully!
+[2020-05-31T05:38:45.261Z] info User validation
+[2020-05-31T05:40:03.245Z] debug 127.0.0.1 - there's no place like debug
+[2020-05-31T05:40:03.250Z] verbose 127.0.0.1 - there's no place like verbose
+[2020-05-31T05:40:03.255Z] info 127.0.0.1 - there's no place like info
+[2020-05-31T05:40:03.287Z] warn 127.0.0.1 - there's no place like warn
+[2020-05-31T05:40:03.302Z] error 127.0.0.1 - there's no place like error
+[2020-05-31T05:40:03.509Z] info Server on port:8000
+[2020-05-31T05:40:04.104Z] info Connection has been established successfully!
+[2020-05-31T05:40:10.370Z] info User validation

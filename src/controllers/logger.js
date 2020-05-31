@@ -1,37 +1,21 @@
-const {createLogger,format,transports} = require('winston');//librería para registro de eventos
-//const bunyan = require('bunyan');
+const winston = require('winston');//library for event logs
+const {format} = require('winston');//format to print the event log
 
-module.exports = createLogger({
-  format: format.combine(
+module.exports = winston.createLogger({
+  format: winston.format.combine(
     format.simple(), 
     format.timestamp(),
     format.printf(info => `[${info.timestamp}] ${info.level} ${info.message}`),
-    format.printf(debug => `[${debug.timestamp}] ${debug.level} ${debug.message}`),
-    format.printf(error => `[${error.timestamp}] ${error.level} ${error.message}`)
   ),
-  trasnports: [
-    new transports.File({
+  transports: [
+    new winston.transports.File({
+      level: 'debug',
       maxsize: 5242880, //5MB
-      maxFiles: 5,
-      filename: `${__dirname}/../logs/logs.log`,//'./logs/logs.log',
-      handleExceptions: true,
-      json: true,
-      colorize: false,
-      level: 'debug'
+      maxFiles: 5, 
+      filename: 'logs.log', //file event logs
     }),
-    new transports.Console({
-      handleExceptions: true,
-      json: false,
-      colorize: true,
+    new winston.transports.Console({
       level: 'info'
     }),
-    new transports.Console({
-      handleExceptions: true,
-      json: false,
-      colorize: true,
-      level: 'error',
-    }),
-  ],
-  exitOnError: false
+  ]
 });
-
