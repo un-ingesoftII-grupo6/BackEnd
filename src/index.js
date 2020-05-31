@@ -5,22 +5,34 @@ const path = require('path');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors')
+const logger = require('./logger/logger');
 
 // Settings 
 app.set('port', process.env.PORT || 8000)
-app.set('views', path.join(__dirname, 'views'));
+//app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile)
 app.set('view engine', 'ejs');
 
+var fs = require('fs');
+var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' });
+
 // view petitions
-app.use(morgan('dev'));
+//app.use(morgan('dev'));
+app.use(morgan('combined', { stream: accessLogStream }));
 app.use(bodyParser.urlencoded({extended: false})); //Just url encoded data
 app.use(bodyParser.json());
 app.use(cors());
 
+// setup the logger
+app.get('/user', function (req, res) {
+  res.send('hello, User!')
+  logger.info("hello, User!")
+});
+
 // listening the server 
 app.listen(app.get('port'), () => {
-    console.log('Server on port', app.get('port'));
+    //console.log('Server on port', app.get('port'));
+    logger.info('Server on port ' + app.get('port'));
 });
 
 //DB Connection

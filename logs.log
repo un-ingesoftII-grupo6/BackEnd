@@ -1,0 +1,31 @@
+[2020-05-31T20:42:31.252Z] info Server on port8000
+[2020-05-31T20:44:17.106Z] info Server on port8000
+[2020-05-31T20:44:41.420Z] info Server on port8000
+[2020-05-31T20:45:28.134Z] info hello, User!
+[2020-05-31T20:49:23.547Z] info Server on port8000
+[2020-05-31T20:54:20.329Z] info Server on port8000
+[2020-05-31T20:55:20.506Z] info Server on port8000
+[2020-05-31T20:55:37.554Z] info Server on port8000
+[2020-05-31T20:56:29.388Z] info Server on port
+[2020-05-31T20:56:45.438Z] info Server on port
+[2020-05-31T20:58:24.553Z] info hello, User!
+[2020-05-31T21:01:20.024Z] info Server on port 8000
+[2020-05-31T21:01:46.171Z] info Server on port 8000
+[2020-05-31T21:02:03.946Z] info Server on port 8000
+[2020-05-31T21:02:21.756Z] info Server on port 8000
+[2020-05-31T21:09:20.457Z] info Server on port 8000
+[2020-05-31T21:10:49.940Z] info Server on port 8000
+[2020-05-31T21:11:10.773Z] info Server on port 8000
+[2020-05-31T21:16:56.400Z] info Server on port 8000
+[2020-05-31T21:17:12.493Z] info Server on port 8000
+[2020-05-31T21:17:37.037Z] info Server on port 8000
+[2020-05-31T21:18:03.681Z] info user-validate
+[2020-05-31T21:26:20.323Z] info Server on port 8000
+[2020-05-31T21:26:20.864Z] info Connection has been established successfully!
+[2020-05-31T21:26:41.425Z] info Server on port 8000
+[2020-05-31T21:26:41.992Z] info Connection has been established successfully!
+[2020-05-31T21:28:16.995Z] info Server on port 8000
+[2020-05-31T21:28:17.624Z] error Can't establish database connection:
+SequelizeAccessDeniedError: Access denied for user 'root'@'localhost' (using password: YES)
+[2020-05-31T21:28:54.190Z] info Server on port 8000
+[2020-05-31T21:28:54.620Z] info Connection has been established successfully!
