@@ -160,21 +160,39 @@ async function Movement(req, res) {
                     if (findSenderWallet) {
                         if (findRecipientWallet) {
                             const val = await helpers.matchPassword(password, findSender.Usr_password);
-                            if(val){
-                            const movement = await models.Movement.create({
-                                Tra_id: findTransfer.Tra_id,
-                                Wal_id_sender: findSenderWallet.Wal_id,
-                                Wal_id_recipient: findRecipientWallet.Wal_id,
-                                Mov_total_amount: amount,
-                                Mov_is_successful: 0,
-                                Mov_timestamp: new Date()
-                            });
+                            if (val) {
+                                const senderNewBalance = findSenderWallet.Wal_balance - amount;
+                                if (senderNewBalance >= 0) {
 
-                            //Here is possible to call updateWallet function to commit changes in db
+                                    const updated1 = await models.Wallet.update({
+                                        Wal_balance: senderNewBalance
+                                    }, {
+                                        where: { Wal_id: findSenderWallet.Wal_id }
+                                    });
+                                    const recipientNewBalance = findRecipientWallet.Wal_balance + amount;
+                                    const updated2 = await models.Wallet.update({
+                                        Wal_balance: recipientNewBalance
+                                    }, {
+                                        where: { Wal_id: findRecipientWallet.Wal_id }
+                                    });
 
-                            return res.status(201).json({ movement: movement });
-                        }
-                        return res.status(401).send('The password is incorrect. Please try again');
+                                    if(updated1.length > 0 && updated2.length > 0){
+
+                                        const movement = await models.Movement.create({
+                                            Tra_id: findTransfer.Tra_id,
+                                            Wal_id_sender: findSenderWallet.Wal_id,
+                                            Wal_id_recipient: findRecipientWallet.Wal_id,
+                                            Mov_total_amount: amount,
+                                            Mov_is_successful: 0,
+                                            Mov_timestamp: new Date()
+                                        });
+                                        return res.status(201).json({ movement: movement });
+                                    }
+                                    return res.status(500).send('The Wallets could not be actualized');
+                                }
+                                return res.status(401).send('The Sender Wallet has no funds for this operation');
+                            }
+                            return res.status(401).send('The password is incorrect. Please try again');
                         }
                         return res.status(404).send("Recipient Wallet not found");
                     }
