@@ -22,9 +22,10 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.route('/').get((req,res)=>{
-    const foundUser = user.validateUser(req.query);
+    //const foundUser = user.validateUser(null);
     logger.info('Validación Usuario');
-    res.send('Perfil de usuario',{ foundUser });
+    logger.debug('Validación Usuario')
+    res.send('Perfil de usuario');
     //res.send("User found", { foundUser });
 });
 /*
