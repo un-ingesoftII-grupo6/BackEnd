@@ -7,7 +7,7 @@ router.post("/create", enterpriseController.createEnterprise);
 //Finds all enterprises in the database
 router.get("/find/all",enterpriseController.getAllEnterprises);
 //Updates an Enterprise
-router.put("/edit/:NIT", enterpriseController.updateEnterprise);
+router.put("/edit/:ent_id", enterpriseController.updateEnterprise);
 //Delete enterprise by NIT
 router.delete("/delete/:ent_id", enterpriseController.deleteEnterprise);
 //Managed wallets for enterprise

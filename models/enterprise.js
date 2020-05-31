@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
         Ent_NIT: {
             type: DataTypes.CHAR(25),
             allowNull: false,
-            primaryKey: true
+            unique: true
         },
         Ent_name: {
             type: DataTypes.STRING(50),
