@@ -29,3 +29,231 @@
 SequelizeAccessDeniedError: Access denied for user 'root'@'localhost' (using password: YES)
 [2020-05-31T21:28:54.190Z] info Server on port 8000
 [2020-05-31T21:28:54.620Z] info Connection has been established successfully!
+[2020-06-01T00:10:40.896Z] info Server on port 8000
+[2020-06-01T00:10:40.934Z] error Can't establish database connection:
+SequelizeAccessDeniedError: Access denied for user 'root'@'localhost' (using password: YES)
+[2020-06-01T00:11:15.226Z] info Server on port 8000
+[2020-06-01T00:11:15.275Z] error Can't establish database connection:
+SequelizeAccessDeniedError: Access denied for user 'root'@'localhost' (using password: YES)
+[2020-06-01T00:12:20.575Z] info Server on port 8000
+[2020-06-01T00:12:20.632Z] info Connection has been established successfully!
+[2020-06-01T00:13:58.251Z] info Server on port 8000
+[2020-06-01T00:13:58.304Z] info Connection has been established successfully!
+[2020-06-01T00:18:59.771Z] info user
+[2020-06-01T00:19:19.963Z] info user
+[2020-06-01T00:29:00.542Z] info Server on port 8000
+[2020-06-01T00:29:00.594Z] info Connection has been established successfully!
+[2020-06-01T00:29:04.696Z] info user
+[2020-06-01T00:49:38.677Z] info user-by-username
+{2020-06-01T00:52:03.144Z} info Server on port 8000
+{2020-06-01T00:52:03.199Z} info Connection has been established successfully!
+{2020-06-01T01:16:16.592Z} info Server on port 8000
+{2020-06-01T01:16:16.719Z} info Connection has been established successfully!
+[2020-06-01T01:21:42.995Z] info Server on port 8000
+[2020-06-01T01:21:43.043Z] info Connection has been established successfully!
+[2020-06-01T01:34:41.285Z] info [object Object]
+[2020-06-01T01:34:41.679Z] info Server on port 8000
+[2020-06-01T01:34:41.727Z] info Connection has been established successfully!
+[2020-06-01T01:35:07.450Z] info [object Object]
+[2020-06-01T01:35:07.839Z] info Server on port 8000
+[2020-06-01T01:35:07.878Z] info Connection has been established successfully!
+[2020-06-01T01:35:58.421Z] info user-by-username
+[2020-06-01T01:36:43.839Z] info [object Object]
+[2020-06-01T01:36:44.223Z] info Server on port 8000
+[2020-06-01T01:36:44.258Z] info Connection has been established successfully!
+[2020-06-01T01:39:50.266Z] info [object Object]
+[2020-06-01T01:39:50.645Z] info Server on port 8000
+[2020-06-01T01:39:50.684Z] info Connection has been established successfully!
+[2020-06-01T01:40:16.475Z] info user
+[2020-06-01T01:41:44.024Z] info [object Object]
+[2020-06-01T01:41:44.401Z] info Server on port 8000
+[2020-06-01T01:41:44.437Z] info Connection has been established successfully!
+::1 - - [01/Jun/2020:01:41:50 +0000] "GET /wallet/find/all HTTP/1.1" 200 696 "-" "PostmanRuntime/7.25.0"
+[2020-06-01T01:54:33.182Z] info Server on port 8000
+[2020-06-01T01:54:33.222Z] info Connection has been established successfully!
+::1 - - [2020-06-01T02:01:58.140Z] info Server on port 8000
+::1 - - [2020-06-01T02:01:58.182Z] info Connection has been established successfully!
+::1 - - [2020-06-01T02:02:37.171Z] info user
+::1 - - [01/Jun/2020:02:02:37 +0000] "GET /user/find/all HTTP/1.1" 200 422 "-" "PostmanRuntime/7.25.0"
+::1 - - [2020-06-01T02:05:21.253Z] info Server on port 8000
+::1 - - [2020-06-01T02:05:21.289Z] info Connection has been established successfully!
+::1 - - [2020-06-01T02:05:49.112Z] info user
+::1 - - [2020-06-01T02:05:49.114Z] info user
+::1 - - [01/Jun/2020:02:05:49 +0000] "GET /user/find/all HTTP/1.1" 200 422 "-" "PostmanRuntime/7.25.0"
+::1 - - [2020-06-01T02:07:02.509Z] info Server on port 8000
+::1 - - [2020-06-01T02:07:02.565Z] info Connection has been established successfully!
+::1 - - [2020-06-01T02:07:09.325Z] info read user:
+::1 - - [2020-06-01T02:07:09.330Z] info user
+::1 - - [01/Jun/2020:02:07:09 +0000] "GET /user/find/all HTTP/1.1" 200 422 "-" "PostmanRuntime/7.25.0"
+::1 - - [2020-06-01T02:08:20.431Z] info Server on port 8000
+::1 - - [2020-06-01T02:08:20.472Z] info Connection has been established successfully!
+::1 - - [2020-06-01T02:08:28.566Z] info read user:
+::1 - - [2020-06-01T02:08:28.568Z] info user
+[0mGET /user/find/all [32m200[0m 39.776 ms - 422[0m
+::1 - - [2020-06-01T02:09:02.708Z] info Server on port 8000
+::1 - - [2020-06-01T02:09:02.754Z] info Connection has been established successfully!
+::1 - - [2020-06-01T02:09:10.542Z] info read user:
+::1 - - [2020-06-01T02:09:10.545Z] info user
+::1 - - [01/Jun/2020:02:09:10 +0000] "GET /user/find/all HTTP/1.1" 200 422 "-" "PostmanRuntime/7.25.0"
+::1 - - [2020-06-01T02:09:41.899Z] info Server on port 8000
+::1 - - [2020-06-01T02:09:41.941Z] info Connection has been established successfully!
+::1 - - [2020-06-01T02:09:47.979Z] info read user:
+::1 - - [2020-06-01T02:09:47.981Z] info user
+::1 - - [01/Jun/2020:02:09:48 +0000] "GET /user/find/all HTTP/1.1" 200 422 "-" "PostmanRuntime/7.25.0"
+::1 - - [2020-06-01T02:10:25.195Z] info read user-by-username:
+::1 - - [2020-06-01T02:10:25.198Z] info user-by-username
+::1 - - [01/Jun/2020:02:10:25 +0000] "GET /user/find/allz HTTP/1.1" 404 48 "-" "PostmanRuntime/7.25.0"
+::1 - - [01/Jun/2020:02:11:07 +0000] "GET /user/find/all/miapenahu HTTP/1.1" 404 45 "-" "PostmanRuntime/7.25.0"
+::1 - - [2020-06-01T02:14:43.639Z] info Server on port 8000
+::1 - - [2020-06-01T02:14:43.682Z] info Connection has been established successfully!
+::1 - - [01/Jun/2020:02:14:58 +0000] "GET /user/find/all/miapenahu HTTP/1.1" 404 45
+::1 - - [2020-06-01T02:16:23.583Z] info Server on port 8000
+::1 - - [2020-06-01T02:16:23.640Z] info Connection has been established successfully!
+GET /user/find/all/miapenahu 404 45 - 4.183 ms
+::1 - - [2020-06-01T02:17:17.977Z] info Server on port 8000
+::1 - - [2020-06-01T02:17:18.033Z] info Connection has been established successfully!
+::1 - - [Mon, 01 Jun 2020 02:17:33 GMT] "GET /user/find/all/miapenahu HTTP/1.1" 404 45 "-" "PostmanRuntime/7.25.0"
+::1 - - [2020-06-01T02:19:05.366Z] info Server on port 8000
+::1 - - [2020-06-01T02:19:05.416Z] info Connection has been established successfully!
+::1 - - [01/Jun/2020:02:24:32 +0000] "GET /user/find/all/miapenahu HTTP/1.1" 404 45 "-" "PostmanRuntime/7.25.0"
+::1 - - [31/05/2020 21:27::00] info Server on port 8000
+::1 - - [31/05/2020 21:27::00] info Connection has been established successfully!
+::1 - - [31/05/202021:32:00] info Server on port 8000
+::1 - - [31/05/202021:32:00] info Connection has been established successfully!
+::1 - - [31/05/2020 21:32:37 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:32:37 +0000] info Connection has been established successfully!
+::1 - - [01/Jun/2020:02:32:52 +0000] "GET /user/find/all/miapenahu HTTP/1.1" 404 45 "-" "PostmanRuntime/7.25.0"
+::1 - - [31/05/2020 21:36:45.391-0500 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:36:45.431-0500 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:37:10 147-0500 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:37:10 187-0500 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:37:27 -0500 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:37:27 -0500 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:40:08 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:40:08 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:41:49 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:41:49 -0500+2 +0000] info Connection has been established successfully!
+[01/Jun/2020:02:42:01 +0000] "GET /user/find/all/miapenahu" 404 45 - 3.339 ms
+::1 - - [31/05/2020 21:43:42 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:43:42 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:45:31 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:45:31 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:45:35 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:45:35 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:46:31 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:46:31 -0500+2 +0000] info Connection has been established successfully!
+[2020-06-01T10:46:38+08:00] "GET /user/find/all/miapenahu" 404 45 - 2.980 ms
+::1 - - [31/05/2020 21:48:14 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:48:14 -0500+2 +0000] info Connection has been established successfully!
+[2020-05-31T22:48:26-04:00] "GET /user/find/all/miapenahu" 404 45 - 3.536 ms
+::1 - - [31/05/2020 21:49:39 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:49:39 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:51:33 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:51:33 -0500+2 +0000] info Connection has been established successfully!
+[-] "GET /user/find/all/miapenahu HTTP/1.1" 404 45 "-" "PostmanRuntime/7.25.0"
+::1 - - [31/05/2020 21:53:12 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:53:12 -0500+2 +0000] info Connection has been established successfully!
+[-] "GET /user/find/all/miapenahu HTTP/1.1" 404 45 "-" "PostmanRuntime/7.25.0"
+::1 - - [31/05/2020 21:54:48 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:54:48 -0500+2 +0000] info Connection has been established successfully!
+[-] "GET /user/find/all/miapenahu" 404 45 "-" "PostmanRuntime/7.25.0"- 5.139 ms
+::1 - - [31/05/2020 21:55:13 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:55:13 -0500+2 +0000] info Connection has been established successfully!
+[-] "GET /user/find/all/miapenahu" 404 45 - 3.135 ms
+::1 - - [31/05/2020 21:55:30 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 21:55:30 -0500+2 +0000] info user-by-username
+[-] "GET /user/find/miapenahu" 200 204 - 49.072 ms
+::1 - - [31/05/2020 21:56:31 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:56:31 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:56:36 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 21:56:36 -0500+2 +0000] info user-by-username
+[-] "GET /user/find/miapenahu" 200 204 - 40.704 ms
+::1 - - [31/05/2020 21:56:44 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 21:56:44 -0500+2 +0000] info user-by-username
+[-] "GET /user/find/miapenahu" 200 204 - 13.551 ms
+::1 - - [31/05/2020 21:58:35 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:58:35 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:58:52 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 21:58:52 -0500+2 +0000] info user-by-username
+[-] "GET /user/find/miapenahu HTTP/1.1" 200 204 "-" "PostmanRuntime/7.25.0"
+::1 - - [31/05/2020 22:01:23 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:01:23 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:01:28 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 22:01:28 -0500+2 +0000] info user-by-username
+[-] "GET /user/find/miapenahu" 200 204 - 39.252 ms
+::1 - - [31/05/2020 22:02:44 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:02:44 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:02:48 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 22:02:48 -0500+2 +0000] info user-by-username
+[-] "GET /user/find/miapenahu" 200 204 - 35.833 ms
+::1 - - [31/05/2020 22:02:57 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 22:02:57 -0500+2 +0000] info user-by-username
+[-] "GET /user/find/miapenahu" 200 204 - 17.735 ms
+::1 - - [31/05/2020 22:04:44 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:04:44 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:05:34 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 22:05:34 -0500+2 +0000] info user-by-username
+[01/Jun/2020:03:05:34 +0000] "GET /user/find/miapenahu" 200 204 - 28.069 ms
+::1 - - [31/05/2020 22:06:57 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:06:57 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:07:04 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:07:04 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:07:12 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 22:07:12 -0500+2 +0000] info user-by-username
+[-] "GET /user/find/miapenahu" 200 204 - 46.647 ms
+::1 - - [31/05/2020 22:07:52 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:07:53 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:07:59 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 22:07:59 -0500+2 +0000] info user-by-username
+[2020-05-31T23:08:00-04:00] "GET /user/find/miapenahu" 200 204 - 40.318 ms
+::1 - - [31/05/2020 22:10:03 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:10:03 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:10:06 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:10:06 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:10:37 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:10:37 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:10:57 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:10:57 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:11:19 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 22:11:19 -0500+2 +0000] info user-by-username
+[2020-05-31T22:11:19-05:00] "GET /user/find/miapenahu HTTP/1.1" 200 204 "-" "PostmanRuntime/7.25.0"
+::1 - - [2020-05-31T22:12:01-0500 +0000] info Server on port 8000
+::1 - - [2020-05-31T22:12:01-0500 +0000] info Connection has been established successfully!
+[2020-05-31T22:12:12-0500] info Server on port 8000
+[2020-05-31T22:12:13-0500] info Connection has been established successfully!
+[2020-05-31T22:12:26-0500] info read user-by-username:
+[2020-05-31T22:12:26-0500] info user-by-username
+[2020-05-31T22:12:26-05:00] "GET /user/find/miapenahu HTTP/1.1" 200 204 "-" "PostmanRuntime/7.25.0"
+[2020-05-31T22:12:56Z] info Server on port 8000
+[2020-05-31T22:12:56Z] info Connection has been established successfully!
+[2020-05-31T22:13:10zz] info Server on port 8000
+[2020-05-31T22:13:10zz] info Connection has been established successfully!
+[2020-05-31T22:14:22 TZ31] info Server on port 8000
+[2020-05-31T22:14:22 TZ31] info Connection has been established successfully!
+[2020-05-31T22:15:01 -10:15] info Server on port 8000
+[2020-05-31T22:15:01 -10:15] info Connection has been established successfully!
+[2020-05-31T22:15:25 Z] info Server on port 8000
+[2020-05-31T22:15:25 Z] info Connection has been established successfully!
+[2020-05-31T22:17:03-05:00] info Server on port 8000
+[2020-05-31T22:17:03-05:00] info Connection has been established successfully!
+[2020-05-31T22:17:12-05:00] info read user-by-username:
+[2020-05-31T22:17:12-05:00] info user-by-username
+[2020-05-31T22:17:12-05:00] "GET /user/find/miapenahu HTTP/1.1" 200 204 "-" "PostmanRuntime/7.25.0"
+[2020-05-31T22:17:59-05:00] info Server on port 8000
+[2020-05-31T22:17:59-05:00] info Connection has been established successfully!
+[2020-05-31T22:18:22-05:00] info read wallet:
+[2020-05-31T22:18:22-05:00] "GET /wallet/find/all HTTP/1.1" 200 696 "-" "PostmanRuntime/7.25.0"
+[2020-05-31T22:18:44-05:00] info Server on port 8000
+[2020-05-31T22:18:45-05:00] info Connection has been established successfully!
+[2020-05-31T22:20:46-05:00] info update user:
+[2020-05-31T22:20:47-05:00] "PUT /user/edit/mario-bros HTTP/1.1" 500 16 "PostmanRuntime/7.25.0"
+[2020-05-31T22:21:04-05:00] info read user-by-username:
+[2020-05-31T22:21:04-05:00] "GET /user/find/miapenahu HTTP/1.1" 200 204 "PostmanRuntime/7.25.0"
+[2020-05-31T22:21:13-05:00] info create user:
+[2020-05-31T22:21:14-05:00] "POST /user/signup HTTP/1.1" 201 314 "PostmanRuntime/7.25.0"
+[2020-05-31T22:21:16-05:00] info create user:
+[2020-05-31T22:21:16-05:00] "POST /user/signup HTTP/1.1" 500 28 "PostmanRuntime/7.25.0"
+[2020-05-31T22:21:34-05:00] info Server on port 8000
+[2020-05-31T22:21:34-05:00] info Connection has been established successfully!
+[2020-05-31T22:22:47-05:00] info Server on port 8000
+[2020-05-31T22:22:47-05:00] info Connection has been established successfully!

@@ -4,8 +4,10 @@ const {format} = require('winston');//format to print the event log
 module.exports = winston.createLogger({
     format: winston.format.combine(
         format.simple(), 
-        format.timestamp(),
-        format.printf(info => `[${info.timestamp}] ${info.level} ${info.message}`),
+        format.timestamp({
+          format: 'YYYY-MM-DDTHH:mm:ss'
+        }),
+        format.printf(info => `[${info.timestamp}-05:00] ${info.level} ${info.message}`),
     ),
     transports: [
         new winston.transports.File({
