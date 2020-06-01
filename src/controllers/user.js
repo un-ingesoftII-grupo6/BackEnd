@@ -1,7 +1,7 @@
 const helpers = require("../lib/helpers");
 const uuid = require('uuid');
 const models = require("../../models");
-const persistence = require("../patterns/factory_persistence")
+const persistence = require("../patterns/factory_persistence");
 
 const persistenceFactory = new persistence.Factory();
 
@@ -26,7 +26,7 @@ const deleteUser = async (req, res) => {
 };
 
 const validateUser = async (req, res) => {
-persistenceFactory.create(req,res,"user-validate","read");
+  persistenceFactory.create(req,res,"user-validate","read");
 }
 
 module.exports = {
