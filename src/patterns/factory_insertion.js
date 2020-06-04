@@ -4,35 +4,45 @@ const models = require("../../models");
 
 async function User(req, res) {
     try {
-        const { name, surname, email } = req.body;
+        const { name, surname, email, password, cpassword } = req.body;
         const username = helpers.hasNoSpaces(req.body.username);
-        const password = await helpers.encryptPassword(req.body.password);
+        
+        const findUser = await models.User.findOne({ where: { Usr_username: username } });
 
-        if (username) {
-            const user = await models.User.create({
-                Usr_name: name,
-                Usr_surname: surname,
-                Usr_email: email,
-                Usr_username: username,
-                Usr_password: password
-            });
+        if (!findUser) {
+            if (username) {
+            if (password === cpassword) {
+                const pass = await helpers.encryptPassword(req.body.password);
+                
+                    const user = await models.User.create({
+                        Usr_name: name,
+                        Usr_surname: surname,
+                        Usr_email: email,
+                        Usr_username: username,
+                        Usr_password: pass
+                    });
 
-            const wallet = await models.Wallet.create({
-                Wal_id: uuid.v4(),
-                Usr_id: user.Usr_id,
-                Wtyp_id: 1,
-                Wal_balance: 0.00,
-                Wal_state: "Active"
-            });
+                    const wallet = await models.Wallet.create({
+                        Wal_id: uuid.v4(),
+                        Usr_id: user.Usr_id,
+                        Wtyp_id: 1,
+                        Wal_balance: 0.00,
+                        Wal_state: "Active"
+                    });
 
-            return res.status(201).json({
-                user: user,
-                wallet: wallet
-            });
+                    return res.status(201).json({
+                        user: user,
+                        wallet: wallet
+                    });
+                }
+                
+                return res.status(400).send("Passwords inserted does not coincide");
+            }
+            return res.status(400).send("Username can't contain spaces");
         }
-        return res.status(400).send("Username can't contain spaces");
+        return res.status(400).send("Username is already registered");
     } catch (error) {
-        return res.status(500).json({ error: error.message })
+        return res.status(500).send("Error: " + error.message)
     }
 }
 
@@ -154,56 +164,65 @@ async function Movement(req, res) {
 
         //Note: This function would be customized depending of transfer_type, possible dessign pattern application
 
-        if (findSender) {
-            if (findRecipient) {
-                if (findTransfer) {
-                    if (findSenderWallet) {
-                        if (findRecipientWallet) {
-                            const val = await helpers.matchPassword(password, findSender.Usr_password);
-                            if (val) {
-                                const senderNewBalance = findSenderWallet.Wal_balance - amount;
-                                if (senderNewBalance >= 0) {
+        if (findSenderWallet) {
+            if (findRecipientWallet) {
+                if (findSenderWallet.Wal_id !== findRecipientWallet.Wal_id) {
+                    if (amount > 5000) {
+                        if (amount % 1000 === 0) {
+                            if (findSender) {
+                                if (findRecipient) {
+                                    if (findTransfer) {
 
-                                    const updated1 = await models.Wallet.update({
-                                        Wal_balance: senderNewBalance
-                                    }, {
-                                        where: { Wal_id: findSenderWallet.Wal_id }
-                                    });
-                                    const recipientNewBalance = findRecipientWallet.Wal_balance + amount;
-                                    const updated2 = await models.Wallet.update({
-                                        Wal_balance: recipientNewBalance
-                                    }, {
-                                        where: { Wal_id: findRecipientWallet.Wal_id }
-                                    });
+                                        const val = await helpers.matchPassword(password, findSender.Usr_password);
+                                        if (val) {
+                                            const senderNewBalance = +findSenderWallet.Wal_balance - +amount;
+                                            if (senderNewBalance >= 0) {
 
-                                    if(updated1.length > 0 && updated2.length > 0){
+                                                const updated1 = await models.Wallet.update({
+                                                    Wal_balance: senderNewBalance
+                                                }, {
+                                                    where: { Wal_id: findSenderWallet.Wal_id }
+                                                });
+                                                const recipientNewBalance = +findRecipientWallet.Wal_balance + +amount;
+                                                const updated2 = await models.Wallet.update({
+                                                    Wal_balance: recipientNewBalance
+                                                }, {
+                                                    where: { Wal_id: findRecipientWallet.Wal_id }
+                                                });
 
-                                        const movement = await models.Movement.create({
-                                            Tra_id: findTransfer.Tra_id,
-                                            Wal_id_sender: findSenderWallet.Wal_id,
-                                            Wal_id_recipient: findRecipientWallet.Wal_id,
-                                            Mov_total_amount: amount,
-                                            Mov_is_successful: 0,
-                                            Mov_timestamp: new Date()
-                                        });
-                                        return res.status(201).json({ movement: movement });
+                                                if (updated1.length > 0 && updated2.length > 0) {
+
+                                                    const movement = await models.Movement.create({
+                                                        Tra_id: findTransfer.Tra_id,
+                                                        Wal_id_sender: findSenderWallet.Wal_id,
+                                                        Wal_id_recipient: findRecipientWallet.Wal_id,
+                                                        Mov_total_amount: amount,
+                                                        Mov_is_successful: 0,
+                                                        Mov_timestamp: new Date()
+                                                    });
+                                                    return res.status(201).json({ movement: movement });
+                                                }
+                                                return res.status(500).send('The Wallets could not be actualized');
+                                            }
+                                            return res.status(401).send('The Sender Wallet has no funds for this operation');
+                                        }
+                                        return res.status(401).send('The password is incorrect. Please try again');
                                     }
-                                    return res.status(500).send('The Wallets could not be actualized');
+                                    return res.status(404).send("Transfer type not found");
                                 }
-                                return res.status(401).send('The Sender Wallet has no funds for this operation');
+                                return res.status(404).send("Recipient Username not found");
                             }
-                            return res.status(401).send('The password is incorrect. Please try again');
+                            return res.status(404).send("Sender Username not found");
                         }
-                        return res.status(404).send("Recipient Wallet not found");
+                        return res.status(400).send("The minimum unit of money you can add is $1000");
                     }
-                    return res.status(404).send("Sender Wallet not found");
+                    return res.status(400).send("You can't send less than $5000");
                 }
-                return res.status(404).send("Transfer type not found");
+                return res.status(400).send("You can't send money to yourself!");
             }
-            return res.status(404).send("Recipient Username not found");
-        } else {
-            return res.status(404).send("Sender Username not found");
+            return res.status(404).send("Recipient Wallet not found");
         }
+        return res.status(404).send("Sender Wallet not found");
 
     } catch (error) {
         return res.status(500).send(error.message);

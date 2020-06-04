@@ -57,9 +57,9 @@ async function ValidateUser(req, res) {
             }
 
         }
-        return res.status(404).send('User with specified username does not exists');
+        return res.status(404).send('User with specified username does not exist');
     } catch (error) {
-        return res.status(500).send(error.message);
+        return res.status(500).send("Error: "+error.message);
     }
 }
 
