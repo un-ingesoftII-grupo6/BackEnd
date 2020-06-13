@@ -32,12 +32,13 @@ app.use(bodyParser.urlencoded({ extended: false })); //Just url encoded data
 app.use(bodyParser.json());
 
 //CORS configuration
-app.use(cors());
-//var whitelist = ['http://localhost:8080','http://localhost:8082'] //Intended for allow more than one origin - not implemented yet
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:8080');
-    next();
-});
+
+var corsOptions = {
+    origin: ['http://localhost:8080','http://localhost:8081'],
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  }
+
+app.use(cors(corsOptions));
 
 // listening the server 
 app.listen(app.get('port'), () => {
