@@ -24,7 +24,7 @@ const User = async (req, res) => {
     } catch (error) {
         return res.status(500).send(error.message);
     }
-};
+}
 
 async function Bank(req, res) {
     try {
@@ -59,7 +59,7 @@ async function Bank(req, res) {
     } catch (error) {
         return res.status(500).send(error.message);
     }
-};
+}
 
 async function Wallet(req, res) {
     try {
@@ -121,7 +121,7 @@ async function WalletType(req, res) {
     } catch (error) {
         return res.status(500).send(error.message);
     }
-};
+}
 
 
 async function Transfer(req, res) {
@@ -149,7 +149,7 @@ async function Transfer(req, res) {
     } catch (error) {
         return res.status(500).send(error.message);
     }
-};
+}
 
 async function Movement(req, res) {
     try {
@@ -254,7 +254,7 @@ async function Enterprise (req, res) {
     } catch (error) {
         return res.status(500).send(error.message);
     }
-};
+}
 
 function Factory() {
     this.delete = (req, res, entity) => {
