@@ -30,7 +30,15 @@ app.use(morgan('myformat', { stream: accessLogStream }));
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: false })); //Just url encoded data
 app.use(bodyParser.json());
-app.use(cors());
+
+//CORS configuration
+
+var corsOptions = {
+    origin: ['http://localhost:8080','http://localhost:8081'],
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  }
+
+app.use(cors(corsOptions));
 
 // listening the server 
 app.listen(app.get('port'), () => {
@@ -57,20 +65,6 @@ app.use("/bank", bankRoutes);
 app.use("/transfer", transferRoutes);
 app.use("/enterprise", enterpriseRoutes);
 app.use("/wallet-type", wtypRoutes);
-
-//CORS configuration
-
-var whitelist = ['http://localhost:8080']
-
-var corsOptions = {
-    origin: function (origin, callback) {
-        if (whitelist.indexOf(origin) !== 1) {
-            callback(null, true);
-        } else {
-            callback(new Error('not allowed by CORS'));
-        }
-    }
-}
 
 //Unknown Routes Handler
 

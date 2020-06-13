@@ -29,7 +29,7 @@ async function User(req, res) {
     } catch (error) {
         return res.status(500).send(error.message);
     }
-};
+}
 
 async function Bank(req, res) {
     try {
@@ -56,7 +56,7 @@ async function Bank(req, res) {
     } catch (error) {
         return res.status(500).send(error.message);
     }
-};
+}
 
 async function Wallet(req, res) {
     try {
@@ -90,7 +90,7 @@ async function Wallet(req, res) {
     } catch (error) {
         return res.status(500).send(error.message);
     }
-};
+}
 
 async function WalletState(req, res) {
     try {
@@ -132,7 +132,7 @@ async function WalletState(req, res) {
     } catch (error) {
         return res.status(500).send(error.message);
     }
-};
+}
 
 async function WalletType(req, res) {
     try {
@@ -162,7 +162,7 @@ async function WalletType(req, res) {
     } catch (error) {
         return res.status(500).send(error.message);
     }
-};
+}
 
 async function Transfer(req, res) {
     try {
@@ -189,7 +189,7 @@ async function Transfer(req, res) {
     } catch (error) {
         return res.status(500).send(error.message);
     }
-};
+}
 
 async function Enterprise(req, res) {
     try {
@@ -226,7 +226,7 @@ async function Enterprise(req, res) {
     } catch (error) {
         return res.status(500).send(error.message);
     }
-};
+}
 
 function Factory() {
     this.update = (req, res, entity) => {
