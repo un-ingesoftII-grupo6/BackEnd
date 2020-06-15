@@ -3,13 +3,13 @@ const logger = require('../logger/logger');
 
 const sequelize = new Sequelize("db_unwallet",'root','root', {
      host: '127.0.0.1', 
-     dialect: "mysql"
+     dialect: "mysql",
     });
 
 sequelize.authenticate().then(() => {
     logger.info('Connection has been established successfully!');
 }).catch((err) => {
-    logger.error('Can\'t establish database connection:\n' + err);
+    logger.critical('Can\'t establish database connection: ' + err);
 });
 
 module.exports = sequelize;

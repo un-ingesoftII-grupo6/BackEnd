@@ -3,7 +3,7 @@ const helpers = require("../src/lib/helpers");
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    const pass = await helpers.encryptPassword("enterprise1");
+    const pass = await helpers.encryptPassword("empresa1");
     return queryInterface.bulkInsert("ENTERPRISE", [{
       Ent_NIT: "enterprise-1",
       Ent_name: "Empresa 1",

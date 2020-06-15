@@ -22,7 +22,8 @@
     "mysql2": "^2.1.0",
     "sequelize": "^5.21.11",
     "uuid": "^7.0.3",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "winston-stream": "0.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

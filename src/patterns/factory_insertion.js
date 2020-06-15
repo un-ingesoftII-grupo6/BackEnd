@@ -1,6 +1,7 @@
 const helpers = require("../lib/helpers");
 const uuid = require('uuid');
 const models = require("../../models");
+const logger = require("../logger/logger");
 
 async function User(req, res) {
     try {
@@ -29,20 +30,20 @@ async function User(req, res) {
                         Wal_balance: 0.00,
                         Wal_state: "Active"
                     });
-
+                    logger.info("Successfully inserted.");
                     return res.status(201).json({
                         user: user,
                         wallet: wallet
                     });
                 }
                 
-                return res.status(400).send("Passwords inserted does not coincide");
+                helpers.loggerWarnAndResponse(400,res,"Passwords inserted does not coincide"); return res;
             }
-            return res.status(400).send("Username can't contain spaces");
+            helpers.loggerWarnAndResponse(400,res,"Username can't contain spaces"); return res;
         }
-        return res.status(400).send("Username is already registered");
+        helpers.loggerWarnAndResponse(400,res,"Username is already registered"); return res;
     } catch (error) {
-        return res.status(500).send("Error: " + error.message)
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -56,9 +57,11 @@ async function Bank(req, res) {
             Bank_month_limit: month_limit,
             Bank_transfer_limit: transfer_limit
         });
+        logger.info("Successfully inserted.");
         return res.status(201).json({ bank: bank });
     } catch (error) {
-        return res.status(500).json({ error: error.message })
+        helpers.loggerErrorAndResponse(res,error.message);
+        return res;
     }
 }
 
@@ -80,17 +83,18 @@ async function Wallet(req, res) {
                         Wal_balance: 0.00,
                         Wal_state: "Active"
                     });
+                    logger.info("Successfully inserted.");
                     return res.status(201).json({ wallet: wallet });
                 } else {
-                    return res.status(401).send('The password is incorrect. Please try again');
+                    helpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
                 }
             } else {
-                return res.status(404).send('Specified wallet type does not exists');
+                helpers.loggerWarnAndResponse(404,res,'Specified wallet type does not exists'); return res;
             }
         }
-        return res.status(404).send('User with specified username does not exists');
+        helpers.loggerWarnAndResponse(404,res,'User with specified username does not exists'); return res;
     } catch (error) {
-        return res.status(500).json({ error: error.message })
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -106,11 +110,12 @@ async function WalletType(req, res) {
                 Wtyp_movement_limit: movement_limit,
                 Wtyp_month_limit: month_limit,
             });
+            logger.info("Successfully inserted.");
             return res.status(201).json({ wallet_type: wallettype });
         }
-        return res.status(400).send("Wallet Type name can't contain spaces");
+        helpers.loggerWarnAndResponse(400,res,"Wallet Type name can't contain spaces"); return res;
     } catch (error) {
-        return res.status(500).json({ error: error.message })
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -126,11 +131,12 @@ async function Transfer(req, res) {
                 Tra_description: description,
                 Tra_interest_rate: interest
             });
+            logger.info("Successfully inserted.");
             return res.status(201).json({ transfer: transfer });
         }
-        return res.status(400).send("Route can't contain spaces");
+        helpers.loggerWarnAndResponse(400,res,"Route can't contain spaces"); return res;
     } catch (error) {
-        return res.status(500).json({ error: error.message })
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -197,35 +203,36 @@ async function Movement(req, res) {
                                                         Wal_id_sender: findSenderWallet.Wal_id,
                                                         Wal_id_recipient: findRecipientWallet.Wal_id,
                                                         Mov_total_amount: amount,
-                                                        Mov_is_successful: 0,
+                                                        Mov_is_successful: 1,
                                                         Mov_timestamp: new Date()
                                                     });
+                                                    logger.info("Successfully inserted.");
                                                     return res.status(201).json({ movement: movement });
                                                 }
-                                                return res.status(500).send('The Wallets could not be actualized');
+                                                helpers.loggerErrorAndResponse(res,'The Wallets could not be actualized'); return res;
                                             }
-                                            return res.status(401).send('The Sender Wallet has no funds for this operation');
+                                            helpers.loggerWarnAndResponse(401,res,'The Sender Wallet has no funds for this operation'); return res;
                                         }
-                                        return res.status(401).send('The password is incorrect. Please try again');
+                                        rhelpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
                                     }
-                                    return res.status(404).send("Transfer type not found");
+                                    helpers.loggerWarnAndResponse(404,res,"Transfer type not found"); return res;
                                 }
-                                return res.status(404).send("Recipient Username not found");
+                                helpers.loggerWarnAndResponse(404,res,"Recipient Username not found"); return res;
                             }
-                            return res.status(404).send("Sender Username not found");
+                            helpers.loggerWarnAndResponse(404,res,"Sender Username not found"); return res;
                         }
-                        return res.status(400).send("The minimum unit of money you can add is $1000");
+                        helpers.loggerWarnAndResponse(400,res,"The minimum unit of money you can add is $1000"); return res;
                     }
-                    return res.status(400).send("You can't send less than $5000");
-                }
-                return res.status(400).send("You can't send money to yourself!");
+                    helpers.loggerWarnAndResponse(400,res,"You can't send less than $5000"); return res;
+                } 
+                helpers.loggerWarnAndResponse(400,res,"You can't send money to yourself!"); return res;
             }
-            return res.status(404).send("Recipient Wallet not found");
+            helpers.loggerWarnAndResponse(404,res,"Recipient Wallet not found"); return res;
         }
-        return res.status(404).send("Sender Wallet not found");
+        helpers.loggerWarnAndResponse(404,res,"Sender Wallet not found"); return res;
 
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -245,13 +252,14 @@ async function Enterprise(req, res) {
                     Ent_username: username,
                     Ent_password: password
                 });
+                logger.info("Successfully inserted.");
                 return res.status(201).json({ enterprise: enterprise });
             }
-            return res.status(400).send("Enterprise NIT can't contain spaces");
+            helpers.loggerWarnAndResponse(400,res,"Enterprise NIT can't contain spaces"); return res;
         }
-        return res.status(400).send("Enterprise username can't contain spaces");
+        helpers.loggerWarnAndResponse(400,res,"Enterprise username can't contain spaces"); return res;
     } catch (error) {
-        return res.status(500).json({ error: error.message })
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -280,7 +288,7 @@ function Factory() {
                 Enterprise(req, res);
                 break;
             default:
-                return res.status(404).send("Unknown route");
+                helpers.loggerWarnAndResponse(404,res,"Unknown route"); return res;
         }
     }
 }

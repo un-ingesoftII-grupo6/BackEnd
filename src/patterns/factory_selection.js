@@ -1,13 +1,15 @@
 const helpers = require("../lib/helpers");
 const uuid = require('uuid');
 const models = require("../../models");
+const logger = require("../logger/logger");
 
 async function User(req, res) {
     try {
         const users = await models.User.findAll();
+        logger.info("Successfully read.");
         return res.status(200).json({ users: users });
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message);
     }
 }
 
@@ -18,11 +20,12 @@ async function UserByUsername(req, res) {
             where: { Usr_username: username }
         });
         if (user) {
+            logger.info("Successfully read.");
             return res.status(200).json({ user: user });
         }
-        return res.status(404).send('User with the specified username does not exists');
+        helpers.loggerWarnAndResponse(404,res,'User with the specified username does not exists'); return res;
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -51,9 +54,10 @@ async function ValidateUser(req, res) {
         if (user) {
             const val = await helpers.matchPassword(password, user.Usr_password);
             if (val) {
+                logger.info("Successfully read.");
                 return res.status(200).json({ user: user }); //Si se autenticó correctamente, le devuelve el user con su wallet
             } else {
-                return res.status(401).send('The password is incorrect. Please try again');
+                helpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
             }
 
         } else {
@@ -79,25 +83,27 @@ async function ValidateUser(req, res) {
             if(enterprise){
                 const val2 = await helpers.matchPassword(password, enterprise.Ent_password);
                 if (val2) {
+                    logger.info("Successfully read.");
                     return res.status(200).json({ enterprise: enterprise }); //Si se autenticó correctamente, le devuelve la enterprise con su wallet
                 } else {
-                    return res.status(401).send('The password is incorrect. Please try again');
+                    helpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
                 }
             }
              
         }
-        return res.status(404).send('User/Enterprise with specified username does not exist');
+        helpers.loggerWarnAndResponse(404,res,'User/Enterprise with specified username does not exist'); return res;
     } catch (error) {
-        return res.status(500).send("Error: "+error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
 async function Bank(req, res) {
     try {
         const banks = await models.Bank.findAll();
+        logger.info("Successfully read.");
         return res.status(200).json({ banks: banks });
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -111,9 +117,10 @@ async function Wallet(req, res) {
                 }
             ]
         });
+        logger.info("Successfully read.");
         return res.status(200).json({ wallets: wallets });
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -125,29 +132,32 @@ async function WalletsByUsername(req, res) {
             const wallets = await models.Wallet.findAll({
                 where: { Usr_id: findUser.Usr_id }
             });
+            logger.info("Successfully read.");
             return res.status(200).json({ wallets: wallets });
         }
-        return res.status(404).send("Specified User not found");
+        helpers.loggerWarnAndResponse(404,res,"Specified User not found"); return res;
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
 async function WalletType(req, res) {
     try {
         const wallettype = await models.WalletType.findAll();
+        logger.info("Successfully read.");
         return res.status(200).json({ wallet_type: wallettype });
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
 async function Transfer(req, res) {
     try {
         const transfers = await models.Transfer.findAll();
+        logger.info("Successfully read.");
         return res.status(200).json({ transfers: transfers });
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -171,9 +181,10 @@ async function Movement(req, res) {
                 },
             ]
         });
+        logger.info("Successfully read.");
         return res.status(200).json({ movements: movements });
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -197,18 +208,20 @@ async function MovementByUsername(req, res) {
                 }
             ]
         });
+        logger.info("Successfully read.");
         return res.status(200).json({ wallets: movements });
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
 async function Enterprise(req, res) {
     try {
         const enterprises = await models.Enterprise.findAll();
+        logger.info("Successfully read.");
         return res.status(200).json({ enterprises: enterprises });
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -219,11 +232,12 @@ async function EnterpriseByUsername(req, res) {
             where: { Ent_username: username }
         });
         if (enterprise) {
+            logger.info("Successfully read.");
             return res.status(200).json({ enterprise: enterprise });
         }
-        return res.status(404).send('Enterprise username does not exist');
+        helpers.loggerWarnAndResponse(404,res,'Enterprise username does not exist'); return res;
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -231,6 +245,7 @@ async function UserManagedByEnterprise(req, res) {
     try {
         const username = req.params.username;
         const findEnterprise = await models.Enterprise.findOne({ where: { Ent_username: username } });
+        if(findEnterprise){
         const users = await models.Wallet.findAll({
             where: {
                 Ent_id: findEnterprise.Ent_id
@@ -252,9 +267,16 @@ async function UserManagedByEnterprise(req, res) {
                 }
             ]
         });
-        return res.status(200).json({ users: users });
+        if(users){
+            logger.info("Successfully read.");
+            return res.status(200).json({ users: users });
+            } else {
+                helpers.loggerWarnAndResponse(404,res,"No Managed Users found for this Enterprise"); return res;
+            }
+    } 
+    helpers.loggerWarnAndResponse(404,res,"This Enterprise Username does not exist"); return res;
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -304,7 +326,7 @@ function Factory() {
                     UserManagedByEnterprise(req, res);
                 break;
             default:
-                return res.status(404).send("Unknown route");
+                helpers.loggerWarnAndResponse(404,res,"Unknown route"); return res;
         }
     }
 }
