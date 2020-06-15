@@ -1219,3 +1219,13 @@ GET /user/find/all/miapenahu 404 45 - 4.183 ms
 [2020-06-13T17:44:09-05:00] info Connection has been established successfully!
 [2020-06-13T17:45:54-05:00] info Server on port 8000
 [2020-06-13T17:45:54-05:00] info Connection has been established successfully!
+[2020-06-14T19:20:11-05:00] info Server on port 8000
+[2020-06-14T19:20:11-05:00] info Connection has been established successfully!
+[2020-06-14T19:20:28-05:00] info read enterprise-validate:
+[2020-06-14T19:20:29-05:00] "POST /enterprise/login HTTP/1.1" 200 438 "PostmanRuntime/7.25.0"
+[2020-06-14T19:20:36-05:00] info read enterprise-by-username:
+[2020-06-14T19:20:36-05:00] "GET /enterprise/find/enterprise1 HTTP/1.1" 200 260 "PostmanRuntime/7.25.0"
+[2020-06-14T19:20:45-05:00] info read managed-users:
+[2020-06-14T19:20:45-05:00] "GET /enterprise/find/managed/enterprise1 HTTP/1.1" 200 395 "PostmanRuntime/7.25.0"
+[2020-06-14T19:20:48-05:00] info read managed-users:
+[2020-06-14T19:20:48-05:00] "GET /enterprise/find/managed/enterprise1 HTTP/1.1" 200 395 "PostmanRuntime/7.25.0"

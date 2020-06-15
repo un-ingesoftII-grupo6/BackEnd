@@ -56,8 +56,37 @@ async function ValidateUser(req, res) {
                 return res.status(401).send('The password is incorrect. Please try again');
             }
 
+        } else {
+            const enterprise = await models.Enterprise.findOne({
+                where: { Ent_username: username },
+                include: [
+                    {
+                        model: models.Wallet,
+                        as: 'manages',
+                        include: [
+                            {
+                                model: models.Movement,
+                                as: 'modifies_sender',
+                            },
+                            {
+                                model: models.Movement,
+                                as: 'modifies_recipient',
+                            }
+                        ]
+                    }
+                ]
+            });
+            if(enterprise){
+                const val2 = await helpers.matchPassword(password, enterprise.Ent_password);
+                if (val2) {
+                    return res.status(200).json({ enterprise: enterprise }); //Si se autenticó correctamente, le devuelve la enterprise con su wallet
+                } else {
+                    return res.status(401).send('The password is incorrect. Please try again');
+                }
+            }
+             
         }
-        return res.status(404).send('User with specified username does not exist');
+        return res.status(404).send('User/Enterprise with specified username does not exist');
     } catch (error) {
         return res.status(500).send("Error: "+error.message);
     }
@@ -183,6 +212,52 @@ async function Enterprise(req, res) {
     }
 }
 
+async function EnterpriseByUsername(req, res) {
+    try {
+        const { username } = req.params;
+        const enterprise = await models.Enterprise.findOne({
+            where: { Ent_username: username }
+        });
+        if (enterprise) {
+            return res.status(200).json({ enterprise: enterprise });
+        }
+        return res.status(404).send('Enterprise username does not exist');
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
+
+async function UserManagedByEnterprise(req, res) {
+    try {
+        const username = req.params.username;
+        const findEnterprise = await models.Enterprise.findOne({ where: { Ent_username: username } });
+        const users = await models.Wallet.findAll({
+            where: {
+                Ent_id: findEnterprise.Ent_id
+            },
+            include: [
+                {
+                    model: models.User,
+                    as: 'possess',
+                },
+                {
+                    model: models.Movement,
+                    as: 'modifies_sender',
+
+                },
+                {
+                    model: models.Movement,
+                    as: 'modifies_recipient',
+
+                }
+            ]
+        });
+        return res.status(200).json({ users: users });
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
+
 function Factory() {
     this.read = (req, res, entity) => {
         switch (entity) {
@@ -218,6 +293,15 @@ function Factory() {
                 break;
             case "enterprise":
                 Enterprise(req, res);
+                break;
+            case "enterprise-validate":
+                    ValidateUser(req, res);
+                break;
+            case "enterprise-by-username":
+                    EnterpriseByUsername(req, res);
+                break;
+            case "managed-users":
+                    UserManagedByEnterprise(req, res);
                 break;
             default:
                 return res.status(404).send("Unknown route");

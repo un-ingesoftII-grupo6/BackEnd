@@ -9,8 +9,20 @@ const createEnterprise = async (req, res) => {
     persistenceFactory.create(req, res, "enterprise", "create");
 }
 
+const validateEnterprise = async (req, res) => {
+    persistenceFactory.create(req,res,"enterprise-validate","read");
+}
+
+const getEnterpriseByUsername = async (req, res) => {
+    persistenceFactory.create(req,res,"enterprise-by-username","read");
+}
+
 const getAllEnterprises = async (req, res) => {
     persistenceFactory.create(req, res, "enterprise", "read");
+}
+
+const getUsersByEnterprise = async (req, res) => {
+    persistenceFactory.create(req,res,"managed-users","read");
 }
 
 const updateEnterprise = async (req, res) => {
@@ -23,6 +35,9 @@ const deleteEnterprise = async (req, res) => {
 
 module.exports = {
     createEnterprise,
+    validateEnterprise,
+    getEnterpriseByUsername,
+    getUsersByEnterprise,
     getAllEnterprises,
     updateEnterprise,
     deleteEnterprise
