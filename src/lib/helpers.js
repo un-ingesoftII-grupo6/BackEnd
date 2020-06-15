@@ -1,5 +1,5 @@
 const bcrypt = require('bcrypt');
-
+const logger = require("../logger/logger");
 const helpers = {};
 
 helpers.encryptPassword = async (password) => {
@@ -35,6 +35,38 @@ helpers.hasNoSpaces = (str) => {
         return null;
     }
     return str;
+}
+
+helpers.loggerInfoAndResponse = (status, res, message) => {
+    try {
+        logger.info(message);
+        if(status < 400){
+        return res.status(status).send(message)
+        }
+    } catch (e) {
+        logger.critical(e.message);
+        console.log(e.message);
+    }
+}
+
+helpers.loggerWarnAndResponse = (status, res, message) => {
+    try {
+        logger.warning(message);
+        return res.status(status).send(message)
+    } catch (e) {
+        logger.critical(e.message);
+        console.log(e.message);
+    }
+}
+
+helpers.loggerErrorAndResponse = (res, message) => {
+    try {
+        logger.error(message);
+        return res.status(500).send("Error: " + message);
+    } catch (e) {
+        logger.critical(e.message);
+        console.log(e.message);
+    }
 }
 
 module.exports = helpers;

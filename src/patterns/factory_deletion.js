@@ -1,6 +1,7 @@
 const helpers = require("../lib/helpers");
 const uuid = require('uuid');
 const models = require("../../models");
+const logger = require("../logger/logger");
 
 const User = async (req, res) => {
     try {
@@ -11,18 +12,19 @@ const User = async (req, res) => {
             const wallets = await models.Wallet.findAll({ where: { Usr_id: findUser.Usr_id } });
 
             if (wallets.length > 0) {
-                return res.status(400).send("This User has associated Wallets. Please delete them first");
+                helpers.loggerWarnAndResponse(400,res,"This User has associated Wallets. Please delete them first"); return res;
             }
             const deleted = await models.User.destroy({
                 where: { Usr_username: username }
             });
             if (deleted) {
+                logger.info("User " + username + " deleted");
                 return res.status(200).send("User " + username + " deleted");
             }
         }
-        return res.status(404).send("Specified User not found");
+        helpers.loggerWarnAndResponse(404,res,"Specified User not found"); return res;
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -51,13 +53,14 @@ async function Bank(req, res) {
                 where: { Bank_id: bank_id }
             });
             if (deleted) {
+                logger.info("Bank " + findBank.Bank_name + " deleted");
                 return res.status(200).send("Bank " + findBank.Bank_name + " deleted");
             }
             throw new Error("Specified Bank could not be deleted");
         }
-        return res.status(404).send("Specified Bank not found");
+        helpers.loggerWarnAndResponse(404,res,"Specified Bank not found"); return res;
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -74,7 +77,7 @@ async function Wallet(req, res) {
                 const movement_recipient = await models.Movement.findAll({ where: { Wal_id_recipient: wal_id } });
 
                 if (movement_sender.length > 0 || movement_recipient.length > 0) {
-                    return res.status(400).send("This Wallet has associated Movements. Please delete them first");
+                    helpers.loggerWarnAndResponse(400,res,"This Wallet has associated Movements. Please delete them first"); return res;
                 }
                 const val = await helpers.matchPassword(password, findUser.Usr_password);
                 if (val) {
@@ -82,18 +85,19 @@ async function Wallet(req, res) {
                         where: { Wal_id: wal_id }
                     });
                     if (deleted) {
+                        logger.info("Wallet deleted.")
                         return res.status(200).send("Wallet deleted");
                     }
                 } else {
-                    return res.status(401).send('The password is incorrect. Please try again');
+                    helpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
                 }
             } else {
-                return res.status(404).send('Specified wallet does not exists');
+                helpers.loggerWarnAndResponse(404,res,'Specified wallet does not exists'); return res;
             }
         }
-        return res.status(404).send('User does not exists');
+        helpers.loggerWarnAndResponse(404,res,'User does not exists'); return res;
     } catch (error) {
-        return res.status(500).send({ error: error.message })
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -106,20 +110,21 @@ async function WalletType(req, res) {
             const wallets = await models.Wallet.findAll({ where: { Wtyp_id: wtyp_id } });
 
             if (wallets.length > 0) {
-                return res.status(400).send("This Wallet Type has associated Wallets. Please delete them first");
+                helpers.loggerWarnAndResponse(400,res,"This Wallet Type has associated Wallets. Please delete them first"); return res;
             }
 
             const deleted = await models.WalletType.destroy({
                 where: { Wtyp_id: wtyp_id }
             });
             if (deleted) {
+                logger.info("Wallet Type " + findWalletType.Wtyp_name + " deleted");
                 return res.status(200).send("Wallet Type " + findWalletType.Wtyp_name + " deleted");
             }
             throw new Error("Specified Wallet Type could not be deleted");
         }
-        return res.status(404).send("Specified Wallet Type not found");
+        helpers.loggerWarnAndResponse(404,res,"Specified Wallet Type not found"); return res;
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -133,7 +138,7 @@ async function Transfer(req, res) {
             const movements = await models.Movement.findAll({ where: { Tra_id: findTransfer.Tra_id } });
 
             if (movements.length > 0) {
-                return res.status(400).send("This Transfer has associated Movements. Please delete them first");
+                helpers.loggerWarnAndResponse(400,res,"This Transfer has associated Movements. Please delete them first"); return res;
             }
 
             const deleted = await models.Transfer.destroy({
@@ -141,13 +146,14 @@ async function Transfer(req, res) {
             });
 
             if (deleted) {
+                logger.info("Transfer " + findTransfer.Tra_name + " deleted");
                 return res.status(200).send("Transfer " + findTransfer.Tra_name + " deleted");
             }
             throw new Error("Specified Transfer could not be deleted");
         }
-        return res.status(404).send("Specified Transfer not found");
+        helpers.loggerWarnAndResponse(404,res,"Specified Transfer not found"); return res;
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -171,17 +177,18 @@ async function Movement(req, res) {
                         where: { Mov_id: mov_id }
                     });
                     if (deleted) {
+                        logger.info("Movement deleted.");
                         return res.status(200).send("Movement deleted");
                     }
                 }
-                return res.status(401).send('This User is not associated with this Movement through Wallet');
+                helpers.loggerWarnAndResponse(401,res,'This User is not associated with this Movement through Wallet'); return res;
             } else {
-                return res.status(404).send('Specified movement does not exist');
+                helpers.loggerWarnAndResponse(404,res,'Specified movement does not exist'); return res;
             }
         }
-        return res.status(404).send('Given Username does not exists');
+        helpers.loggerWarnAndResponse(404,res,'Given Username does not exists'); return res;
     } catch (error) {
-        return res.status(500).send({ error: error.message })
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -205,17 +212,18 @@ async function MovementByTimestamp(req, res) {
                         where: { Mov_timestamp: timestamp }
                     });
                     if (deleted) {
+                        logger.info("Movement deleted.");
                         return res.status(200).send("Movement deleted");
                     }
                 }
-                return res.status(401).send('This User is not associated with this Timestamp through Wallet');
+                helpers.loggerWarnAndResponse(401,res,'This User is not associated with this Timestamp through Wallet'); return res;
             } else {
-                return res.status(404).send('Specified movement does not exists');
+                helpers.loggerWarnAndResponse(404,res,'Specified movement does not exists'); return res;
             }
         }
-        return res.status(404).send('User does not exists');
+        helpers.loggerWarnAndResponse(404,res,'User does not exists'); return res;
     } catch (error) {
-        return res.status(500).send({ error: error.message })
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -246,13 +254,14 @@ async function Enterprise (req, res) {
             });
 
             if (deleted) {
+                logger.info("Enterprise " + findEnterprise.Ent_name + " deleted");
                 return res.status(200).send("Enterprise " + findEnterprise.Ent_name + " deleted");
             }
             throw new Error("Specified Enterprise could not be deleted");
         }
-        return res.status(404).send("Specified Enterprise not found");
-    } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerWarnAndResponse(404,res,"Specified Enterprise not found"); return res;
+    } catch (error) { 
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -284,7 +293,7 @@ function Factory() {
                 Enterprise(req, res);
                 break;
             default:
-                return res.status(404).send("Unknown route");
+                helpers.loggerWarnAndResponse(404,res,"Unknown route"); return res;
         }
     }
 }

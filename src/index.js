@@ -6,28 +6,19 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors')
 const logger = require('./logger/logger');
+var winstonStream = require("winston-stream");
+var loggerStream = winstonStream(logger, "debug");
 
 // Settings 
 app.set('port', process.env.PORT || 8000)
 app.engine('html', require('ejs').renderFile)
 app.set('view engine', 'ejs');
 
-//write file stream
-var fs = require('fs');
-var accessLogStream = fs.createWriteStream(path.join("./", 'logs.log'), { flags: 'a' });
+//Customized morgan format for logger Stream
+morgan.format('myformat', ' :method :url STATUS::status REMOTE_ADDR::remote-addr REMOTE_USER::remote-user USER-AGENT::user-agent');
 
-// view petitions
-const moment = require('moment-timezone');
-moment().tz("America/Bogota").format();
-
-morgan.token('date', (req, res, tz) => {
-    return moment().tz(tz).format();
-})
-
-morgan.format('myformat', '[:date[America/Bogota]] ":method :url HTTP/:http-version" :status :res[content-length] ":user-agent"');
-
-app.use(morgan('myformat', { stream: accessLogStream }));
-app.use(morgan('dev'));
+app.use(morgan('myformat', { stream: loggerStream}));
+app.use(morgan('dev')); // console petitions
 app.use(bodyParser.urlencoded({ extended: false })); //Just url encoded data
 app.use(bodyParser.json());
 
@@ -69,6 +60,7 @@ app.use("/wallet-type", wtypRoutes);
 //Unknown Routes Handler
 
 app.use((req, res, next) => { //In case of a unknown route
+    logger.info("Resource not found :(");
     const error = new Error("Resource not found :(");
     error.status = 404;
     next(error);

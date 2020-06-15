@@ -3,6 +3,7 @@ const selection = require("./factory_selection");
 const deletion = require("./factory_deletion");
 const update = require("./factory_update");
 const logger = require('../logger/logger');
+const helpers = require("../lib/helpers");
 
 const insertionFactory = new insertion.Factory();
 const selectionFactory = new selection.Factory();
@@ -25,6 +26,8 @@ function Factory() {
             case "delete":
                 deletionFactory.delete(req, res, entity);
                 break;
+            default:
+                helpers.loggerWarnAndResponse(404,res,"Unknown route"); return res;
         }
     }
 }

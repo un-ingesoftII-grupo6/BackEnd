@@ -1,6 +1,7 @@
 const helpers = require("../lib/helpers");
 const uuid = require('uuid');
 const models = require("../../models");
+const logger = require("../logger/logger");
 
 async function User(req, res) {
     try {
@@ -21,13 +22,14 @@ async function User(req, res) {
             });
             if (updated) {
                 const updatedUser = await models.User.findOne({ where: { Usr_username: usrname } });
+                logger.info("Successfully updated.");
                 return res.status(200).json({ user: updatedUser });
             }
             throw new Error('User not updated');
         }
-        return res.status(400).send("Username can't contain spaces");
+        helpers.loggerWarnAndResponse(400,res,"Username can't contain spaces"); return res;
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -48,13 +50,14 @@ async function Bank(req, res) {
             });
             if (updated) {
                 const updatedBank = await models.Bank.findOne({ where: { Bank_id: bank_id } });
+                logger.info("Successfully updated.");
                 return res.status(200).json({ bank: updatedBank });
             }
-            return res.status(400).send("Not updated: Update data is the same");
+            helpers.loggerWarnAndResponse(400,res,"Not updated: Update data is the same"); return res;
         }
-        return res.status(404).send("Bank not found");
+        helpers.loggerWarnAndResponse(404,res,"Bank not found"); return res;
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -66,9 +69,9 @@ async function Wallet(req, res) {
         const findWtyp = await models.WalletType.findOne({ where: { Wtyp_id: wallettype } });
 
         if (state == null) {
-            return res.status(400).send('Not a valid wallet state (Active, Inactive)');
+            helpers.loggerWarnAndResponse(400,res,'Not a valid wallet state (Active, Inactive)'); return res;
         } else if (!findWtyp) {
-            return res.status(400).send('Not a valid wallet type');
+            helpers.loggerWarnAndResponse(400,res,'Not a valid wallet type'); return res;
         }
 
         const [updated] = await models.Wallet.update({
@@ -82,13 +85,14 @@ async function Wallet(req, res) {
 
         const updatedWallet = await models.Wallet.findOne({ where: { Wal_id: wal_id } });
         if (updated) {
+            logger.info("Successfully updated.");
             return res.status(200).json({ wallet: updatedWallet });
         } else if (updatedWallet) {
-            return res.status(400).send("Not updated: Update data is the same");
+            helpers.loggerWarnAndResponse(400,res,"Not updated: Update data is the same"); return res;
         }
-        return res.status(404).send("Wallet not found");
+        helpers.loggerWarnAndResponse(404,res,"Wallet not found"); return res;
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -104,16 +108,16 @@ async function WalletState(req, res) {
                 const val = await helpers.matchPassword(password, findUser.Usr_password);
                 if (val) {
                     if (state == null) {
-                        return res.status(400).send('Not a valid wallet state (Active, Inactive)');
+                        helpers.loggerWarnAndResponse(400,res,'Not a valid wallet state (Active, Inactive)'); return res;
                     }
                 } else {
-                    return res.status(401).send('The password is incorrect. Please try again');
+                    helpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
                 }
             } else {
-                return res.status(401).send('The User does not own this wallet');
+                helpers.loggerWarnAndResponse(401,res,'The User does not own this wallet'); return res;
             }
         } else {
-            return res.status(404).send('User not found');
+            helpers.loggerWarnAndResponse(404,res,'User not found'); return res;
         }
 
         const [updated] = await models.Wallet.update({
@@ -124,13 +128,14 @@ async function WalletState(req, res) {
 
         const updatedWallet = await models.Wallet.findOne({ where: { Wal_id: wal_id } });
         if (updated) {
+            logger.info("Successfully updated.");
             return res.status(200).json({ wallet: updatedWallet });
         } else if (updatedWallet) {
-            return res.status(400).send("Not updated: Update data is the same");
+            helpers.loggerWarnAndResponse(400,res,"Not updated: Update data is the same"); return res;
         }
-        return res.status(404).send("Wallet not found");
+        helpers.loggerWarnAndResponse(404,res,"Wallet not found"); return res;
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -152,15 +157,16 @@ async function WalletType(req, res) {
                 });
                 if (updated) {
                     const updatedWalletType = await models.WalletType.findOne({ where: { Wtyp_id: wtyp_id } });
+                    logger.info("Successfully updated.");
                     return res.status(200).json({ wallet_type: updatedWalletType });
                 }
-                return res.status(400).send("Not updated: Update data is the same");
+                helpers.loggerWarnAndResponse(400,res,"Not updated: Update data is the same"); return res;
             }
-            return res.status(400).send("Wallet Type name can't contain spaces");
+            helpers.loggerWarnAndResponse(400,res,"Wallet Type name can't contain spaces"); return res;
         }
-        return res.status(404).send("Wallet Type not found");
+        helpers.loggerWarnAndResponse(404,res,"Wallet Type not found"); return res;
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -181,13 +187,14 @@ async function Transfer(req, res) {
             });
             if (updated) {
                 const updatedTransfer = await models.Transfer.findOne({ where: { Tra_id: tra_id } });
+                logger.info("Successfully updated.");
                 return res.status(200).json({ transfer: updatedTransfer });
             }
-            return res.status(400).send("Not updated: Update data is the same");
+            helpers.loggerWarnAndResponse(400,res,"Not updated: Update data is the same"); return res;
         }
-        return res.status(404).send("Transfer not found");
+        helpers.loggerWarnAndResponse(404,res,"Transfer not found"); return res;
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -214,17 +221,18 @@ async function Enterprise(req, res) {
                     });
                     if (updated) {
                         const updatedTransfer = await models.Enterprise.findOne({ where: { Ent_id: ent_id } });
+                        logger.info("Successfully updated.");
                         return res.status(200).json({ transfer: updatedTransfer });
                     }
-                    return res.status(400).send("Not updated: Update data is the same");
+                    helpers.loggerWarnAndResponse(400,res,"Not updated: Update data is the same"); return res;
                 }
-                return res.status(401).send('The password is incorrect. Please try again');
+                helpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
             }
-            return res.status(400).send("Enterprise username can't contain spaces");
+            helpers.loggerWarnAndResponse(400,res,"Enterprise username can't contain spaces"); return res;
         }
-        return res.status(404).send("Enterprise not found");
+        helpers.loggerWarnAndResponse(404,res,"Enterprise not found"); return res;
     } catch (error) {
-        return res.status(500).send(error.message);
+        helpers.loggerErrorAndResponse(res,error.message); return res;
     }
 }
 
@@ -249,14 +257,14 @@ function Factory() {
             case "transfer":
                 Transfer(req, res);
                 break;
-            case "movement":
+/*          case "movement":           //A movement can't be updated now in the sistem
                 Movement(req, res);
                 break;
-            case "enterprise":
+*/          case "enterprise":
                 Enterprise(req, res);
                 break;
             default:
-                return res.status(404).send("Unknown route");
+                helpers.loggerWarnAndResponse(404,res,"Unknown route"); return res;
         }
     }
 }
