@@ -267,3 +267,343 @@
 [2020-06-15T13:30:24-05:00] DEBUG:  POST /user/signup STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
 [2020-06-15T13:31:26-05:00] INFO: Server on port 8000
 [2020-06-15T13:31:28-05:00] CRITICAL: Can't establish database connection: SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+[2020-06-15T17:23:25-05:00] INFO: Server on port 8000
+[2020-06-15T17:23:25-05:00] INFO: Connection has been established successfully!
+[2020-06-15T17:23:57-05:00] INFO: Server on port 8000
+[2020-06-15T17:23:57-05:00] INFO: Connection has been established successfully!
+[2020-06-15T17:24:05-05:00] INFO: read user:
+[2020-06-15T17:24:05-05:00] INFO: Successfully read.
+[2020-06-15T17:24:05-05:00] DEBUG:  GET /user/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T17:24:13-05:00] INFO: create user:
+[2020-06-15T17:24:13-05:00] WARNING: Passwords inserted does not coincide
+[2020-06-15T17:24:13-05:00] DEBUG:  POST /user/signup STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T17:26:00-05:00] INFO: create user:
+[2020-06-15T17:26:00-05:00] INFO: Successfully inserted.
+[2020-06-15T17:26:00-05:00] DEBUG:  POST /user/signup STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T17:29:36-05:00] INFO: read user-by-username:
+[2020-06-15T17:29:36-05:00] INFO: Successfully read.
+[2020-06-15T17:29:37-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T17:30:46-05:00] INFO: Server on port 8000
+[2020-06-15T17:30:46-05:00] INFO: Connection has been established successfully!
+[2020-06-15T17:30:57-05:00] INFO: read user:
+[2020-06-15T17:30:57-05:00] INFO: Successfully read.
+[2020-06-15T17:30:57-05:00] DEBUG:  GET /user/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T17:31:07-05:00] INFO: read user-validate:
+[2020-06-15T17:31:07-05:00] INFO: Successfully read.
+[2020-06-15T17:31:07-05:00] DEBUG:  POST /user/login STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T17:31:12-05:00] INFO: update user:
+[2020-06-15T17:31:13-05:00] INFO: Successfully updated.
+[2020-06-15T17:31:13-05:00] DEBUG:  PUT /user/edit/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T17:31:18-05:00] INFO: delete user:
+[2020-06-15T17:31:18-05:00] WARNING: This User has associated Wallets. Please delete them first
+[2020-06-15T17:31:18-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T17:32:04-05:00] INFO: read user-by-username:
+[2020-06-15T17:32:04-05:00] INFO: Successfully read.
+[2020-06-15T17:32:04-05:00] DEBUG:  GET /user/find/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T17:32:25-05:00] INFO: read wallet-by-username:
+[2020-06-15T17:32:25-05:00] INFO: Successfully read.
+[2020-06-15T17:32:25-05:00] DEBUG:  GET /wallet/find/all/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T17:32:42-05:00] INFO: delete wallet:
+[2020-06-15T17:32:42-05:00] WARNING: The password is incorrect. Please try again
+[2020-06-15T17:32:42-05:00] DEBUG:  DELETE /wallet/delete/mario-bros/79c243cf-5b07-4605-9293-63e1762b3edf STATUS:401 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T17:32:59-05:00] INFO: delete wallet:
+[2020-06-15T17:32:59-05:00] INFO: Wallet deleted.
+[2020-06-15T17:32:59-05:00] DEBUG:  DELETE /wallet/delete/mario-bros/79c243cf-5b07-4605-9293-63e1762b3edf STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T17:33:03-05:00] INFO: delete user:
+[2020-06-15T17:33:03-05:00] INFO: User mario-bros deleted
+[2020-06-15T17:33:03-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T19:20:05-05:00] INFO: Server on port 8000
+[2020-06-15T19:20:05-05:00] INFO: Connection has been established successfully!
+[2020-06-15T19:21:27-05:00] INFO: read user-auth:
+[2020-06-15T19:21:27-05:00] WARNING: The password is incorrect. Please try again
+[2020-06-15T19:21:27-05:00] DEBUG:  POST /user/login/auth STATUS:401 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T19:21:47-05:00] INFO: read user-auth:
+[2020-06-15T19:21:48-05:00] INFO: Successfully read.
+[2020-06-15T19:21:48-05:00] ERROR: app.get is not a function
+[2020-06-15T19:21:48-05:00] DEBUG:  POST /user/login/auth STATUS:500 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T19:23:23-05:00] INFO: Server on port 8000
+[2020-06-15T19:23:23-05:00] INFO: Connection has been established successfully!
+[2020-06-15T19:23:26-05:00] INFO: read user-auth:
+[2020-06-15T19:23:26-05:00] INFO: Successfully read.
+[2020-06-15T19:23:26-05:00] ERROR: secret must be a string or bufferor a KeyObject
+[2020-06-15T19:23:26-05:00] DEBUG:  POST /user/login/auth STATUS:500 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T19:24:36-05:00] INFO: Server on port 8000
+[2020-06-15T19:24:36-05:00] INFO: Connection has been established successfully!
+[2020-06-15T19:24:39-05:00] INFO: read user-auth:
+[2020-06-15T19:24:39-05:00] INFO: Successfully read.
+[2020-06-15T19:24:39-05:00] ERROR: secret must be a string or bufferor a KeyObject
+[2020-06-15T19:24:39-05:00] DEBUG:  POST /user/login/auth STATUS:500 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T19:25:03-05:00] INFO: Server on port 8000
+[2020-06-15T19:25:03-05:00] INFO: Connection has been established successfully!
+[2020-06-15T19:25:06-05:00] INFO: read user-auth:
+[2020-06-15T19:25:06-05:00] INFO: Successfully read.
+[2020-06-15T19:25:06-05:00] ERROR: secretOrPrivateKey must have a value
+[2020-06-15T19:25:06-05:00] DEBUG:  POST /user/login/auth STATUS:500 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T19:29:52-05:00] INFO: Server on port 8000
+[2020-06-15T19:29:53-05:00] INFO: Connection has been established successfully!
+[2020-06-15T19:30:01-05:00] INFO: Server on port 8000
+[2020-06-15T19:30:01-05:00] INFO: Connection has been established successfully!
+[2020-06-15T19:30:14-05:00] INFO: read user-auth:
+[2020-06-15T19:30:14-05:00] INFO: Successfully read.
+[2020-06-15T19:30:14-05:00] DEBUG:  POST /user/login/auth STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:32:45-05:00] INFO: Server on port 8000
+[2020-06-15T20:32:45-05:00] INFO: Connection has been established successfully!
+[2020-06-15T20:33:00-05:00] DEBUG:  GET /user/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:33:22-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:34:05-05:00] INFO: Server on port 8000
+[2020-06-15T20:34:05-05:00] INFO: Connection has been established successfully!
+[2020-06-15T20:34:09-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:35:03-05:00] INFO: Server on port 8000
+[2020-06-15T20:35:03-05:00] INFO: Connection has been established successfully!
+[2020-06-15T20:35:07-05:00] INFO: read user:
+[2020-06-15T20:35:07-05:00] INFO: Successfully read.
+[2020-06-15T20:35:07-05:00] DEBUG:  GET /user/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:36:09-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:38:45-05:00] DEBUG:  POST /user/login/auth STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:39:26-05:00] INFO: Server on port 8000
+[2020-06-15T20:39:26-05:00] INFO: Connection has been established successfully!
+[2020-06-15T20:39:29-05:00] INFO: read user-auth:
+[2020-06-15T20:39:29-05:00] WARNING: User/Enterprise with specified username does not exist
+[2020-06-15T20:39:29-05:00] DEBUG:  POST /user/login/auth STATUS:404 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:39:50-05:00] INFO: read user-auth:
+[2020-06-15T20:39:50-05:00] INFO: Successfully read.
+[2020-06-15T20:39:50-05:00] DEBUG:  POST /user/login/auth STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:41:39-05:00] DEBUG:  GET /user/find/miapenahu STATUS:500 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:42:14-05:00] INFO: Server on port 8000
+[2020-06-15T20:42:14-05:00] INFO: Connection has been established successfully!
+[2020-06-15T20:42:17-05:00] INFO: read user-by-username:
+[2020-06-15T20:42:17-05:00] INFO: Successfully read.
+[2020-06-15T20:42:17-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:43:31-05:00] INFO: read wallet:
+[2020-06-15T20:43:31-05:00] INFO: Successfully read.
+[2020-06-15T20:43:31-05:00] DEBUG:  GET /wallet/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:44:48-05:00] INFO: read wallet:
+[2020-06-15T20:44:48-05:00] INFO: Successfully read.
+[2020-06-15T20:44:48-05:00] DEBUG:  GET /wallet/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:50:38-05:00] INFO: Server on port 8000
+[2020-06-15T20:50:38-05:00] INFO: Connection has been established successfully!
+[2020-06-15T20:52:46-05:00] INFO: Server on port 8000
+[2020-06-15T20:52:46-05:00] INFO: Connection has been established successfully!
+[2020-06-15T20:52:54-05:00] INFO: read wallet:
+[2020-06-15T20:52:54-05:00] INFO: Successfully read.
+[2020-06-15T20:52:54-05:00] DEBUG:  GET /wallet/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:53:06-05:00] INFO: read user:
+[2020-06-15T20:53:06-05:00] INFO: Successfully read.
+[2020-06-15T20:53:06-05:00] DEBUG:  GET /user/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:53:16-05:00] INFO: read user-by-username:
+[2020-06-15T20:53:16-05:00] INFO: Successfully read.
+[2020-06-15T20:53:16-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:53:22-05:00] INFO: read user-by-username:
+[2020-06-15T20:53:22-05:00] INFO: Successfully read.
+[2020-06-15T20:53:22-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:55:00-05:00] INFO: Server on port 8000
+[2020-06-15T20:55:00-05:00] INFO: Connection has been established successfully!
+[2020-06-15T20:55:05-05:00] INFO: Server on port 8000
+[2020-06-15T20:55:05-05:00] INFO: Connection has been established successfully!
+[2020-06-15T20:55:09-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:55:17-05:00] INFO: read user:
+[2020-06-15T20:55:17-05:00] INFO: Successfully read.
+[2020-06-15T20:55:17-05:00] DEBUG:  GET /user/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T20:57:51-05:00] INFO: Server on port 8000
+[2020-06-15T20:57:51-05:00] INFO: Connection has been established successfully!
+[2020-06-15T21:01:02-05:00] INFO: Server on port 8000
+[2020-06-15T21:01:02-05:00] INFO: Connection has been established successfully!
+[2020-06-15T21:03:40-05:00] INFO: Server on port 8000
+[2020-06-15T21:03:40-05:00] INFO: Connection has been established successfully!
+[2020-06-15T21:07:09-05:00] INFO: read user-auth:
+[2020-06-15T21:07:09-05:00] INFO: Successfully read.
+[2020-06-15T21:07:09-05:00] DEBUG:  POST /user/login/auth STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:15:28-05:00] INFO: Server on port 8000
+[2020-06-15T21:15:28-05:00] INFO: Connection has been established successfully!
+[2020-06-15T21:15:31-05:00] INFO: Server on port 8000
+[2020-06-15T21:15:31-05:00] INFO: Connection has been established successfully!
+[2020-06-15T21:15:48-05:00] INFO: read user-auth:
+[2020-06-15T21:15:49-05:00] INFO: Successfully read.
+[2020-06-15T21:15:49-05:00] DEBUG:  POST /user/login/auth STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:16:54-05:00] WARNING: Invalid token
+[2020-06-15T21:16:54-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:16:56-05:00] WARNING: Invalid token
+[2020-06-15T21:16:56-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:16:57-05:00] WARNING: Invalid token
+[2020-06-15T21:16:57-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:17:01-05:00] WARNING: Invalid token
+[2020-06-15T21:17:01-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:17:32-05:00] INFO: read user-auth:
+[2020-06-15T21:17:32-05:00] INFO: Successfully read.
+[2020-06-15T21:17:32-05:00] DEBUG:  POST /user/login/auth STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:17:55-05:00] INFO: read user-by-username:
+[2020-06-15T21:17:55-05:00] INFO: Successfully read.
+[2020-06-15T21:17:55-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:17:56-05:00] INFO: read user-by-username:
+[2020-06-15T21:17:56-05:00] INFO: Successfully read.
+[2020-06-15T21:17:56-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:17:57-05:00] INFO: read user-by-username:
+[2020-06-15T21:17:57-05:00] INFO: Successfully read.
+[2020-06-15T21:17:57-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:17:58-05:00] INFO: read user-by-username:
+[2020-06-15T21:17:58-05:00] INFO: Successfully read.
+[2020-06-15T21:17:58-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:17:59-05:00] INFO: read user-by-username:
+[2020-06-15T21:17:59-05:00] INFO: Successfully read.
+[2020-06-15T21:17:59-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:00-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:00-05:00] INFO: Successfully read.
+[2020-06-15T21:18:00-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:01-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:01-05:00] INFO: Successfully read.
+[2020-06-15T21:18:01-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:01-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:01-05:00] INFO: Successfully read.
+[2020-06-15T21:18:01-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:02-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:02-05:00] INFO: Successfully read.
+[2020-06-15T21:18:02-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:03-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:03-05:00] INFO: Successfully read.
+[2020-06-15T21:18:03-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:03-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:03-05:00] INFO: Successfully read.
+[2020-06-15T21:18:03-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:04-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:04-05:00] INFO: Successfully read.
+[2020-06-15T21:18:04-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:05-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:05-05:00] INFO: Successfully read.
+[2020-06-15T21:18:05-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:05-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:05-05:00] INFO: Successfully read.
+[2020-06-15T21:18:05-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:06-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:06-05:00] INFO: Successfully read.
+[2020-06-15T21:18:06-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:06-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:06-05:00] INFO: Successfully read.
+[2020-06-15T21:18:06-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:07-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:07-05:00] INFO: Successfully read.
+[2020-06-15T21:18:07-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:08-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:08-05:00] INFO: Successfully read.
+[2020-06-15T21:18:08-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:08-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:08-05:00] INFO: Successfully read.
+[2020-06-15T21:18:08-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:09-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:09-05:00] INFO: Successfully read.
+[2020-06-15T21:18:09-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:09-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:09-05:00] INFO: Successfully read.
+[2020-06-15T21:18:09-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:10-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:10-05:00] INFO: Successfully read.
+[2020-06-15T21:18:10-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:10-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:10-05:00] INFO: Successfully read.
+[2020-06-15T21:18:10-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:11-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:11-05:00] INFO: Successfully read.
+[2020-06-15T21:18:11-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:12-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:12-05:00] INFO: Successfully read.
+[2020-06-15T21:18:12-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:12-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:12-05:00] INFO: Successfully read.
+[2020-06-15T21:18:12-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:13-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:13-05:00] INFO: Successfully read.
+[2020-06-15T21:18:13-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:14-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:14-05:00] INFO: Successfully read.
+[2020-06-15T21:18:14-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:14-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:14-05:00] INFO: Successfully read.
+[2020-06-15T21:18:15-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:15-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:15-05:00] INFO: Successfully read.
+[2020-06-15T21:18:15-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:16-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:16-05:00] INFO: Successfully read.
+[2020-06-15T21:18:16-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:16-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:16-05:00] INFO: Successfully read.
+[2020-06-15T21:18:16-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:17-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:17-05:00] INFO: Successfully read.
+[2020-06-15T21:18:17-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:17-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:17-05:00] INFO: Successfully read.
+[2020-06-15T21:18:17-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:18-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:18-05:00] INFO: Successfully read.
+[2020-06-15T21:18:18-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:18-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:18-05:00] INFO: Successfully read.
+[2020-06-15T21:18:18-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:19-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:19-05:00] INFO: Successfully read.
+[2020-06-15T21:18:19-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:20-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:20-05:00] INFO: Successfully read.
+[2020-06-15T21:18:20-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:20-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:20-05:00] INFO: Successfully read.
+[2020-06-15T21:18:20-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:21-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:21-05:00] INFO: Successfully read.
+[2020-06-15T21:18:21-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:21-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:21-05:00] INFO: Successfully read.
+[2020-06-15T21:18:21-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:22-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:22-05:00] INFO: Successfully read.
+[2020-06-15T21:18:22-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:22-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:22-05:00] INFO: Successfully read.
+[2020-06-15T21:18:22-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:23-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:23-05:00] INFO: Successfully read.
+[2020-06-15T21:18:23-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:23-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:23-05:00] INFO: Successfully read.
+[2020-06-15T21:18:23-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:24-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:24-05:00] INFO: Successfully read.
+[2020-06-15T21:18:24-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:25-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:25-05:00] INFO: Successfully read.
+[2020-06-15T21:18:25-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:25-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:25-05:00] INFO: Successfully read.
+[2020-06-15T21:18:25-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:26-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:26-05:00] INFO: Successfully read.
+[2020-06-15T21:18:26-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:27-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:27-05:00] INFO: Successfully read.
+[2020-06-15T21:18:27-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:28-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:28-05:00] INFO: Successfully read.
+[2020-06-15T21:18:28-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:28-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:28-05:00] INFO: Successfully read.
+[2020-06-15T21:18:28-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:29-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:29-05:00] INFO: Successfully read.
+[2020-06-15T21:18:29-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:30-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:30-05:00] INFO: Successfully read.
+[2020-06-15T21:18:30-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:30-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:30-05:00] INFO: Successfully read.
+[2020-06-15T21:18:30-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:31-05:00] INFO: read user-by-username:
+[2020-06-15T21:18:31-05:00] INFO: Successfully read.
+[2020-06-15T21:18:31-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:32-05:00] WARNING: Invalid token
+[2020-06-15T21:18:32-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:33-05:00] WARNING: Invalid token
+[2020-06-15T21:18:33-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:33-05:00] WARNING: Invalid token
+[2020-06-15T21:18:33-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-15T21:18:34-05:00] WARNING: Invalid token
+[2020-06-15T21:18:34-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0

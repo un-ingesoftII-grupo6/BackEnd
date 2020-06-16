@@ -8,6 +8,10 @@ const cors = require('cors')
 const logger = require('./logger/logger');
 var winstonStream = require("winston-stream");
 var loggerStream = winstonStream(logger, "debug");
+//const jwt = require('jsonwebtoken');
+//const config = require('../config/keys');
+
+//app.set('key', config.tokenKey);
 
 // Settings 
 app.set('port', process.env.PORT || 8000)
@@ -19,7 +23,7 @@ morgan.format('myformat', ' :method :url STATUS::status REMOTE_ADDR::remote-addr
 
 app.use(morgan('myformat', { stream: loggerStream}));
 app.use(morgan('dev')); // console petitions
-app.use(bodyParser.urlencoded({ extended: false })); //Just url encoded data
+app.use(bodyParser.urlencoded({ extended: true })); //Has to be true for the JWT
 app.use(bodyParser.json());
 
 //CORS configuration
@@ -47,6 +51,7 @@ const bankRoutes = require("./routes/bank");
 const transferRoutes = require("./routes/transfer");
 const enterpriseRoutes = require("./routes/enterprise");
 const wtypRoutes = require("./routes/wallettype");
+const keys = require('../config/keys');
 
 //Routes Handler
 app.use("/user", userRoutes);

@@ -1,6 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const movementController = require("../controllers/movement");
+const helpers = require('../lib/helpers')
+
+//////////////////////Methods below this line are validated with token////////////////////////////
+router.use(helpers.beginTokenValidation);
 
 //Creates a new movement set for one transaction
 router.post("/:transfer_type", movementController.createMovement);

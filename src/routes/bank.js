@@ -1,6 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const bankController = require("../controllers/bank");
+const helpers = require('../lib/helpers')
+
+//////////////////////Methods below this line are validated with token////////////////////////////
+router.use(helpers.beginTokenValidation);
 
 //Creates a new bank
 router.post("/create", bankController.createBank);

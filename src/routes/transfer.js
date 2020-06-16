@@ -1,6 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const transferController = require("../controllers/transfer");
+const helpers = require('../lib/helpers')
+
+//////////////////////Methods below this line are validated with token////////////////////////////
+router.use(helpers.beginTokenValidation);
 
 //Creates a new transfer
 router.post("/create", transferController.createTransfer);

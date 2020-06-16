@@ -1,6 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const walletController = require("../controllers/wallet");
+const helpers = require('../lib/helpers')
+
+//////////////////////Methods below this line are validated with token////////////////////////////
+router.use(helpers.beginTokenValidation);
 
 //Creates a new wallet by username
 router.post("/create/:username", walletController.createWallet);

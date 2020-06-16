@@ -2,6 +2,9 @@ const helpers = require("../lib/helpers");
 const uuid = require('uuid');
 const models = require("../../models");
 const logger = require("../logger/logger");
+const jwt = require("jsonwebtoken");
+const keys = require('../../config/keys');
+
 
 async function User(req, res) {
     try {
@@ -54,8 +57,9 @@ async function ValidateUser(req, res) {
         if (user) {
             const val = await helpers.matchPassword(password, user.Usr_password);
             if (val) {
-                logger.info("Successfully read.");
-                return res.status(200).json({ user: user }); //Si se autenticó correctamente, le devuelve el user con su wallet
+                const token = helpers.generateToken(1800);
+                logger.info("Successfully read. Token generated");
+                return res.status(200).json({ user: user, token: token }); //Si se autenticó correctamente, le devuelve el user con su wallet
             } else {
                 helpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
             }
@@ -83,13 +87,55 @@ async function ValidateUser(req, res) {
             if(enterprise){
                 const val2 = await helpers.matchPassword(password, enterprise.Ent_password);
                 if (val2) {
-                    logger.info("Successfully read.");
-                    return res.status(200).json({ enterprise: enterprise }); //Si se autenticó correctamente, le devuelve la enterprise con su wallet
+                    const token = helpers.generateToken(1800);
+                    logger.info("Successfully read. Token generated");
+                    return res.status(200).json({ enterprise: enterprise, token: token }); //Si se autenticó correctamente, le devuelve la enterprise con su wallet
                 } else {
                     helpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
                 }
             }
              
+        }
+        helpers.loggerWarnAndResponse(404,res,'User/Enterprise with specified username does not exist'); return res;
+    } catch (error) {
+        helpers.loggerErrorAndResponse(res,error.message); return res;
+    }
+}
+
+async function AuthUser(req, res) {
+    try {
+        const { username, password } = req.body;
+        const user = await models.User.findOne({
+            where: { Usr_username: username },
+            include: [
+                {
+                    model: models.Wallet,
+                    as: 'possess',
+                    include: [
+                        {
+                            model: models.Movement,
+                            as: 'modifies_sender',
+                        },
+                        {
+                            model: models.Movement,
+                            as: 'modifies_recipient',
+                        }
+                    ]
+                }
+            ]
+        });
+        if (user) {
+            const val = await helpers.matchPassword(password, user.Usr_password);
+            if (val) {
+                logger.info("Successfully read.");
+                const payload = { };//check: true };
+                const key =  keys.tokenKey;
+                const token = jwt.sign(payload,key,{ expiresIn: 1800 });
+                return res.status(200).json({ user: user, token: token }); //Si se autenticó correctamente, le devuelve el user con su wallet
+            } else {
+                helpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
+            }
+
         }
         helpers.loggerWarnAndResponse(404,res,'User/Enterprise with specified username does not exist'); return res;
     } catch (error) {
@@ -291,6 +337,9 @@ function Factory() {
                 break;
             case "user-validate":
                 ValidateUser(req, res);
+                break;
+            case "user-auth":
+                AuthUser(req, res);
                 break;
             case "bank":
                 Bank(req, res);

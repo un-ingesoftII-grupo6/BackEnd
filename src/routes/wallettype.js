@@ -1,6 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const wtypController = require("../controllers/wallettype");
+const helpers = require('../lib/helpers')
+
+//////////////////////Methods below this line are validated with token////////////////////////////
+router.use(helpers.beginTokenValidation);
 
 //Creates a new Wallet Type
 router.post("/create", wtypController.createWalletType);

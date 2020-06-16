@@ -4,7 +4,7 @@ const enterpriseController = require("../controllers/enterprise");
 
 //Creates a new enterprise
 router.post("/create", enterpriseController.createEnterprise);
-//Validate user in db
+//Validate user in db and return access token
 router.post('/login', enterpriseController.validateEnterprise);
 //Finds all enterprises in the database
 router.get("/find/all",enterpriseController.getAllEnterprises);
