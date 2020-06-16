@@ -102,47 +102,6 @@ async function ValidateUser(req, res) {
     }
 }
 
-async function AuthUser(req, res) {
-    try {
-        const { username, password } = req.body;
-        const user = await models.User.findOne({
-            where: { Usr_username: username },
-            include: [
-                {
-                    model: models.Wallet,
-                    as: 'possess',
-                    include: [
-                        {
-                            model: models.Movement,
-                            as: 'modifies_sender',
-                        },
-                        {
-                            model: models.Movement,
-                            as: 'modifies_recipient',
-                        }
-                    ]
-                }
-            ]
-        });
-        if (user) {
-            const val = await helpers.matchPassword(password, user.Usr_password);
-            if (val) {
-                logger.info("Successfully read.");
-                const payload = { };//check: true };
-                const key =  keys.tokenKey;
-                const token = jwt.sign(payload,key,{ expiresIn: 1800 });
-                return res.status(200).json({ user: user, token: token }); //Si se autenticó correctamente, le devuelve el user con su wallet
-            } else {
-                helpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
-            }
-
-        }
-        helpers.loggerWarnAndResponse(404,res,'User/Enterprise with specified username does not exist'); return res;
-    } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
-    }
-}
-
 async function Bank(req, res) {
     try {
         const banks = await models.Bank.findAll();
@@ -337,9 +296,6 @@ function Factory() {
                 break;
             case "user-validate":
                 ValidateUser(req, res);
-                break;
-            case "user-auth":
-                AuthUser(req, res);
                 break;
             case "bank":
                 Bank(req, res);

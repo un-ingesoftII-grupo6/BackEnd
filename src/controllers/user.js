@@ -29,17 +29,11 @@ const validateUser = async (req, res) => {
   persistenceFactory.create(req,res,"user-validate","read");
 }
 
-const authUser = async (req, res) => {
-  persistenceFactory.create(req,res,"user-auth","read");
-}
-
-
 module.exports = {
   createUser,
   getAllUsers,
   getUserByUsername,
   updateUser,
   deleteUser,
-  validateUser,
-  authUser
+  validateUser
 }
