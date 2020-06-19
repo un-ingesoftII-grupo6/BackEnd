@@ -5,45 +5,65 @@ const logger = require("../logger/logger");
 
 async function User(req, res) {
     try {
-        const { name, surname, email, password, cpassword } = req.body;
+        const { name, surname, email, password, cpassword, wtyp_id, ent_id } = req.body;
         const username = helpers.hasNoSpaces(req.body.username);
-        
+
         const findUser = await models.User.findOne({ where: { Usr_username: username } });
+        const findWtyp = await models.WalletType.findOne({ where: { Wtyp_id: wtyp_id } }); 
 
         if (!findUser) {
             if (username) {
-            if (password === cpassword) {
-                const pass = await helpers.encryptPassword(req.body.password);
-                
-                    const user = await models.User.create({
-                        Usr_name: name,
-                        Usr_surname: surname,
-                        Usr_email: email,
-                        Usr_username: username,
-                        Usr_password: pass
-                    });
+                if (findWtyp) {
+                    if (password === cpassword) {
+                        const pass = await helpers.encryptPassword(req.body.password);
+                        var entId, monthLimit, movementLimit;
+                        entId = null;
+                        monthLimit = findWtyp.Wtyp_month_limit;
+                        movementLimit = findWtyp.Wtyp_movement_limit;
+                        if (wtyp_id == 3) {
+                            const findEnterprise = await models.Enterprise.findOne({ where: { Ent_id: ent_id } });
+                            if (findEnterprise) {
+                                entId = ent_id;
+                                monthLimit = findEnterprise.Ent_month_limit;
+                                movementLimit = findEnterprise.Ent_movement_limit
+                            } else{
+                            helpers.loggerWarnAndResponse(404, res, 'Specified enterprise not found. Please try again'); return res;
+                            }
+                        }
 
-                    const wallet = await models.Wallet.create({
-                        Wal_id: uuid.v4(),
-                        Usr_id: user.Usr_id,
-                        Wtyp_id: 1,
-                        Wal_balance: 0.00,
-                        Wal_state: "Active"
-                    });
-                    logger.info("Successfully inserted.");
-                    return res.status(201).json({
-                        user: user,
-                        wallet: wallet
-                    });
+                        const user = await models.User.create({
+                            Usr_name: name,
+                            Usr_surname: surname,
+                            Usr_email: email,
+                            Usr_username: username,
+                            Usr_password: pass
+                        });
+
+                        const wallet = await models.Wallet.create({
+                            Wal_id: uuid.v4(),
+                            Usr_id: user.Usr_id,
+                            Wtyp_id: wtyp_id,
+                            Ent_id: entId,
+                            Wal_balance: 0.00,
+                            Wal_state: "Active",
+                            Wal_movement_limit: movementLimit,
+                            Wal_month_limit: monthLimit
+                        });
+                        logger.info("Successfully inserted.");
+                        return res.status(201).json({
+                            user: user,
+                            wallet: wallet
+                        });
+                    }
+                    helpers.loggerWarnAndResponse(400, res, "Passwords inserted does not coincide"); return res;
                 }
-                
-                helpers.loggerWarnAndResponse(400,res,"Passwords inserted does not coincide"); return res;
+                helpers.loggerWarnAndResponse(404, res, 'Specified wallet type does not exists'); return res;
             }
-            helpers.loggerWarnAndResponse(400,res,"Username can't contain spaces"); return res;
+            helpers.loggerWarnAndResponse(400, res, "Username can't contain spaces"); return res;
         }
-        helpers.loggerWarnAndResponse(400,res,"Username is already registered"); return res;
+        helpers.loggerWarnAndResponse(400, res, "Username is already registered"); return res;
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -60,7 +80,7 @@ async function Bank(req, res) {
         logger.info("Successfully inserted.");
         return res.status(201).json({ bank: bank });
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message);
+        helpers.loggerErrorAndResponse(res, error.message);
         return res;
     }
 }
@@ -68,7 +88,7 @@ async function Bank(req, res) {
 async function Wallet(req, res) {
     try {
         const username = req.params.username;
-        const { wallettype, password } = req.body;
+        const { wallettype, password, ent_id } = req.body;
         const findUser = await models.User.findOne({ where: { Usr_username: username } });
         const findWtyp = await models.WalletType.findOne({ where: { Wtyp_id: wallettype } });
 
@@ -76,25 +96,44 @@ async function Wallet(req, res) {
             if (findWtyp) {
                 const val = await helpers.matchPassword(password, findUser.Usr_password);
                 if (val) {
+                    var entId, monthLimit, movementLimit;
+                    entId = null;
+                    monthLimit = findWtyp.Wtyp_month_limit;
+                    movementLimit = findWtyp.Wtyp_movement_limit;
+
+                    if (wallettype == 3){
+                        const findEnterprise = await models.Enterprise.findOne({ where: { Ent_id: ent_id } });
+                        if (findEnterprise) {
+                            entId = findEnterprise.Ent_id;
+                            monthLimit = findEnterprise.Ent_month_limit;
+                            movementLimit = findEnterprise.Ent_movement_limit
+                        } else{
+                        helpers.loggerWarnAndResponse(404, res, 'Specified enterprise not found. Please try again'); return res;
+                        }
+                    }
+
                     const wallet = await models.Wallet.create({
                         Wal_id: uuid.v4(),
                         Usr_id: findUser.Usr_id,
                         Wtyp_id: wallettype,
+                        Ent_id: entId,
                         Wal_balance: 0.00,
-                        Wal_state: "Active"
+                        Wal_state: "Active",
+                        Wal_movement_limit: movementLimit,
+                        Wal_month_limit: monthLimit
                     });
                     logger.info("Successfully inserted.");
                     return res.status(201).json({ wallet: wallet });
                 } else {
-                    helpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
+                    helpers.loggerWarnAndResponse(401, res, 'The password is incorrect. Please try again'); return res;
                 }
             } else {
-                helpers.loggerWarnAndResponse(404,res,'Specified wallet type does not exists'); return res;
+                helpers.loggerWarnAndResponse(404, res, 'Specified wallet type does not exists'); return res;
             }
         }
-        helpers.loggerWarnAndResponse(404,res,'User with specified username does not exists'); return res;
+        helpers.loggerWarnAndResponse(404, res, 'User with specified username does not exists'); return res;
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -113,7 +152,7 @@ async function WalletType(req, res) {
             logger.info("Successfully inserted.");
             return res.status(201).json({ wallet_type: wallettype });
         }
-        helpers.loggerWarnAndResponse(400,res,"Wallet Type name can't contain spaces"); return res;
+        helpers.loggerWarnAndResponse(400, res, "Wallet Type name can't contain spaces"); return res;
     } catch (error) {
         helpers.loggerErrorAndResponse(res, error.message); return res;
     }
@@ -134,7 +173,7 @@ async function Transfer(req, res) {
             logger.info("Successfully inserted.");
             return res.status(201).json({ transfer: transfer });
         }
-        helpers.loggerWarnAndResponse(400,res,"Route can't contain spaces"); return res;
+        helpers.loggerWarnAndResponse(400, res, "Route can't contain spaces"); return res;
     } catch (error) {
         helpers.loggerErrorAndResponse(res, error.message); return res;
     }
@@ -209,36 +248,36 @@ async function Movement(req, res) {
                                                     logger.info("Successfully inserted.");
                                                     return res.status(201).json({ movement: movement });
                                                 }
-                                                helpers.loggerErrorAndResponse(res,'The Wallets could not be actualized'); return res;
+                                                helpers.loggerErrorAndResponse(res, 'The Wallets could not be actualized'); return res;
                                             }
-                                            helpers.loggerWarnAndResponse(401,res,'The Sender Wallet has no funds for this operation'); return res;
+                                            helpers.loggerWarnAndResponse(401, res, 'The Sender Wallet has no funds for this operation'); return res;
                                         }
-                                        rhelpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
+                                        rhelpers.loggerWarnAndResponse(401, res, 'The password is incorrect. Please try again'); return res;
                                     }
-                                    helpers.loggerWarnAndResponse(404,res,"Transfer type not found"); return res;
+                                    helpers.loggerWarnAndResponse(404, res, "Transfer type not found"); return res;
                                 }
-                                helpers.loggerWarnAndResponse(404,res,"Recipient Username not found"); return res;
+                                helpers.loggerWarnAndResponse(404, res, "Recipient Username not found"); return res;
                             }
-                            helpers.loggerWarnAndResponse(404,res,"Sender Username not found"); return res;
+                            helpers.loggerWarnAndResponse(404, res, "Sender Username not found"); return res;
                         }
-                        helpers.loggerWarnAndResponse(400,res,"The minimum unit of money you can add is $1000"); return res;
+                        helpers.loggerWarnAndResponse(400, res, "The minimum unit of money you can add is $1000"); return res;
                     }
-                    helpers.loggerWarnAndResponse(400,res,"You can't send less than $5000"); return res;
-                } 
-                helpers.loggerWarnAndResponse(400,res,"You can't send money to yourself!"); return res;
+                    helpers.loggerWarnAndResponse(400, res, "You can't send less than $5000"); return res;
+                }
+                helpers.loggerWarnAndResponse(400, res, "You can't send money to yourself!"); return res;
             }
-            helpers.loggerWarnAndResponse(404,res,"Recipient Wallet not found"); return res;
+            helpers.loggerWarnAndResponse(404, res, "Recipient Wallet not found"); return res;
         }
-        helpers.loggerWarnAndResponse(404,res,"Sender Wallet not found"); return res;
+        helpers.loggerWarnAndResponse(404, res, "Sender Wallet not found"); return res;
 
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
 async function Enterprise(req, res) {
     try {
-        const { name, description, budget } = req.body;
+        const { name, description, budget,movement_limit,month_limit } = req.body;
         const NIT = helpers.hasNoSpaces(req.body.NIT);
         const username = helpers.hasNoSpaces(req.body.username);
         const password = await helpers.encryptPassword(req.body.password);
@@ -250,14 +289,16 @@ async function Enterprise(req, res) {
                     Ent_description: description,
                     Ent_budget: budget,
                     Ent_username: username,
-                    Ent_password: password
+                    Ent_password: password,
+                    Ent_movement_limit: movement_limit,
+                    Ent_month_limit: month_limit
                 });
                 logger.info("Successfully inserted.");
                 return res.status(201).json({ enterprise: enterprise });
             }
-            helpers.loggerWarnAndResponse(400,res,"Enterprise NIT can't contain spaces"); return res;
+            helpers.loggerWarnAndResponse(400, res, "Enterprise NIT can't contain spaces"); return res;
         }
-        helpers.loggerWarnAndResponse(400,res,"Enterprise username can't contain spaces"); return res;
+        helpers.loggerWarnAndResponse(400, res, "Enterprise username can't contain spaces"); return res;
     } catch (error) {
         helpers.loggerErrorAndResponse(res, error.message); return res;
     }
@@ -288,7 +329,7 @@ function Factory() {
                 Enterprise(req, res);
                 break;
             default:
-                helpers.loggerWarnAndResponse(404,res,"Unknown route"); return res;
+                helpers.loggerWarnAndResponse(404, res, "Unknown route"); return res;
         }
     }
 }

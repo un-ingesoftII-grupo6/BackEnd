@@ -32,6 +32,14 @@ module.exports = (sequelize, DataTypes) => {
         Ent_password: {
             type: DataTypes.STRING(60),
             allowNull: false
+        },
+        Ent_movement_limit: {
+            type: DataTypes.DOUBLE(20, 2),
+            allowNull: false
+        },
+        Ent_month_limit: {
+            type: DataTypes.DOUBLE(20, 2),
+            allowNull: false
         }
     }, {
         timestamps: false,

@@ -9,21 +9,27 @@ module.exports = {
       Wtyp_id: 1,
       Ent_id: null,
       Wal_balance: 500000.00,
-      Wal_state: "Active"
+      Wal_state: "Active",
+      Wal_movement_limit: 4000000.00,
+      Wal_month_limit: 2000000.00
     }, {
       Wal_id: "58ecb6c2-c137-418b-9b2f-01425ac7b124", //uuid.v4(), 
       Usr_id: 2,
       Wtyp_id: 1,
       Ent_id: null,
       Wal_balance: 500000.00,
-      Wal_state: "Active"
+      Wal_state: "Active",
+      Wal_movement_limit: 4000000.00,
+      Wal_month_limit: 2000000.00
     },{
       Wal_id: "48502bcf-87bb-4f88-a7f7-4a5978debb22", //uuid.v4(), 
       Usr_id: 3,
       Wtyp_id: 3,
       Ent_id: 1,
       Wal_balance: 0.00,
-      Wal_state: "Active"
+      Wal_state: "Active",
+      Wal_movement_limit: 4000000.00,
+      Wal_month_limit: 2000000.00
     }
   ]);
   },
