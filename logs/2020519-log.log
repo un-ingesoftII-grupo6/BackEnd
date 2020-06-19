@@ -396,3 +396,14 @@ notNull Violation: Wallet.Wal_month_limit cannot be null
 [2020-06-19T09:44:56-05:00] INFO: create wallet:
 [2020-06-19T09:44:56-05:00] INFO: Successfully inserted.
 [2020-06-19T09:44:56-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:46:13-05:00] INFO: Server on port 8000
+[2020-06-19T09:46:13-05:00] INFO: Connection has been established successfully!
+[2020-06-19T09:46:16-05:00] INFO: create wallet:
+[2020-06-19T09:46:16-05:00] INFO: Successfully inserted.
+[2020-06-19T09:46:16-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:46:30-05:00] INFO: create wallet:
+[2020-06-19T09:46:30-05:00] INFO: Successfully inserted.
+[2020-06-19T09:46:30-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:46:34-05:00] INFO: create wallet:
+[2020-06-19T09:46:34-05:00] INFO: Successfully inserted.
+[2020-06-19T09:46:34-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0

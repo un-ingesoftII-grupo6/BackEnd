@@ -103,7 +103,6 @@ async function Wallet(req, res) {
 
                     if (wallettype == 3){
                         const findEnterprise = await models.Enterprise.findOne({ where: { Ent_id: ent_id } });
-                        entId = findEnterprise.Ent_id;
                         if (findEnterprise) {
                             entId = findEnterprise.Ent_id;
                             monthLimit = findEnterprise.Ent_month_limit;
