@@ -101,14 +101,16 @@ async function Wallet(req, res) {
                     monthLimit = findWtyp.Wtyp_month_limit;
                     movementLimit = findWtyp.Wtyp_movement_limit;
 
-                    if (wallettype == 3) {
+                    if (wallettype == 3){
                         const findEnterprise = await models.Enterprise.findOne({ where: { Ent_id: ent_id } });
+                        entId = findEnterprise.Ent_id;
                         if (findEnterprise) {
-                            entId = ent_id;
+                            entId = findEnterprise.Ent_id;
                             monthLimit = findEnterprise.Ent_month_limit;
                             movementLimit = findEnterprise.Ent_movement_limit
-                        }
+                        } else{
                         helpers.loggerWarnAndResponse(404, res, 'Specified enterprise not found. Please try again'); return res;
+                        }
                     }
 
                     const wallet = await models.Wallet.create({

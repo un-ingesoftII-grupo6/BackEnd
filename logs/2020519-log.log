@@ -320,3 +320,79 @@ notNull Violation: Wallet.Wal_month_limit cannot be null
 [2020-06-19T08:23:57-05:00] INFO: Connection has been established successfully!
 [2020-06-19T08:24:02-05:00] INFO: Server on port 8000
 [2020-06-19T08:24:02-05:00] INFO: Connection has been established successfully!
+[2020-06-19T08:24:08-05:00] INFO: Server on port 8000
+[2020-06-19T08:24:08-05:00] INFO: Connection has been established successfully!
+[2020-06-19T08:30:36-05:00] INFO: create user:
+[2020-06-19T08:30:36-05:00] WARNING: Username is already registered
+[2020-06-19T08:30:36-05:00] DEBUG:  POST /user/signup STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T08:31:32-05:00] INFO: Server on port 8000
+[2020-06-19T08:31:32-05:00] INFO: Connection has been established successfully!
+[2020-06-19T08:31:39-05:00] INFO: create user:
+[2020-06-19T08:31:39-05:00] INFO: Successfully inserted.
+[2020-06-19T08:31:39-05:00] DEBUG:  POST /user/signup STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:24:12-05:00] INFO: read user-validate:
+[2020-06-19T09:24:12-05:00] INFO: Successfully read. Token generated
+[2020-06-19T09:24:12-05:00] DEBUG:  POST /user/login STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:25:26-05:00] WARNING: Token doesn't provided
+[2020-06-19T09:25:26-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:403 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:25:46-05:00] INFO: create wallet:
+[2020-06-19T09:25:46-05:00] INFO: Successfully inserted.
+[2020-06-19T09:25:46-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:26:50-05:00] INFO: create wallet:
+[2020-06-19T09:26:50-05:00] ERROR: WHERE parameter "Ent_id" has invalid "undefined" value
+[2020-06-19T09:26:50-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:500 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:27:09-05:00] INFO: create wallet:
+[2020-06-19T09:27:09-05:00] WARNING: Specified enterprise not found. Please try again
+[2020-06-19T09:27:09-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:404 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:27:53-05:00] INFO: create wallet:
+[2020-06-19T09:27:53-05:00] WARNING: Specified enterprise not found. Please try again
+[2020-06-19T09:27:53-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:404 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:28:09-05:00] INFO: create wallet:
+[2020-06-19T09:28:10-05:00] WARNING: Specified enterprise not found. Please try again
+[2020-06-19T09:28:10-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:404 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:29:17-05:00] INFO: read enterprise:
+[2020-06-19T09:29:17-05:00] INFO: Successfully read.
+[2020-06-19T09:29:17-05:00] DEBUG:  GET /enterprise/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:31:16-05:00] INFO: create wallet:
+[2020-06-19T09:31:16-05:00] WARNING: Specified enterprise not found. Please try again
+[2020-06-19T09:31:16-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:404 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:31:35-05:00] INFO: create wallet:
+[2020-06-19T09:31:35-05:00] WARNING: Specified enterprise not found. Please try again
+[2020-06-19T09:31:35-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:404 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:32:06-05:00] INFO: create wallet:
+[2020-06-19T09:32:07-05:00] WARNING: Specified enterprise not found. Please try again
+[2020-06-19T09:32:07-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:404 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:36:25-05:00] INFO: create user:
+[2020-06-19T09:36:25-05:00] WARNING: Username is already registered
+[2020-06-19T09:36:25-05:00] DEBUG:  POST /user/signup STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:36:43-05:00] WARNING: Invalid token
+[2020-06-19T09:36:43-05:00] DEBUG:  DELETE /wallet/delete/mario-bros/2e6ab795-ac8d-4826-879a-008505dd7ba8 STATUS:403 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:38:38-05:00] INFO: read enterprise:
+[2020-06-19T09:38:38-05:00] INFO: Successfully read.
+[2020-06-19T09:38:38-05:00] DEBUG:  GET /enterprise/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:40:26-05:00] INFO: create wallet:
+[2020-06-19T09:40:26-05:00] WARNING: Specified enterprise not found. Please try again
+[2020-06-19T09:40:26-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:404 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:40:33-05:00] INFO: create wallet:
+[2020-06-19T09:40:33-05:00] WARNING: Specified enterprise not found. Please try again
+[2020-06-19T09:40:33-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:404 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:42:25-05:00] INFO: Server on port 8000
+[2020-06-19T09:42:25-05:00] INFO: create wallet:
+[2020-06-19T09:42:25-05:00] INFO: Connection has been established successfully!
+[2020-06-19T09:42:25-05:00] INFO: Successfully inserted.
+[2020-06-19T09:42:26-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:43:20-05:00] INFO: Server on port 8000
+[2020-06-19T09:43:20-05:00] INFO: Connection has been established successfully!
+[2020-06-19T09:43:29-05:00] INFO: create wallet:
+[2020-06-19T09:43:29-05:00] INFO: Successfully inserted.
+[2020-06-19T09:43:29-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:44:34-05:00] INFO: Server on port 8000
+[2020-06-19T09:44:34-05:00] INFO: Connection has been established successfully!
+[2020-06-19T09:44:40-05:00] INFO: create wallet:
+[2020-06-19T09:44:40-05:00] INFO: Successfully inserted.
+[2020-06-19T09:44:40-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T09:44:53-05:00] INFO: Server on port 8000
+[2020-06-19T09:44:54-05:00] INFO: Connection has been established successfully!
+[2020-06-19T09:44:56-05:00] INFO: create wallet:
+[2020-06-19T09:44:56-05:00] INFO: Successfully inserted.
+[2020-06-19T09:44:56-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
