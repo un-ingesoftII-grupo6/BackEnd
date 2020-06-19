@@ -10,7 +10,9 @@ module.exports = {
       Ent_description: "La empresa familiar por excelencia",
       Ent_budget: 100000000.00,
       Ent_username: "enterprise1",
-      Ent_password: pass
+      Ent_password: pass,
+      Ent_movement_limit: 5000000.00,
+      Ent_month_limit: 2500000.00
     }]);
   },
 

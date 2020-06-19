@@ -27,7 +27,15 @@ module.exports = {
       Wal_state: {
         type: Sequelize.STRING(10),
         allowNull: false
-      }
+      },
+      Wal_movement_limit: {
+        type: Sequelize.DOUBLE(20,2),
+        allowNull: false
+    },
+      Wal_month_limit: {
+        type: Sequelize.DOUBLE(20,2),
+        allowNull: false
+    }
     })
 },
 

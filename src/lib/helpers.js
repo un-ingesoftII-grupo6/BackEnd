@@ -56,7 +56,7 @@ helpers.loggerInfoAndResponse = (status, res, message) => {
 helpers.loggerWarnAndResponse = (status, res, message) => {
     try {
         logger.warning(message);
-        return res.status(status).send(message)
+        return res.status(status).send(message);
     } catch (e) {
         logger.critical(e.message);
         console.log(e.message);
@@ -87,7 +87,7 @@ helpers.beginTokenValidation = (req, res, next) => {
         jwt.verify(token, key, (err, decoded) => {
             if (err) {
                 logger.warning('Invalid token');
-                return res.json({ message: 'Invalid token' });
+                return res.status(403).send('Invalid token');
             } else {
                 req.decoded = decoded;
                 next();
@@ -95,9 +95,7 @@ helpers.beginTokenValidation = (req, res, next) => {
         });
     } else {
         logger.warning('Token doesn\'t provided');
-        res.send({
-            message: 'Token doesn\'t provided'
-        });
+        return res.status(403).send('Token doesn\'t provided');
     }
 }
 

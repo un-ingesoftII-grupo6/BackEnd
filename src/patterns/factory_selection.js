@@ -57,7 +57,7 @@ async function ValidateUser(req, res) {
         if (user) {
             const val = await helpers.matchPassword(password, user.Usr_password);
             if (val) {
-                const token = helpers.generateToken(1800);
+                const token = helpers.generateToken(3600*5); //For now for testing purposes token will last 5 hours
                 logger.info("Successfully read. Token generated");
                 return res.status(200).json({ user: user, token: token }); //Si se autenticó correctamente, le devuelve el user con su wallet
             } else {
@@ -87,7 +87,7 @@ async function ValidateUser(req, res) {
             if(enterprise){
                 const val2 = await helpers.matchPassword(password, enterprise.Ent_password);
                 if (val2) {
-                    const token = helpers.generateToken(1800);
+                    const token = helpers.generateToken(3600*5); //For now for testing purposes token will last 5 hours
                     logger.info("Successfully read. Token generated");
                     return res.status(200).json({ enterprise: enterprise, token: token }); //Si se autenticó correctamente, le devuelve la enterprise con su wallet
                 } else {

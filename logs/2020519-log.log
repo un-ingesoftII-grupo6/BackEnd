@@ -1,0 +1,322 @@
+[2020-06-19T05:33:12-05:00] INFO: Server on port 8000
+[2020-06-19T05:33:12-05:00] INFO: Connection has been established successfully!
+[2020-06-19T05:33:21-05:00] WARNING: Token doesn't provided
+[2020-06-19T05:33:21-05:00] DEBUG:  POST /wallet/create/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:36:22-05:00] WARNING: Token doesn't provided
+[2020-06-19T05:36:22-05:00] DEBUG:  POST /user/login/auth STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:37:11-05:00] INFO: read user-validate:
+[2020-06-19T05:37:11-05:00] INFO: Successfully read. Token generated
+[2020-06-19T05:37:11-05:00] DEBUG:  POST /user/login STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:37:38-05:00] WARNING: Invalid token
+[2020-06-19T05:37:38-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:37:51-05:00] INFO: read user-by-username:
+[2020-06-19T05:37:51-05:00] INFO: Successfully read.
+[2020-06-19T05:37:51-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:38:58-05:00] WARNING: Token doesn't provided
+[2020-06-19T05:38:58-05:00] DEBUG:  GET /user/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:39:20-05:00] INFO: read user:
+[2020-06-19T05:39:20-05:00] INFO: Successfully read.
+[2020-06-19T05:39:20-05:00] DEBUG:  GET /user/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:40:01-05:00] INFO: create user:
+[2020-06-19T05:40:02-05:00] ERROR: notNull Violation: Wallet.Wal_movement_limit cannot be null,
+notNull Violation: Wallet.Wal_month_limit cannot be null
+[2020-06-19T05:40:02-05:00] DEBUG:  POST /user/signup STATUS:500 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:44:08-05:00] INFO: Server on port 8000
+[2020-06-19T05:44:08-05:00] INFO: Connection has been established successfully!
+[2020-06-19T05:44:13-05:00] INFO: create user:
+[2020-06-19T05:44:13-05:00] WARNING: Username is already registered
+[2020-06-19T05:44:13-05:00] DEBUG:  POST /user/signup STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:44:22-05:00] WARNING: Token doesn't provided
+[2020-06-19T05:44:22-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:46:43-05:00] INFO: Server on port 8000
+[2020-06-19T05:46:43-05:00] INFO: Connection has been established successfully!
+[2020-06-19T05:46:46-05:00] WARNING: Token doesn't provided
+[2020-06-19T05:46:46-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:49:17-05:00] INFO: Server on port 8000
+[2020-06-19T05:49:17-05:00] INFO: Connection has been established successfully!
+[2020-06-19T05:49:29-05:00] INFO: Server on port 8000
+[2020-06-19T05:49:29-05:00] INFO: Connection has been established successfully!
+[2020-06-19T05:49:32-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:500 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:49:42-05:00] INFO: Server on port 8000
+[2020-06-19T05:49:42-05:00] INFO: Connection has been established successfully!
+[2020-06-19T05:49:46-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:500 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:51:12-05:00] INFO: Server on port 8000
+[2020-06-19T05:51:12-05:00] INFO: Connection has been established successfully!
+[2020-06-19T05:51:15-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:500 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:51:29-05:00] INFO: Server on port 8000
+[2020-06-19T05:51:29-05:00] INFO: Connection has been established successfully!
+[2020-06-19T05:51:32-05:00] WARNING: Token doesn't provided
+[2020-06-19T05:51:32-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:403 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:53:43-05:00] INFO: Server on port 8000
+[2020-06-19T05:53:43-05:00] INFO: Connection has been established successfully!
+[2020-06-19T05:53:57-05:00] WARNING: Token doesn't provided
+[2020-06-19T05:53:57-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:403 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:54:00-05:00] WARNING: Token doesn't provided
+[2020-06-19T05:54:00-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:403 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:54:38-05:00] INFO: read user-validate:
+[2020-06-19T05:54:38-05:00] INFO: Successfully read. Token generated
+[2020-06-19T05:54:38-05:00] DEBUG:  POST /user/login STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:55:10-05:00] INFO: delete user:
+[2020-06-19T05:55:10-05:00] INFO: User mario-bros deleted
+[2020-06-19T05:55:10-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T05:55:45-05:00] INFO: create user:
+[2020-06-19T05:55:45-05:00] INFO: Successfully inserted.
+[2020-06-19T05:55:45-05:00] DEBUG:  POST /user/signup STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:00:10-05:00] INFO: create user:
+[2020-06-19T06:00:10-05:00] WARNING: Username is already registered
+[2020-06-19T06:00:10-05:00] DEBUG:  POST /user/signup STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:00:18-05:00] INFO: delete user:
+[2020-06-19T06:00:18-05:00] WARNING: This User has associated Wallets. Please delete them first
+[2020-06-19T06:00:18-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:00:45-05:00] WARNING: Token doesn't provided
+[2020-06-19T06:00:45-05:00] DEBUG:  DELETE /wallet/delete/miapenahu/(poner%20id%20de%20la%20wallet%20reciÃ©n%20creada%20aquÃ­) STATUS:403 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:04:18-05:00] INFO: read wallet-by-username:
+[2020-06-19T06:04:18-05:00] INFO: Successfully read.
+[2020-06-19T06:04:18-05:00] DEBUG:  GET /wallet/find/all/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:05:27-05:00] INFO: delete wallet:
+[2020-06-19T06:05:27-05:00] INFO: Wallet deleted.
+[2020-06-19T06:05:27-05:00] DEBUG:  DELETE /wallet/delete/mario-bros/fc139cd5-3b7f-498b-99c9-13c29fb7de20 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:05:37-05:00] INFO: delete user:
+[2020-06-19T06:05:37-05:00] INFO: User mario-bros deleted
+[2020-06-19T06:05:37-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:07:03-05:00] WARNING: Token doesn't provided
+[2020-06-19T06:07:03-05:00] DEBUG:  PUT /wallet/edit/bce63b35-031b-43a3-988d-bd6600a0b5af STATUS:403 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:22:15-05:00] INFO: Server on port 8000
+[2020-06-19T06:22:15-05:00] INFO: Connection has been established successfully!
+[2020-06-19T06:22:33-05:00] INFO: create user:
+[2020-06-19T06:22:33-05:00] INFO: Successfully inserted.
+[2020-06-19T06:22:33-05:00] DEBUG:  POST /user/signup STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:23:01-05:00] INFO: read wallet-by-username:
+[2020-06-19T06:23:01-05:00] INFO: Successfully read.
+[2020-06-19T06:23:01-05:00] DEBUG:  GET /wallet/find/all/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:23:18-05:00] INFO: delete wallet:
+[2020-06-19T06:23:18-05:00] INFO: Wallet deleted.
+[2020-06-19T06:23:18-05:00] DEBUG:  DELETE /wallet/delete/mario-bros/0fef7f9c-d4f2-4f97-874b-a015974fedcb STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:23:24-05:00] INFO: delete user:
+[2020-06-19T06:23:24-05:00] INFO: User mario-bros deleted
+[2020-06-19T06:23:24-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:24:18-05:00] INFO: create user:
+[2020-06-19T06:24:18-05:00] WARNING: Specified wallet type does not exists
+[2020-06-19T06:24:18-05:00] DEBUG:  POST /user/signup STATUS:404 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:24:26-05:00] INFO: create user:
+[2020-06-19T06:24:26-05:00] WARNING: Username is already registered
+[2020-06-19T06:24:26-05:00] DEBUG:  POST /user/signup STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:24:33-05:00] INFO: delete user:
+[2020-06-19T06:24:33-05:00] INFO: User mario-bros deleted
+[2020-06-19T06:24:33-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:24:46-05:00] INFO: create user:
+[2020-06-19T06:24:46-05:00] ERROR: ent_id is not defined
+[2020-06-19T06:24:46-05:00] DEBUG:  POST /user/signup STATUS:500 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:26:14-05:00] INFO: create user:
+[2020-06-19T06:26:14-05:00] WARNING: Username is already registered
+[2020-06-19T06:26:14-05:00] DEBUG:  POST /user/signup STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:26:57-05:00] WARNING: Invalid token
+[2020-06-19T06:26:57-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:403 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:27:03-05:00] INFO: read user-validate:
+[2020-06-19T06:27:03-05:00] INFO: Successfully read. Token generated
+[2020-06-19T06:27:03-05:00] DEBUG:  POST /user/login STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:27:20-05:00] INFO: delete user:
+[2020-06-19T06:27:20-05:00] INFO: User mario-bros deleted
+[2020-06-19T06:27:20-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:27:32-05:00] INFO: create user:
+[2020-06-19T06:27:32-05:00] ERROR: ent_id is not defined
+[2020-06-19T06:27:32-05:00] DEBUG:  POST /user/signup STATUS:500 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:28:15-05:00] INFO: create user:
+[2020-06-19T06:28:15-05:00] WARNING: Username is already registered
+[2020-06-19T06:28:15-05:00] DEBUG:  POST /user/signup STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:29:51-05:00] INFO: delete user:
+[2020-06-19T06:29:51-05:00] INFO: User mario-bros deleted
+[2020-06-19T06:29:51-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:30:01-05:00] INFO: create user:
+[2020-06-19T06:30:01-05:00] ERROR: ent_id is not defined
+[2020-06-19T06:30:01-05:00] DEBUG:  POST /user/signup STATUS:500 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T06:30:30-05:00] INFO: delete user:
+[2020-06-19T06:30:30-05:00] INFO: User mario-bros deleted
+[2020-06-19T06:30:30-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:15:52-05:00] INFO: read user-validate:
+[2020-06-19T07:15:52-05:00] WARNING: User/Enterprise with specified username does not exist
+[2020-06-19T07:15:52-05:00] DEBUG:  POST /user/login STATUS:404 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:15:58-05:00] INFO: read user-validate:
+[2020-06-19T07:15:58-05:00] INFO: Successfully read. Token generated
+[2020-06-19T07:15:58-05:00] DEBUG:  POST /user/login STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:16:10-05:00] INFO: create user:
+[2020-06-19T07:16:11-05:00] ERROR: ent_id is not defined
+[2020-06-19T07:16:11-05:00] DEBUG:  POST /user/signup STATUS:500 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:19:14-05:00] INFO: Server on port 8000
+[2020-06-19T07:19:14-05:00] INFO: Connection has been established successfully!
+[2020-06-19T07:19:31-05:00] WARNING: Invalid token
+[2020-06-19T07:19:31-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:403 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:19:54-05:00] INFO: delete user:
+[2020-06-19T07:19:54-05:00] INFO: User mario-bros deleted
+[2020-06-19T07:19:54-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:20:14-05:00] INFO: create user:
+[2020-06-19T07:20:14-05:00] WARNING: Specified enterprise not found. Please try again
+[2020-06-19T07:20:14-05:00] DEBUG:  POST /user/signup STATUS:404 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:21:05-05:00] INFO: read enterprise:
+[2020-06-19T07:21:05-05:00] INFO: Successfully read.
+[2020-06-19T07:21:05-05:00] DEBUG:  GET /enterprise/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:22:17-05:00] INFO: create user:
+[2020-06-19T07:22:17-05:00] WARNING: Specified enterprise not found. Please try again
+[2020-06-19T07:22:17-05:00] DEBUG:  POST /user/signup STATUS:404 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:22:57-05:00] INFO: Server on port 8000
+[2020-06-19T07:22:57-05:00] INFO: Connection has been established successfully!
+[2020-06-19T07:22:59-05:00] INFO: create user:
+[2020-06-19T07:23:00-05:00] ERROR: notNull Violation: Wallet.Wal_movement_limit cannot be null,
+notNull Violation: Wallet.Wal_month_limit cannot be null
+[2020-06-19T07:23:00-05:00] DEBUG:  POST /user/signup STATUS:500 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:24:19-05:00] INFO: create user:
+[2020-06-19T07:24:19-05:00] WARNING: Username is already registered
+[2020-06-19T07:24:19-05:00] DEBUG:  POST /user/signup STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:24:33-05:00] INFO: delete user:
+[2020-06-19T07:24:33-05:00] INFO: User mario-bros deleted
+[2020-06-19T07:24:33-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:24:36-05:00] INFO: delete user:
+[2020-06-19T07:24:36-05:00] WARNING: Specified User not found
+[2020-06-19T07:24:36-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:404 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:24:52-05:00] INFO: create user:
+[2020-06-19T07:24:52-05:00] INFO: Successfully inserted.
+[2020-06-19T07:24:52-05:00] DEBUG:  POST /user/signup STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:25:10-05:00] INFO: create user:
+[2020-06-19T07:25:10-05:00] WARNING: Username is already registered
+[2020-06-19T07:25:10-05:00] DEBUG:  POST /user/signup STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:25:26-05:00] INFO: read wallet-by-username:
+[2020-06-19T07:25:26-05:00] INFO: Successfully read.
+[2020-06-19T07:25:26-05:00] DEBUG:  GET /wallet/find/all/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:25:44-05:00] WARNING: Invalid token
+[2020-06-19T07:25:44-05:00] DEBUG:  DELETE /wallet/delete/mario-bros/a582f180-034c-4372-91f4-80954047140d%22 STATUS:403 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:26:09-05:00] INFO: delete wallet:
+[2020-06-19T07:26:09-05:00] INFO: Wallet deleted.
+[2020-06-19T07:26:09-05:00] DEBUG:  DELETE /wallet/delete/mario-bros/a582f180-034c-4372-91f4-80954047140d STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:26:23-05:00] INFO: delete user:
+[2020-06-19T07:26:23-05:00] INFO: User mario-bros deleted
+[2020-06-19T07:26:23-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:26:31-05:00] INFO: create user:
+[2020-06-19T07:26:31-05:00] INFO: Successfully inserted.
+[2020-06-19T07:26:31-05:00] DEBUG:  POST /user/signup STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:27:29-05:00] INFO: Server on port 8000
+[2020-06-19T07:27:29-05:00] INFO: Connection has been established successfully!
+[2020-06-19T07:28:46-05:00] INFO: Server on port 8000
+[2020-06-19T07:28:46-05:00] INFO: Connection has been established successfully!
+[2020-06-19T07:28:49-05:00] INFO: Server on port 8000
+[2020-06-19T07:28:49-05:00] INFO: Connection has been established successfully!
+[2020-06-19T07:28:51-05:00] INFO: Server on port 8000
+[2020-06-19T07:28:51-05:00] INFO: Connection has been established successfully!
+[2020-06-19T07:28:53-05:00] INFO: Server on port 8000
+[2020-06-19T07:28:53-05:00] INFO: Connection has been established successfully!
+[2020-06-19T07:28:55-05:00] INFO: Server on port 8000
+[2020-06-19T07:28:55-05:00] INFO: Connection has been established successfully!
+[2020-06-19T07:29:09-05:00] INFO: create user:
+[2020-06-19T07:29:09-05:00] WARNING: Username is already registered
+[2020-06-19T07:29:09-05:00] DEBUG:  POST /user/signup STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:29:16-05:00] INFO: delete user:
+[2020-06-19T07:29:16-05:00] WARNING: This User has associated Wallets. Please delete them first
+[2020-06-19T07:29:16-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:29:25-05:00] INFO: read wallet-by-username:
+[2020-06-19T07:29:25-05:00] INFO: Successfully read.
+[2020-06-19T07:29:25-05:00] DEBUG:  GET /wallet/find/all/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:29:38-05:00] INFO: delete wallet:
+[2020-06-19T07:29:38-05:00] INFO: Wallet deleted.
+[2020-06-19T07:29:38-05:00] DEBUG:  DELETE /wallet/delete/mario-bros/2e6ab795-ac8d-4826-879a-008505dd7ba8 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:29:46-05:00] INFO: delete user:
+[2020-06-19T07:29:46-05:00] INFO: User mario-bros deleted
+[2020-06-19T07:29:46-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:31:19-05:00] INFO: create user:
+[2020-06-19T07:31:20-05:00] ERROR: notNull Violation: Wallet.Wal_movement_limit cannot be null,
+notNull Violation: Wallet.Wal_month_limit cannot be null
+[2020-06-19T07:31:20-05:00] DEBUG:  POST /user/signup STATUS:500 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:31:53-05:00] INFO: Server on port 8000
+[2020-06-19T07:31:53-05:00] INFO: Connection has been established successfully!
+[2020-06-19T07:32:21-05:00] INFO: read wallet-by-username:
+[2020-06-19T07:32:21-05:00] INFO: Successfully read.
+[2020-06-19T07:32:21-05:00] DEBUG:  GET /wallet/find/all/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:32:46-05:00] INFO: delete user:
+[2020-06-19T07:32:46-05:00] INFO: User mario-bros deleted
+[2020-06-19T07:32:46-05:00] DEBUG:  DELETE /user/delete/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:33:00-05:00] INFO: create user:
+[2020-06-19T07:33:00-05:00] INFO: Successfully inserted.
+[2020-06-19T07:33:00-05:00] DEBUG:  POST /user/signup STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:33:33-05:00] INFO: Server on port 8000
+[2020-06-19T07:33:33-05:00] INFO: Connection has been established successfully!
+[2020-06-19T07:34:02-05:00] INFO: Server on port 8000
+[2020-06-19T07:34:03-05:00] INFO: Connection has been established successfully!
+[2020-06-19T07:34:30-05:00] INFO: create user:
+[2020-06-19T07:34:30-05:00] INFO: Successfully inserted.
+[2020-06-19T07:34:30-05:00] DEBUG:  POST /user/signup STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:38:59-05:00] INFO: Server on port 8000
+[2020-06-19T07:38:59-05:00] INFO: Connection has been established successfully!
+[2020-06-19T07:40:01-05:00] INFO: Server on port 8000
+[2020-06-19T07:40:01-05:00] INFO: Connection has been established successfully!
+[2020-06-19T07:55:07-05:00] INFO: read wallet-by-username:
+[2020-06-19T07:55:07-05:00] INFO: Successfully read.
+[2020-06-19T07:55:07-05:00] DEBUG:  GET /wallet/find/all/mario-bros STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:56:56-05:00] INFO: update wallet-state:
+[2020-06-19T07:56:57-05:00] WARNING: The password is incorrect. Please try again
+[2020-06-19T07:56:57-05:00] DEBUG:  PUT /wallet/edit/mario-bros/35996b09-f800-4636-99db-5c950851af05 STATUS:401 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:57:16-05:00] DEBUG:  PUT /wallet/edit/mario-bros/35996b09-f800-4636-99db-5c950851af05 STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:57:37-05:00] INFO: update wallet-state:
+[2020-06-19T07:57:38-05:00] INFO: Successfully updated.
+[2020-06-19T07:57:38-05:00] DEBUG:  PUT /wallet/edit/mario-bros/35996b09-f800-4636-99db-5c950851af05 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:58:10-05:00] INFO: update wallet-state:
+[2020-06-19T07:58:10-05:00] INFO: Successfully updated.
+[2020-06-19T07:58:10-05:00] DEBUG:  PUT /wallet/edit/mario-bros/35996b09-f800-4636-99db-5c950851af05 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:58:27-05:00] INFO: update wallet-state:
+[2020-06-19T07:58:27-05:00] WARNING: Not updated: Update data is the same
+[2020-06-19T07:58:27-05:00] DEBUG:  PUT /wallet/edit/mario-bros/35996b09-f800-4636-99db-5c950851af05 STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:58:35-05:00] INFO: update wallet-state:
+[2020-06-19T07:58:35-05:00] WARNING: Not updated: Update data is the same
+[2020-06-19T07:58:35-05:00] DEBUG:  PUT /wallet/edit/mario-bros/35996b09-f800-4636-99db-5c950851af05 STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:58:43-05:00] INFO: update wallet-state:
+[2020-06-19T07:58:43-05:00] WARNING: Not updated: Update data is the same
+[2020-06-19T07:58:43-05:00] DEBUG:  PUT /wallet/edit/mario-bros/35996b09-f800-4636-99db-5c950851af05 STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:59:28-05:00] INFO: Server on port 8000
+[2020-06-19T07:59:28-05:00] INFO: Connection has been established successfully!
+[2020-06-19T07:59:31-05:00] INFO: update wallet-state:
+[2020-06-19T07:59:31-05:00] INFO: Successfully updated.
+[2020-06-19T07:59:31-05:00] DEBUG:  PUT /wallet/edit/mario-bros/35996b09-f800-4636-99db-5c950851af05 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T07:59:59-05:00] INFO: Server on port 8000
+[2020-06-19T07:59:59-05:00] INFO: Connection has been established successfully!
+[2020-06-19T08:00:03-05:00] INFO: update wallet-state:
+[2020-06-19T08:00:04-05:00] INFO: Successfully updated.
+[2020-06-19T08:00:04-05:00] DEBUG:  PUT /wallet/edit/mario-bros/35996b09-f800-4636-99db-5c950851af05 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T08:00:33-05:00] INFO: update wallet-state:
+[2020-06-19T08:00:33-05:00] INFO: Successfully updated.
+[2020-06-19T08:00:33-05:00] DEBUG:  PUT /wallet/edit/miapenahu/bce63b35-031b-43a3-988d-bd6600a0b5af STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T08:00:40-05:00] INFO: update wallet-state:
+[2020-06-19T08:00:40-05:00] WARNING: Not updated: Update data is the same
+[2020-06-19T08:00:40-05:00] DEBUG:  PUT /wallet/edit/miapenahu/bce63b35-031b-43a3-988d-bd6600a0b5af STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T08:04:06-05:00] INFO: update wallet-state:
+[2020-06-19T08:04:06-05:00] WARNING: Not updated: Update data is the same
+[2020-06-19T08:04:06-05:00] DEBUG:  PUT /wallet/edit/mario-bros/35996b09-f800-4636-99db-5c950851af05 STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T08:04:19-05:00] INFO: update wallet-state:
+[2020-06-19T08:04:19-05:00] WARNING: Not updated: Update data is the same
+[2020-06-19T08:04:19-05:00] DEBUG:  PUT /wallet/edit/mario-bros/35996b09-f800-4636-99db-5c950851af05 STATUS:400 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T08:04:25-05:00] INFO: update wallet-state:
+[2020-06-19T08:04:25-05:00] INFO: Successfully updated.
+[2020-06-19T08:04:25-05:00] DEBUG:  PUT /wallet/edit/mario-bros/35996b09-f800-4636-99db-5c950851af05 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T08:09:41-05:00] INFO: Server on port 8000
+[2020-06-19T08:09:41-05:00] INFO: Connection has been established successfully!
+[2020-06-19T08:11:44-05:00] INFO: create enterprise:
+[2020-06-19T08:11:44-05:00] INFO: Successfully inserted.
+[2020-06-19T08:11:44-05:00] DEBUG:  POST /enterprise/create STATUS:201 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T08:12:24-05:00] INFO: update enterprise:
+[2020-06-19T08:12:24-05:00] INFO: Successfully updated.
+[2020-06-19T08:12:24-05:00] DEBUG:  PUT /enterprise/edit/2 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T08:12:31-05:00] INFO: delete enterprise:
+[2020-06-19T08:12:31-05:00] INFO: Enterprise Azúcar Manuelita deleted
+[2020-06-19T08:12:31-05:00] DEBUG:  DELETE /enterprise/delete/2 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-19T08:13:29-05:00] INFO: Server on port 8000
+[2020-06-19T08:13:29-05:00] INFO: Connection has been established successfully!
+[2020-06-19T08:17:29-05:00] INFO: Server on port 8000
+[2020-06-19T08:17:29-05:00] INFO: Connection has been established successfully!
+[2020-06-19T08:23:17-05:00] INFO: Server on port 8000
+[2020-06-19T08:23:17-05:00] INFO: Connection has been established successfully!
+[2020-06-19T08:23:41-05:00] INFO: Server on port 8000
+[2020-06-19T08:23:41-05:00] INFO: Connection has been established successfully!
+[2020-06-19T08:23:49-05:00] INFO: Server on port 8000
+[2020-06-19T08:23:49-05:00] INFO: Connection has been established successfully!
+[2020-06-19T08:23:52-05:00] INFO: Server on port 8000
+[2020-06-19T08:23:52-05:00] INFO: Connection has been established successfully!
+[2020-06-19T08:23:57-05:00] INFO: Server on port 8000
+[2020-06-19T08:23:57-05:00] INFO: Connection has been established successfully!
+[2020-06-19T08:24:02-05:00] INFO: Server on port 8000
+[2020-06-19T08:24:02-05:00] INFO: Connection has been established successfully!

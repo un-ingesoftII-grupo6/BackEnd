@@ -102,7 +102,7 @@ async function WalletState(req, res) {
         const findUser = await models.User.findOne({ where: { Usr_username: username } });
         const findWallet = await models.Wallet.findOne({ where: { Usr_id: findUser.Usr_id, Wal_id: wal_id } });
         const state = helpers.isWalletState(req.body.state);
-        const { password } = req.body;
+        const { password, new_month_limit,new_movement_limit } = req.body;
         if (findUser) {
             if (findWallet) {
                 const val = await helpers.matchPassword(password, findUser.Usr_password);
@@ -119,9 +119,22 @@ async function WalletState(req, res) {
         } else {
             helpers.loggerWarnAndResponse(404,res,'User not found'); return res;
         }
-
+        var monthLimit, movementLimit;
+        monthLimit = findWallet.Wtyp_month_limit;
+        movementLimit = findWallet.Wtyp_movement_limit;
+        if (findWallet.Wtyp_id == 3) {
+            const findEnterprise = await models.Enterprise.findOne({ where: { Ent_id: findWallet.Ent_id } });
+            if (findEnterprise) {
+                monthLimit = new_month_limit;
+                movementLimit = new_movement_limit;
+            } else{
+            helpers.loggerWarnAndResponse(404, res, 'Enterprise registered in wallet not found. Please try again'); return res;
+            }
+        }
         const [updated] = await models.Wallet.update({
-            Wal_state: state
+            Wal_state: state,
+            Wal_movement_limit: movementLimit,
+            Wal_month_limit: monthLimit
         }, {
             where: { Wal_id: wal_id }
         });

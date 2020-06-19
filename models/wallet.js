@@ -25,6 +25,14 @@ const Wallet = sequelize.define("Wallet", {
     Wal_state: {
         type: DataTypes.STRING(10),
         allowNull: false
+    },
+    Wal_movement_limit: {
+        type: DataTypes.DOUBLE(20,2),
+        allowNull: false
+    },
+    Wal_month_limit: {
+        type: DataTypes.DOUBLE(20,2),
+        allowNull: false
     }
 }, {
     timestamps: false,
