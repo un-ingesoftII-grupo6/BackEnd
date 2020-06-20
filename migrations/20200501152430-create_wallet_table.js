@@ -10,7 +10,7 @@ module.exports = {
       },
       Usr_id: {
         type: Sequelize.BIGINT,
-        allowNull: false
+        allowNull: true
       },
       Wtyp_id: {
         type: Sequelize.INTEGER,

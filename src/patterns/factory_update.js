@@ -105,7 +105,13 @@ async function WalletState(req, res) {
         const { password, new_month_limit,new_movement_limit } = req.body;
         if (findUser) {
             if (findWallet) {
-                const val = await helpers.matchPassword(password, findUser.Usr_password);
+                    var val;
+                if(findWallet.Ent_id != null){
+                    const findEnterprise = await models.Enterprise.findOne({ where: { Ent_id: findWallet.Ent_id } });
+                    val = await helpers.matchPassword(password, findEnterprise.Ent_password);
+                }else{
+                    val = await helpers.matchPassword(password, findUser.Usr_password);
+                }
                 if (val) {
                     if (state == null) {
                         helpers.loggerWarnAndResponse(400,res,'Not a valid wallet state (Active, Inactive)'); return res;

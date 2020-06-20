@@ -293,8 +293,20 @@ async function Enterprise(req, res) {
                     Ent_movement_limit: movement_limit,
                     Ent_month_limit: month_limit
                 });
+
+                const wallet = await models.Wallet.create({
+                    Wal_id: uuid.v4(),
+                    Usr_id: null,
+                    Wtyp_id: 2,
+                    Ent_id: enterprise.Ent_id,
+                    Wal_balance: enterprise.Ent_budget,
+                    Wal_state: "Active",
+                    Wal_movement_limit: enterprise.Ent_movement_limit,
+                    Wal_month_limit: enterprise.Ent_month_limit
+                });
+                
                 logger.info("Successfully inserted.");
-                return res.status(201).json({ enterprise: enterprise });
+                return res.status(201).json({ enterprise: enterprise, wallet: wallet });
             }
             helpers.loggerWarnAndResponse(400, res, "Enterprise NIT can't contain spaces"); return res;
         }

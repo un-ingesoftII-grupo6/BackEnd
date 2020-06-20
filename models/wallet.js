@@ -8,7 +8,7 @@ const Wallet = sequelize.define("Wallet", {
     },
     Usr_id: {
         type: DataTypes.BIGINT,
-        allowNull: false
+        allowNull: true
     },
     Wtyp_id: {
         type: DataTypes.INTEGER,
