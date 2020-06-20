@@ -112,3 +112,14 @@
 [2020-06-20T10:54:05-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
 [2020-06-20T10:55:18-05:00] INFO: Resource not found :(
 [2020-06-20T10:55:18-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T11:53:30-05:00] INFO: Resource not found :(
+[2020-06-20T12:37:26-05:00] INFO: Server on port 8000
+[2020-06-20T12:37:26-05:00] INFO: Connection has been established successfully!
+[2020-06-20T12:38:49-05:00] INFO: read user-validate:
+[2020-06-20T12:38:49-05:00] INFO: Successfully read. Token generated
+[2020-06-20T12:38:49-05:00] DEBUG:  POST /user/login STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T12:39:16-05:00] WARNING: Token doesn't provided
+[2020-06-20T12:39:16-05:00] DEBUG:  GET /wallet/find/all STATUS:403 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T12:39:32-05:00] INFO: read wallet:
+[2020-06-20T12:39:32-05:00] INFO: Successfully read.
+[2020-06-20T12:39:32-05:00] DEBUG:  GET /wallet/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0

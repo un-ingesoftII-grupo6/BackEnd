@@ -1,5 +1,6 @@
 # Editor directories and files
 node_modules
+coverage
 .idea
 .vscode
 *.suo
