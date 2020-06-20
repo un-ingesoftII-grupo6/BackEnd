@@ -123,3 +123,59 @@
 [2020-06-20T12:39:32-05:00] INFO: read wallet:
 [2020-06-20T12:39:32-05:00] INFO: Successfully read.
 [2020-06-20T12:39:32-05:00] DEBUG:  GET /wallet/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T16:18:52-05:00] INFO: Resource not found :(
+[2020-06-20T16:18:52-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T16:53:48-05:00] INFO: Server on port 8000
+[2020-06-20T16:53:48-05:00] INFO: Connection has been established successfully!
+[2020-06-20T16:55:01-05:00] INFO: Server on port 8000
+[2020-06-20T16:55:01-05:00] INFO: Connection has been established successfully!
+[2020-06-20T16:55:20-05:00] INFO: Server on port 8000
+[2020-06-20T16:55:20-05:00] INFO: Connection has been established successfully!
+[2020-06-20T16:55:59-05:00] INFO: Server on port 8000
+[2020-06-20T16:55:59-05:00] INFO: Connection has been established successfully!
+[2020-06-20T16:56:15-05:00] INFO: read user-validate:
+[2020-06-20T16:56:15-05:00] INFO: Successfully read. Token generated
+[2020-06-20T16:56:15-05:00] DEBUG:  POST /user/login STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T17:00:16-05:00] INFO: Server on port 8000
+[2020-06-20T17:00:16-05:00] INFO: Connection has been established successfully!
+[2020-06-20T17:00:39-05:00] INFO: read wallet:
+[2020-06-20T17:00:39-05:00] INFO: Successfully read.
+[2020-06-20T17:00:39-05:00] DEBUG:  GET /wallet/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T17:01:29-05:00] INFO: Server on port 8000
+[2020-06-20T17:01:29-05:00] INFO: Connection has been established successfully!
+[2020-06-20T17:01:31-05:00] INFO: read wallet:
+[2020-06-20T17:01:31-05:00] INFO: Successfully read.
+[2020-06-20T17:01:31-05:00] DEBUG:  GET /wallet/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T17:03:10-05:00] WARNING: Token doesn't provided
+[2020-06-20T17:03:10-05:00] DEBUG:  GET /wallet/find/all/miapenahu STATUS:403 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T17:03:20-05:00] INFO: read wallet-by-username:
+[2020-06-20T17:03:20-05:00] INFO: Successfully read.
+[2020-06-20T17:03:20-05:00] DEBUG:  GET /wallet/find/all/miapenahu STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T17:03:34-05:00] INFO: read wallet-by-username:
+[2020-06-20T17:03:34-05:00] WARNING: Specified User/Enterprise not found
+[2020-06-20T17:03:34-05:00] DEBUG:  GET /wallet/find/all/enterprise-1 STATUS:404 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T17:03:46-05:00] WARNING: Token doesn't provided
+[2020-06-20T17:03:46-05:00] DEBUG:  GET /enterprise/find/all STATUS:403 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T17:04:00-05:00] INFO: read enterprise:
+[2020-06-20T17:04:00-05:00] INFO: Successfully read.
+[2020-06-20T17:04:00-05:00] DEBUG:  GET /enterprise/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T17:04:10-05:00] INFO: read wallet-by-username:
+[2020-06-20T17:04:10-05:00] INFO: Successfully read.
+[2020-06-20T17:04:10-05:00] DEBUG:  GET /wallet/find/all/enterprise1 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T17:05:49-05:00] INFO: Server on port 8000
+[2020-06-20T17:05:49-05:00] INFO: Connection has been established successfully!
+[2020-06-20T17:06:17-05:00] INFO: Server on port 8000
+[2020-06-20T17:06:17-05:00] INFO: Connection has been established successfully!
+[2020-06-20T17:06:29-05:00] INFO: Server on port 8000
+[2020-06-20T17:06:29-05:00] INFO: Connection has been established successfully!
+[2020-06-20T17:08:40-05:00] INFO: Server on port 8000
+[2020-06-20T17:08:40-05:00] INFO: Connection has been established successfully!
+[2020-06-20T17:08:43-05:00] INFO: read wallet-by-username:
+[2020-06-20T17:08:43-05:00] INFO: Successfully read.
+[2020-06-20T17:08:43-05:00] DEBUG:  GET /wallet/find/all/enterprise1 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T17:10:28-05:00] INFO: read wallet-by-username:
+[2020-06-20T17:10:28-05:00] INFO: Successfully read.
+[2020-06-20T17:10:28-05:00] DEBUG:  GET /wallet/find/all/enterprise1 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T17:35:47-05:00] INFO: read wallet-by-username:
+[2020-06-20T17:35:47-05:00] INFO: Successfully read.
+[2020-06-20T17:35:47-05:00] DEBUG:  GET /wallet/find/all/enterprise1 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0

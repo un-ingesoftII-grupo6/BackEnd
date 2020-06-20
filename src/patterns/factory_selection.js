@@ -119,6 +119,10 @@ async function Wallet(req, res) {
                 {
                     model: models.User,
                     as: 'possess'
+                },
+                {
+                    model: models.Enterprise,
+                    as: 'manages'
                 }
             ]
         });
@@ -139,8 +143,17 @@ async function WalletsByUsername(req, res) {
             });
             logger.info("Successfully read.");
             return res.status(200).json({ wallets: wallets });
+        } else {
+            const findEnterprise = await models.Enterprise.findOne({ where: { Ent_username: username } });
+            if (findEnterprise) {
+                const wallets = await models.Wallet.findAll({
+                    where: { Ent_id: findEnterprise.Ent_id, Usr_id : null }
+                });
+                logger.info("Successfully read.");
+                return res.status(200).json({ wallets: wallets });
+            } 
         }
-        helpers.loggerWarnAndResponse(404,res,"Specified User not found"); return res;
+        helpers.loggerWarnAndResponse(404,res,"Specified User/Enterprise not found"); return res;
     } catch (error) {
         helpers.loggerErrorAndResponse(res,error.message); return res;
     }

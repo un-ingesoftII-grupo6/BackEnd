@@ -32,9 +32,9 @@ module.exports = winston.createLogger({
           maxFiles: 5, 
           filename: 'logs/'+today.getFullYear()+today.getMonth()+today.getDate()+'-log.log'//Daily rotation of log files
         }),
-        /*new winston.transports.Console({  //Remove of comments if you want to transport to console as well
+        new winston.transports.Console({  //Remove of comments if you want to transport to console as well
           level: precision_level,
-        }),*/
+        }),
       ]
 
 });

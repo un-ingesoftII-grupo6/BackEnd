@@ -30,6 +30,15 @@ module.exports = {
       Wal_state: "Active",
       Wal_movement_limit: 4000000.00,
       Wal_month_limit: 2000000.00
+    },{
+      Wal_id: "022f8a82-5d63-408d-bbd3-9b123f86a14c", //uuid.v4(), //Wallet emterprise1
+      Usr_id: null,
+      Wtyp_id: 2,
+      Ent_id: 1,
+      Wal_balance: 100000000.00,
+      Wal_state: "Active",
+      Wal_movement_limit: 5000000.00,
+      Wal_month_limit: 2500000.00
     }
   ]);
   },

@@ -1,7 +1,7 @@
 //const persistence = require("../patterns/factory_persistence")
 
 //const persistenceFactory = new persistence.Factory();
-'use strict';
+//'use strict';
 
 const app = require('../index')
 const supertest = require('supertest')
