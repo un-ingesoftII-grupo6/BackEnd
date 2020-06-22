@@ -208,26 +208,6 @@ async function Movement(req, res) {
                 ]
             });
         }
-        var findRecipient = await models.User.findOne({
-            include: [
-                {
-                    model: models.Wallet,
-                    as: "possess",
-                    where: { Wal_id: wal_id_recipient }
-                }
-            ]
-        });
-        if (!findRecipient) {
-            findRecipient = await models.Enterprise.findOne({
-                include: [
-                    {
-                        model: models.Wallet,
-                        as: "manages",
-                        where: { Wal_id: wal_id_recipient }
-                    }
-                ]
-            });
-        }
         const findTransfer = await models.Transfer.findOne({ where: { Tra_route: transfer_type } });
 
         //Note: This function would be customized depending of transfer_type, possible dessign pattern application
