@@ -1,0 +1,1297 @@
+[2020-05-31T20:42:31.252Z] info Server on port8000
+[2020-05-31T20:44:17.106Z] info Server on port8000
+[2020-05-31T20:44:41.420Z] info Server on port8000
+[2020-05-31T20:45:28.134Z] info hello, User!
+[2020-05-31T20:49:23.547Z] info Server on port8000
+[2020-05-31T20:54:20.329Z] info Server on port8000
+[2020-05-31T20:55:20.506Z] info Server on port8000
+[2020-05-31T20:55:37.554Z] info Server on port8000
+[2020-05-31T20:56:29.388Z] info Server on port
+[2020-05-31T20:56:45.438Z] info Server on port
+[2020-05-31T20:58:24.553Z] info hello, User!
+[2020-05-31T21:01:20.024Z] info Server on port 8000
+[2020-05-31T21:01:46.171Z] info Server on port 8000
+[2020-05-31T21:02:03.946Z] info Server on port 8000
+[2020-05-31T21:02:21.756Z] info Server on port 8000
+[2020-05-31T21:09:20.457Z] info Server on port 8000
+[2020-05-31T21:10:49.940Z] info Server on port 8000
+[2020-05-31T21:11:10.773Z] info Server on port 8000
+[2020-05-31T21:16:56.400Z] info Server on port 8000
+[2020-05-31T21:17:12.493Z] info Server on port 8000
+[2020-05-31T21:17:37.037Z] info Server on port 8000
+[2020-05-31T21:18:03.681Z] info user-validate
+[2020-05-31T21:26:20.323Z] info Server on port 8000
+[2020-05-31T21:26:20.864Z] info Connection has been established successfully!
+[2020-05-31T21:26:41.425Z] info Server on port 8000
+[2020-05-31T21:26:41.992Z] info Connection has been established successfully!
+[2020-05-31T21:28:16.995Z] info Server on port 8000
+[2020-05-31T21:28:17.624Z] error Can't establish database connection:
+SequelizeAccessDeniedError: Access denied for user 'root'@'localhost' (using password: YES)
+[2020-05-31T21:28:54.190Z] info Server on port 8000
+[2020-05-31T21:28:54.620Z] info Connection has been established successfully!
+[2020-06-01T00:10:40.896Z] info Server on port 8000
+[2020-06-01T00:10:40.934Z] error Can't establish database connection:
+SequelizeAccessDeniedError: Access denied for user 'root'@'localhost' (using password: YES)
+[2020-06-01T00:11:15.226Z] info Server on port 8000
+[2020-06-01T00:11:15.275Z] error Can't establish database connection:
+SequelizeAccessDeniedError: Access denied for user 'root'@'localhost' (using password: YES)
+[2020-06-01T00:12:20.575Z] info Server on port 8000
+[2020-06-01T00:12:20.632Z] info Connection has been established successfully!
+[2020-06-01T00:13:58.251Z] info Server on port 8000
+[2020-06-01T00:13:58.304Z] info Connection has been established successfully!
+[2020-06-01T00:18:59.771Z] info user
+[2020-06-01T00:19:19.963Z] info user
+[2020-06-01T00:29:00.542Z] info Server on port 8000
+[2020-06-01T00:29:00.594Z] info Connection has been established successfully!
+[2020-06-01T00:29:04.696Z] info user
+[2020-06-01T00:49:38.677Z] info user-by-username
+{2020-06-01T00:52:03.144Z} info Server on port 8000
+{2020-06-01T00:52:03.199Z} info Connection has been established successfully!
+{2020-06-01T01:16:16.592Z} info Server on port 8000
+{2020-06-01T01:16:16.719Z} info Connection has been established successfully!
+[2020-06-01T01:21:42.995Z] info Server on port 8000
+[2020-06-01T01:21:43.043Z] info Connection has been established successfully!
+[2020-06-01T01:34:41.285Z] info [object Object]
+[2020-06-01T01:34:41.679Z] info Server on port 8000
+[2020-06-01T01:34:41.727Z] info Connection has been established successfully!
+[2020-06-01T01:35:07.450Z] info [object Object]
+[2020-06-01T01:35:07.839Z] info Server on port 8000
+[2020-06-01T01:35:07.878Z] info Connection has been established successfully!
+[2020-06-01T01:35:58.421Z] info user-by-username
+[2020-06-01T01:36:43.839Z] info [object Object]
+[2020-06-01T01:36:44.223Z] info Server on port 8000
+[2020-06-01T01:36:44.258Z] info Connection has been established successfully!
+[2020-06-01T01:39:50.266Z] info [object Object]
+[2020-06-01T01:39:50.645Z] info Server on port 8000
+[2020-06-01T01:39:50.684Z] info Connection has been established successfully!
+[2020-06-01T01:40:16.475Z] info user
+[2020-06-01T01:41:44.024Z] info [object Object]
+[2020-06-01T01:41:44.401Z] info Server on port 8000
+[2020-06-01T01:41:44.437Z] info Connection has been established successfully!
+::1 - - [01/Jun/2020:01:41:50 +0000] "GET /wallet/find/all HTTP/1.1" 200 696 "-" "PostmanRuntime/7.25.0"
+[2020-06-01T01:54:33.182Z] info Server on port 8000
+[2020-06-01T01:54:33.222Z] info Connection has been established successfully!
+::1 - - [2020-06-01T02:01:58.140Z] info Server on port 8000
+::1 - - [2020-06-01T02:01:58.182Z] info Connection has been established successfully!
+::1 - - [2020-06-01T02:02:37.171Z] info user
+::1 - - [01/Jun/2020:02:02:37 +0000] "GET /user/find/all HTTP/1.1" 200 422 "-" "PostmanRuntime/7.25.0"
+::1 - - [2020-06-01T02:05:21.253Z] info Server on port 8000
+::1 - - [2020-06-01T02:05:21.289Z] info Connection has been established successfully!
+::1 - - [2020-06-01T02:05:49.112Z] info user
+::1 - - [2020-06-01T02:05:49.114Z] info user
+::1 - - [01/Jun/2020:02:05:49 +0000] "GET /user/find/all HTTP/1.1" 200 422 "-" "PostmanRuntime/7.25.0"
+::1 - - [2020-06-01T02:07:02.509Z] info Server on port 8000
+::1 - - [2020-06-01T02:07:02.565Z] info Connection has been established successfully!
+::1 - - [2020-06-01T02:07:09.325Z] info read user:
+::1 - - [2020-06-01T02:07:09.330Z] info user
+::1 - - [01/Jun/2020:02:07:09 +0000] "GET /user/find/all HTTP/1.1" 200 422 "-" "PostmanRuntime/7.25.0"
+::1 - - [2020-06-01T02:08:20.431Z] info Server on port 8000
+::1 - - [2020-06-01T02:08:20.472Z] info Connection has been established successfully!
+::1 - - [2020-06-01T02:08:28.566Z] info read user:
+::1 - - [2020-06-01T02:08:28.568Z] info user
+[0mGET /user/find/all [32m200[0m 39.776 ms - 422[0m
+::1 - - [2020-06-01T02:09:02.708Z] info Server on port 8000
+::1 - - [2020-06-01T02:09:02.754Z] info Connection has been established successfully!
+::1 - - [2020-06-01T02:09:10.542Z] info read user:
+::1 - - [2020-06-01T02:09:10.545Z] info user
+::1 - - [01/Jun/2020:02:09:10 +0000] "GET /user/find/all HTTP/1.1" 200 422 "-" "PostmanRuntime/7.25.0"
+::1 - - [2020-06-01T02:09:41.899Z] info Server on port 8000
+::1 - - [2020-06-01T02:09:41.941Z] info Connection has been established successfully!
+::1 - - [2020-06-01T02:09:47.979Z] info read user:
+::1 - - [2020-06-01T02:09:47.981Z] info user
+::1 - - [01/Jun/2020:02:09:48 +0000] "GET /user/find/all HTTP/1.1" 200 422 "-" "PostmanRuntime/7.25.0"
+::1 - - [2020-06-01T02:10:25.195Z] info read user-by-username:
+::1 - - [2020-06-01T02:10:25.198Z] info user-by-username
+::1 - - [01/Jun/2020:02:10:25 +0000] "GET /user/find/allz HTTP/1.1" 404 48 "-" "PostmanRuntime/7.25.0"
+::1 - - [01/Jun/2020:02:11:07 +0000] "GET /user/find/all/miapenahu HTTP/1.1" 404 45 "-" "PostmanRuntime/7.25.0"
+::1 - - [2020-06-01T02:14:43.639Z] info Server on port 8000
+::1 - - [2020-06-01T02:14:43.682Z] info Connection has been established successfully!
+::1 - - [01/Jun/2020:02:14:58 +0000] "GET /user/find/all/miapenahu HTTP/1.1" 404 45
+::1 - - [2020-06-01T02:16:23.583Z] info Server on port 8000
+::1 - - [2020-06-01T02:16:23.640Z] info Connection has been established successfully!
+GET /user/find/all/miapenahu 404 45 - 4.183 ms
+::1 - - [2020-06-01T02:17:17.977Z] info Server on port 8000
+::1 - - [2020-06-01T02:17:18.033Z] info Connection has been established successfully!
+::1 - - [Mon, 01 Jun 2020 02:17:33 GMT] "GET /user/find/all/miapenahu HTTP/1.1" 404 45 "-" "PostmanRuntime/7.25.0"
+::1 - - [2020-06-01T02:19:05.366Z] info Server on port 8000
+::1 - - [2020-06-01T02:19:05.416Z] info Connection has been established successfully!
+::1 - - [01/Jun/2020:02:24:32 +0000] "GET /user/find/all/miapenahu HTTP/1.1" 404 45 "-" "PostmanRuntime/7.25.0"
+::1 - - [31/05/2020 21:27::00] info Server on port 8000
+::1 - - [31/05/2020 21:27::00] info Connection has been established successfully!
+::1 - - [31/05/202021:32:00] info Server on port 8000
+::1 - - [31/05/202021:32:00] info Connection has been established successfully!
+::1 - - [31/05/2020 21:32:37 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:32:37 +0000] info Connection has been established successfully!
+::1 - - [01/Jun/2020:02:32:52 +0000] "GET /user/find/all/miapenahu HTTP/1.1" 404 45 "-" "PostmanRuntime/7.25.0"
+::1 - - [31/05/2020 21:36:45.391-0500 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:36:45.431-0500 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:37:10 147-0500 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:37:10 187-0500 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:37:27 -0500 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:37:27 -0500 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:40:08 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:40:08 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:41:49 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:41:49 -0500+2 +0000] info Connection has been established successfully!
+[01/Jun/2020:02:42:01 +0000] "GET /user/find/all/miapenahu" 404 45 - 3.339 ms
+::1 - - [31/05/2020 21:43:42 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:43:42 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:45:31 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:45:31 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:45:35 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:45:35 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:46:31 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:46:31 -0500+2 +0000] info Connection has been established successfully!
+[2020-06-01T10:46:38+08:00] "GET /user/find/all/miapenahu" 404 45 - 2.980 ms
+::1 - - [31/05/2020 21:48:14 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:48:14 -0500+2 +0000] info Connection has been established successfully!
+[2020-05-31T22:48:26-04:00] "GET /user/find/all/miapenahu" 404 45 - 3.536 ms
+::1 - - [31/05/2020 21:49:39 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:49:39 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:51:33 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:51:33 -0500+2 +0000] info Connection has been established successfully!
+[-] "GET /user/find/all/miapenahu HTTP/1.1" 404 45 "-" "PostmanRuntime/7.25.0"
+::1 - - [31/05/2020 21:53:12 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:53:12 -0500+2 +0000] info Connection has been established successfully!
+[-] "GET /user/find/all/miapenahu HTTP/1.1" 404 45 "-" "PostmanRuntime/7.25.0"
+::1 - - [31/05/2020 21:54:48 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:54:48 -0500+2 +0000] info Connection has been established successfully!
+[-] "GET /user/find/all/miapenahu" 404 45 "-" "PostmanRuntime/7.25.0"- 5.139 ms
+::1 - - [31/05/2020 21:55:13 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:55:13 -0500+2 +0000] info Connection has been established successfully!
+[-] "GET /user/find/all/miapenahu" 404 45 - 3.135 ms
+::1 - - [31/05/2020 21:55:30 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 21:55:30 -0500+2 +0000] info user-by-username
+[-] "GET /user/find/miapenahu" 200 204 - 49.072 ms
+::1 - - [31/05/2020 21:56:31 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:56:31 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:56:36 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 21:56:36 -0500+2 +0000] info user-by-username
+[-] "GET /user/find/miapenahu" 200 204 - 40.704 ms
+::1 - - [31/05/2020 21:56:44 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 21:56:44 -0500+2 +0000] info user-by-username
+[-] "GET /user/find/miapenahu" 200 204 - 13.551 ms
+::1 - - [31/05/2020 21:58:35 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 21:58:35 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 21:58:52 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 21:58:52 -0500+2 +0000] info user-by-username
+[-] "GET /user/find/miapenahu HTTP/1.1" 200 204 "-" "PostmanRuntime/7.25.0"
+::1 - - [31/05/2020 22:01:23 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:01:23 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:01:28 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 22:01:28 -0500+2 +0000] info user-by-username
+[-] "GET /user/find/miapenahu" 200 204 - 39.252 ms
+::1 - - [31/05/2020 22:02:44 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:02:44 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:02:48 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 22:02:48 -0500+2 +0000] info user-by-username
+[-] "GET /user/find/miapenahu" 200 204 - 35.833 ms
+::1 - - [31/05/2020 22:02:57 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 22:02:57 -0500+2 +0000] info user-by-username
+[-] "GET /user/find/miapenahu" 200 204 - 17.735 ms
+::1 - - [31/05/2020 22:04:44 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:04:44 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:05:34 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 22:05:34 -0500+2 +0000] info user-by-username
+[01/Jun/2020:03:05:34 +0000] "GET /user/find/miapenahu" 200 204 - 28.069 ms
+::1 - - [31/05/2020 22:06:57 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:06:57 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:07:04 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:07:04 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:07:12 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 22:07:12 -0500+2 +0000] info user-by-username
+[-] "GET /user/find/miapenahu" 200 204 - 46.647 ms
+::1 - - [31/05/2020 22:07:52 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:07:53 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:07:59 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 22:07:59 -0500+2 +0000] info user-by-username
+[2020-05-31T23:08:00-04:00] "GET /user/find/miapenahu" 200 204 - 40.318 ms
+::1 - - [31/05/2020 22:10:03 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:10:03 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:10:06 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:10:06 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:10:37 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:10:37 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:10:57 -0500+2 +0000] info Server on port 8000
+::1 - - [31/05/2020 22:10:57 -0500+2 +0000] info Connection has been established successfully!
+::1 - - [31/05/2020 22:11:19 -0500+2 +0000] info read user-by-username:
+::1 - - [31/05/2020 22:11:19 -0500+2 +0000] info user-by-username
+[2020-05-31T22:11:19-05:00] "GET /user/find/miapenahu HTTP/1.1" 200 204 "-" "PostmanRuntime/7.25.0"
+::1 - - [2020-05-31T22:12:01-0500 +0000] info Server on port 8000
+::1 - - [2020-05-31T22:12:01-0500 +0000] info Connection has been established successfully!
+[2020-05-31T22:12:12-0500] info Server on port 8000
+[2020-05-31T22:12:13-0500] info Connection has been established successfully!
+[2020-05-31T22:12:26-0500] info read user-by-username:
+[2020-05-31T22:12:26-0500] info user-by-username
+[2020-05-31T22:12:26-05:00] "GET /user/find/miapenahu HTTP/1.1" 200 204 "-" "PostmanRuntime/7.25.0"
+[2020-05-31T22:12:56Z] info Server on port 8000
+[2020-05-31T22:12:56Z] info Connection has been established successfully!
+[2020-05-31T22:13:10zz] info Server on port 8000
+[2020-05-31T22:13:10zz] info Connection has been established successfully!
+[2020-05-31T22:14:22 TZ31] info Server on port 8000
+[2020-05-31T22:14:22 TZ31] info Connection has been established successfully!
+[2020-05-31T22:15:01 -10:15] info Server on port 8000
+[2020-05-31T22:15:01 -10:15] info Connection has been established successfully!
+[2020-05-31T22:15:25 Z] info Server on port 8000
+[2020-05-31T22:15:25 Z] info Connection has been established successfully!
+[2020-05-31T22:17:03-05:00] info Server on port 8000
+[2020-05-31T22:17:03-05:00] info Connection has been established successfully!
+[2020-05-31T22:17:12-05:00] info read user-by-username:
+[2020-05-31T22:17:12-05:00] info user-by-username
+[2020-05-31T22:17:12-05:00] "GET /user/find/miapenahu HTTP/1.1" 200 204 "-" "PostmanRuntime/7.25.0"
+[2020-05-31T22:17:59-05:00] info Server on port 8000
+[2020-05-31T22:17:59-05:00] info Connection has been established successfully!
+[2020-05-31T22:18:22-05:00] info read wallet:
+[2020-05-31T22:18:22-05:00] "GET /wallet/find/all HTTP/1.1" 200 696 "-" "PostmanRuntime/7.25.0"
+[2020-05-31T22:18:44-05:00] info Server on port 8000
+[2020-05-31T22:18:45-05:00] info Connection has been established successfully!
+[2020-05-31T22:20:46-05:00] info update user:
+[2020-05-31T22:20:47-05:00] "PUT /user/edit/mario-bros HTTP/1.1" 500 16 "PostmanRuntime/7.25.0"
+[2020-05-31T22:21:04-05:00] info read user-by-username:
+[2020-05-31T22:21:04-05:00] "GET /user/find/miapenahu HTTP/1.1" 200 204 "PostmanRuntime/7.25.0"
+[2020-05-31T22:21:13-05:00] info create user:
+[2020-05-31T22:21:14-05:00] "POST /user/signup HTTP/1.1" 201 314 "PostmanRuntime/7.25.0"
+[2020-05-31T22:21:16-05:00] info create user:
+[2020-05-31T22:21:16-05:00] "POST /user/signup HTTP/1.1" 500 28 "PostmanRuntime/7.25.0"
+[2020-05-31T22:21:34-05:00] info Server on port 8000
+[2020-05-31T22:21:34-05:00] info Connection has been established successfully!
+[2020-05-31T22:22:47-05:00] info Server on port 8000
+[2020-05-31T22:22:47-05:00] info Connection has been established successfully!
+[2020-06-02T04:49:58-05:00] info Server on port 8000
+[2020-06-02T04:49:58-05:00] info Connection has been established successfully!
+[2020-06-02T04:52:37-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T04:52:37-05:00] info read user-validate:
+[2020-06-02T04:52:38-05:00] "POST /user/login HTTP/1.1" 200 613 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T04:52:38-05:00] info read user-by-username:
+[2020-06-02T04:52:38-05:00] info read wallet-by-username:
+[2020-06-02T04:52:38-05:00] info read movement-by-username:
+[2020-06-02T04:52:38-05:00] "GET /user/find/miapenahu HTTP/1.1" 200 204 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T04:52:38-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 200 139 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T04:52:38-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 200 410 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T04:57:12-05:00] info read user-by-username:
+[2020-06-02T04:57:12-05:00] info read wallet-by-username:
+[2020-06-02T04:57:12-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T04:57:12-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T04:57:34-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T04:57:34-05:00] info create movement:
+[2020-06-02T04:57:34-05:00] "POST /movement/send-money HTTP/1.1" 201 241 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T04:57:43-05:00] info read user-by-username:
+[2020-06-02T04:57:43-05:00] info read movement-by-username:
+[2020-06-02T04:57:43-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T04:57:43-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 200 868 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:24:39-05:00] info read user-by-username:
+[2020-06-02T05:24:39-05:00] info read wallet-by-username:
+[2020-06-02T05:24:39-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:24:39-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 200 144 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:24:56-05:00] info read user-by-username:
+[2020-06-02T05:24:56-05:00] info read wallet-by-username:
+[2020-06-02T05:24:56-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:24:56-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:37:19-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:37:19-05:00] info create movement:
+[2020-06-02T05:37:19-05:00] "POST /movement/send-money HTTP/1.1" 201 241 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:38:11-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:38:11-05:00] info read user-validate:
+[2020-06-02T05:38:11-05:00] "POST /user/login HTTP/1.1" 200 1530 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:38:11-05:00] info read user-by-username:
+[2020-06-02T05:38:11-05:00] info read wallet-by-username:
+[2020-06-02T05:38:11-05:00] info read movement-by-username:
+[2020-06-02T05:38:11-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:38:12-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 200 149 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:38:12-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 200 1327 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:39:47-05:00] info read wallet-by-username:
+[2020-06-02T05:39:47-05:00] info read user-by-username:
+[2020-06-02T05:39:47-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:39:47-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:42:33-05:00] info Server on port 8000
+[2020-06-02T05:42:33-05:00] info Connection has been established successfully!
+[2020-06-02T05:44:06-05:00] info read user-by-username:
+[2020-06-02T05:44:06-05:00] info read wallet-by-username:
+[2020-06-02T05:44:06-05:00] info read movement-by-username:
+[2020-06-02T05:44:06-05:00] "GET /user/find/miapenahu HTTP/1.1" 200 204 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:44:06-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 200 139 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:44:06-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 200 410 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:44:34-05:00] info read wallet-by-username:
+[2020-06-02T05:44:34-05:00] info read user-by-username:
+[2020-06-02T05:44:34-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:44:34-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:45:04-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:45:04-05:00] info create movement:
+[2020-06-02T05:45:04-05:00] "POST /movement/send-money HTTP/1.1" 201 241 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:45:19-05:00] info read user-by-username:
+[2020-06-02T05:45:19-05:00] info read wallet-by-username:
+[2020-06-02T05:45:19-05:00] info read movement-by-username:
+[2020-06-02T05:45:19-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:45:19-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 200 139 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:45:19-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 200 863 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:45:32-05:00] info read user-by-username:
+[2020-06-02T05:45:32-05:00] info read wallet-by-username:
+[2020-06-02T05:45:32-05:00] info read movement-by-username:
+[2020-06-02T05:45:32-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:45:32-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:45:32-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:46:29-05:00] info read user-by-username:
+[2020-06-02T05:46:29-05:00] info read movement-by-username:
+[2020-06-02T05:46:29-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:46:29-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:46:46-05:00] info read user-by-username:
+[2020-06-02T05:46:46-05:00] info read wallet-by-username:
+[2020-06-02T05:46:46-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:46:46-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:47:01-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:47:01-05:00] info create movement:
+[2020-06-02T05:47:01-05:00] "POST /movement/send-money HTTP/1.1" 401 43 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:47:04-05:00] info create movement:
+[2020-06-02T05:47:05-05:00] "POST /movement/send-money HTTP/1.1" 401 43 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:47:17-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:47:17-05:00] info create movement:
+[2020-06-02T05:47:17-05:00] "POST /movement/send-money HTTP/1.1" 201 241 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:47:31-05:00] info read user-by-username:
+[2020-06-02T05:47:31-05:00] info read wallet-by-username:
+[2020-06-02T05:47:31-05:00] info read movement-by-username:
+[2020-06-02T05:47:31-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:47:31-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 200 139 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:47:31-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 200 1090 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:47:37-05:00] info read user-by-username:
+[2020-06-02T05:47:37-05:00] info read wallet-by-username:
+[2020-06-02T05:47:37-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:47:37-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:50:35-05:00] info Server on port 8000
+[2020-06-02T05:50:35-05:00] info Connection has been established successfully!
+[2020-06-02T05:50:52-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:50:52-05:00] info create movement:
+[2020-06-02T05:50:52-05:00] "POST /movement/send-money HTTP/1.1" 201 241 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:51:14-05:00] info read user-by-username:
+[2020-06-02T05:51:14-05:00] info read wallet-by-username:
+[2020-06-02T05:51:14-05:00] info read movement-by-username:
+[2020-06-02T05:51:14-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:51:14-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 200 139 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:51:14-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 200 1544 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:51:17-05:00] info read user-by-username:
+[2020-06-02T05:51:17-05:00] info read wallet-by-username:
+[2020-06-02T05:51:17-05:00] info read movement-by-username:
+[2020-06-02T05:51:17-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:51:17-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:51:17-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:51:18-05:00] info read user-by-username:
+[2020-06-02T05:51:18-05:00] info read wallet-by-username:
+[2020-06-02T05:51:18-05:00] info read movement-by-username:
+[2020-06-02T05:51:18-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:51:18-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:51:18-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:51:29-05:00] info read user-by-username:
+[2020-06-02T05:51:29-05:00] info read wallet-by-username:
+[2020-06-02T05:51:29-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:51:29-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:51:43-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:51:43-05:00] info create movement:
+[2020-06-02T05:51:43-05:00] "POST /movement/send-money HTTP/1.1" 201 241 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:52:21-05:00] info Server on port 8000
+[2020-06-02T05:52:21-05:00] info Connection has been established successfully!
+[2020-06-02T05:52:24-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:52:24-05:00] info create movement:
+[2020-06-02T05:52:25-05:00] "POST /movement/send-money HTTP/1.1" 404 34 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:52:35-05:00] info Server on port 8000
+[2020-06-02T05:52:35-05:00] info Connection has been established successfully!
+[2020-06-02T05:52:40-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:52:40-05:00] info create movement:
+[2020-06-02T05:52:40-05:00] "POST /movement/send-money HTTP/1.1" 400 34 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:52:59-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:52:59-05:00] info create movement:
+[2020-06-02T05:52:59-05:00] "POST /movement/send-money HTTP/1.1" 400 34 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:53:10-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:53:10-05:00] info create movement:
+[2020-06-02T05:53:10-05:00] "POST /movement/send-money HTTP/1.1" 400 34 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:57:06-05:00] info read user-by-username:
+[2020-06-02T05:57:06-05:00] info read wallet-by-username:
+[2020-06-02T05:57:06-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:57:06-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 200 139 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:57:39-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:57:39-05:00] info create movement:
+[2020-06-02T05:57:39-05:00] "POST /movement/send-money HTTP/1.1" 400 34 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:58:10-05:00] info Server on port 8000
+[2020-06-02T05:58:10-05:00] info Connection has been established successfully!
+[2020-06-02T05:58:14-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T05:58:14-05:00] info create movement:
+[2020-06-02T05:58:14-05:00] "POST /movement/send-money HTTP/1.1" 401 33 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:01:40-05:00] info read user-by-username:
+[2020-06-02T06:01:40-05:00] info read wallet-by-username:
+[2020-06-02T06:01:40-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:01:40-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:01:50-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:01:50-05:00] info create movement:
+[2020-06-02T06:01:50-05:00] "POST /movement/send-money HTTP/1.1" 401 33 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:02:48-05:00] info Server on port 8000
+[2020-06-02T06:02:48-05:00] info Connection has been established successfully!
+[2020-06-02T06:02:53-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:02:53-05:00] info create movement:
+[2020-06-02T06:02:53-05:00] "POST /movement/send-money HTTP/1.1" 400 33 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:03:32-05:00] info read wallet-by-username:
+[2020-06-02T06:03:32-05:00] info read user-by-username:
+[2020-06-02T06:03:33-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:03:33-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:04:02-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:04:02-05:00] info create movement:
+[2020-06-02T06:04:02-05:00] "POST /movement/send-money HTTP/1.1" 404 28 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:06:20-05:00] info Server on port 8000
+[2020-06-02T06:06:20-05:00] info Connection has been established successfully!
+[2020-06-02T06:06:32-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:06:33-05:00] info create movement:
+[2020-06-02T06:06:33-05:00] "POST /movement/send-money HTTP/1.1" 404 26 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:08:12-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:08:12-05:00] info create movement:
+[2020-06-02T06:08:12-05:00] "POST /movement/send-money HTTP/1.1" 404 26 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:08:18-05:00] info Server on port 8000
+[2020-06-02T06:08:18-05:00] info Connection has been established successfully!
+[2020-06-02T06:08:27-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:08:27-05:00] info create movement:
+[2020-06-02T06:08:27-05:00] "POST /movement/send-money HTTP/1.1" 201 239 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:08:47-05:00] info read user-by-username:
+[2020-06-02T06:08:47-05:00] info read wallet-by-username:
+[2020-06-02T06:08:47-05:00] info read movement-by-username:
+[2020-06-02T06:08:47-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:08:48-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 200 139 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:08:48-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 200 2223 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:08:51-05:00] info read user-by-username:
+[2020-06-02T06:08:51-05:00] info read wallet-by-username:
+[2020-06-02T06:08:51-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:08:51-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:09:01-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:09:01-05:00] info create movement:
+[2020-06-02T06:09:01-05:00] "POST /movement/send-money HTTP/1.1" 400 33 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:09:27-05:00] info Server on port 8000
+[2020-06-02T06:09:27-05:00] info Connection has been established successfully!
+[2020-06-02T06:09:29-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:09:29-05:00] info create movement:
+[2020-06-02T06:09:29-05:00] "POST /movement/send-money HTTP/1.1" 400 30 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:10:37-05:00] info read user-by-username:
+[2020-06-02T06:10:37-05:00] info read movement-by-username:
+[2020-06-02T06:10:37-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:10:37-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:13:50-05:00] info Server on port 8000
+[2020-06-02T06:13:50-05:00] info Connection has been established successfully!
+[2020-06-02T06:14:03-05:00] info read user-by-username:
+[2020-06-02T06:14:03-05:00] info read wallet-by-username:
+[2020-06-02T06:14:03-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:14:03-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:14:18-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:14:18-05:00] info create movement:
+[2020-06-02T06:14:18-05:00] "POST /movement/send-money HTTP/1.1" 400 46 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:14:38-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:14:38-05:00] info create movement:
+[2020-06-02T06:14:38-05:00] "POST /movement/send-money HTTP/1.1" 201 240 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:05-05:00] info read user-by-username:
+[2020-06-02T06:15:05-05:00] info read wallet-by-username:
+[2020-06-02T06:15:05-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:05-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 200 139 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:43-05:00] info read user-by-username:
+[2020-06-02T06:15:43-05:00] info read wallet-by-username:
+[2020-06-02T06:15:43-05:00] info read movement-by-username:
+[2020-06-02T06:15:43-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:43-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:43-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 200 2449 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:47-05:00] info read user-by-username:
+[2020-06-02T06:15:47-05:00] info read wallet-by-username:
+[2020-06-02T06:15:47-05:00] info read movement-by-username:
+[2020-06-02T06:15:47-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:47-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:47-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:48-05:00] info read user-by-username:
+[2020-06-02T06:15:48-05:00] info read wallet-by-username:
+[2020-06-02T06:15:48-05:00] info read movement-by-username:
+[2020-06-02T06:15:48-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:48-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:48-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:49-05:00] info read user-by-username:
+[2020-06-02T06:15:49-05:00] info read wallet-by-username:
+[2020-06-02T06:15:49-05:00] info read movement-by-username:
+[2020-06-02T06:15:49-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:49-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:49-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:51-05:00] info read user-by-username:
+[2020-06-02T06:15:51-05:00] info read wallet-by-username:
+[2020-06-02T06:15:51-05:00] info read movement-by-username:
+[2020-06-02T06:15:51-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:51-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:15:51-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:18:17-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:18:17-05:00] info create user:
+[2020-06-02T06:18:18-05:00] "POST /user/signup HTTP/1.1" 201 320 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:20:28-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:20:28-05:00] info create user:
+[2020-06-02T06:20:28-05:00] "POST /user/signup HTTP/1.1" 500 28 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:21:00-05:00] info Server on port 8000
+[2020-06-02T06:21:00-05:00] info Connection has been established successfully!
+[2020-06-02T06:21:08-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:21:08-05:00] info create user:
+[2020-06-02T06:21:08-05:00] "POST /user/signup HTTP/1.1" 500 16 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:21:23-05:00] info Server on port 8000
+[2020-06-02T06:21:23-05:00] info Connection has been established successfully!
+[2020-06-02T06:21:26-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:21:26-05:00] info create user:
+[2020-06-02T06:21:26-05:00] "POST /user/signup HTTP/1.1" 500 23 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:23:11-05:00] info Server on port 8000
+[2020-06-02T06:23:11-05:00] info Connection has been established successfully!
+[2020-06-02T06:23:16-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:23:16-05:00] info create user:
+[2020-06-02T06:23:17-05:00] "POST /user/signup HTTP/1.1" 500 23 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:23:29-05:00] info Server on port 8000
+[2020-06-02T06:23:30-05:00] info Connection has been established successfully!
+[2020-06-02T06:23:33-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:23:33-05:00] info create user:
+[2020-06-02T06:23:33-05:00] "POST /user/signup HTTP/1.1" 400 26 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:24:10-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:24:10-05:00] info create user:
+[2020-06-02T06:24:10-05:00] "POST /user/signup HTTP/1.1" 400 26 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:24:22-05:00] info Server on port 8000
+[2020-06-02T06:24:22-05:00] info Connection has been established successfully!
+[2020-06-02T06:24:30-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:24:30-05:00] info create user:
+[2020-06-02T06:24:30-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:24:47-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:24:47-05:00] info create user:
+[2020-06-02T06:24:47-05:00] "POST /user/signup HTTP/1.1" 400 30 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:28:57-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:28:57-05:00] info read user-validate:
+[2020-06-02T06:28:58-05:00] "POST /user/login HTTP/1.1" 401 43 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:29:37-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:29:37-05:00] info read user-validate:
+[2020-06-02T06:29:37-05:00] "POST /user/login HTTP/1.1" 401 43 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:30:36-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:30:36-05:00] info read user-validate:
+[2020-06-02T06:30:36-05:00] "POST /user/login HTTP/1.1" 404 44 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:32:42-05:00] info Server on port 8000
+[2020-06-02T06:32:42-05:00] info Connection has been established successfully!
+[2020-06-02T06:33:00-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:33:00-05:00] info read user-validate:
+[2020-06-02T06:33:00-05:00] "POST /user/login HTTP/1.1" 404 44 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:33:20-05:00] info Server on port 8000
+[2020-06-02T06:33:20-05:00] info Connection has been established successfully!
+[2020-06-02T06:34:17-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:34:17-05:00] info read user-validate:
+[2020-06-02T06:34:18-05:00] "POST /user/login HTTP/1.1" 401 43 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:34:36-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:34:36-05:00] info read user-validate:
+[2020-06-02T06:34:36-05:00] "POST /user/login HTTP/1.1" 200 382 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:34:36-05:00] info read user-by-username:
+[2020-06-02T06:34:36-05:00] info read wallet-by-username:
+[2020-06-02T06:34:36-05:00] info read movement-by-username:
+[2020-06-02T06:34:36-05:00] "GET /user/find/mikewas HTTP/1.1" 200 201 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:34:36-05:00] "GET /wallet/find/all/mikewas HTTP/1.1" 200 137 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:34:36-05:00] "GET /movement/find/all/mikewas HTTP/1.1" 200 182 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:38:15-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:38:15-05:00] info create user:
+[2020-06-02T06:38:15-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:44:18-05:00] info Server on port 8000
+[2020-06-02T06:44:18-05:00] info Connection has been established successfully!
+[2020-06-02T06:48:41-05:00] info Server on port 8000
+[2020-06-02T06:48:41-05:00] info Connection has been established successfully!
+[2020-06-02T06:50:15-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T06:50:15-05:00] info create user:
+[2020-06-02T06:50:15-05:00] "POST /user/signup HTTP/1.1" 201 310 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:05:29-05:00] info Server on port 8000
+[2020-06-02T07:05:29-05:00] info Connection has been established successfully!
+[2020-06-02T07:06:13-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:06:13-05:00] info create user:
+[2020-06-02T07:06:13-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:07:56-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:07:56-05:00] info create user:
+[2020-06-02T07:07:56-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:10:38-05:00] info Server on port 8000
+[2020-06-02T07:10:38-05:00] info Connection has been established successfully!
+[2020-06-02T07:10:39-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:10:39-05:00] info create user:
+[2020-06-02T07:10:39-05:00] "POST /user/signup HTTP/1.1" 400 36 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:11:57-05:00] info Server on port 8000
+[2020-06-02T07:11:57-05:00] info Connection has been established successfully!
+[2020-06-02T07:12:05-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:12:05-05:00] info create user:
+[2020-06-02T07:12:05-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:12:14-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:12:14-05:00] info create user:
+[2020-06-02T07:12:14-05:00] "POST /user/signup HTTP/1.1" 400 30 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:12:21-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:12:21-05:00] info create user:
+[2020-06-02T07:12:21-05:00] "POST /user/signup HTTP/1.1" 400 36 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:12:27-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:12:27-05:00] info create user:
+[2020-06-02T07:12:27-05:00] "POST /user/signup HTTP/1.1" 400 36 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:12:38-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:12:38-05:00] info create user:
+[2020-06-02T07:12:38-05:00] "POST /user/signup HTTP/1.1" 400 36 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:13:33-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:13:33-05:00] info create user:
+[2020-06-02T07:13:33-05:00] "POST /user/signup HTTP/1.1" 400 36 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:13:38-05:00] info create user:
+[2020-06-02T07:13:38-05:00] "POST /user/signup HTTP/1.1" 201 311 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:15:35-05:00] info Server on port 8000
+[2020-06-02T07:15:35-05:00] info Connection has been established successfully!
+[2020-06-02T07:15:54-05:00] info Server on port 8000
+[2020-06-02T07:15:54-05:00] info Connection has been established successfully!
+[2020-06-02T07:16:12-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:16:12-05:00] info read user-validate:
+[2020-06-02T07:16:12-05:00] "POST /user/login HTTP/1.1" 200 613 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:16:12-05:00] info read user-by-username:
+[2020-06-02T07:16:12-05:00] info read wallet-by-username:
+[2020-06-02T07:16:12-05:00] info read movement-by-username:
+[2020-06-02T07:16:12-05:00] "GET /user/find/miapenahu HTTP/1.1" 200 204 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:16:12-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 200 139 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:16:12-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 200 410 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:17:13-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:17:13-05:00] info create user:
+[2020-06-02T07:17:13-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:17:21-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:17:21-05:00] info create user:
+[2020-06-02T07:17:21-05:00] "POST /user/signup HTTP/1.1" 400 36 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:17:49-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:17:49-05:00] info create user:
+[2020-06-02T07:17:49-05:00] "POST /user/signup HTTP/1.1" 201 315 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:18:25-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:18:25-05:00] info read user-validate:
+[2020-06-02T07:18:25-05:00] "POST /user/login HTTP/1.1" 200 377 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:18:25-05:00] info read user-by-username:
+[2020-06-02T07:18:25-05:00] info read wallet-by-username:
+[2020-06-02T07:18:25-05:00] info read movement-by-username:
+[2020-06-02T07:18:25-05:00] "GET /user/find/new-user HTTP/1.1" 200 196 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:18:25-05:00] "GET /wallet/find/all/new-user HTTP/1.1" 200 137 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:18:25-05:00] "GET /movement/find/all/new-user HTTP/1.1" 200 182 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:18:48-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:18:48-05:00] info read user-validate:
+[2020-06-02T07:18:48-05:00] "POST /user/login HTTP/1.1" 200 613 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:18:48-05:00] info read user-by-username:
+[2020-06-02T07:18:48-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:18:48-05:00] info read wallet-by-username:
+[2020-06-02T07:18:48-05:00] info read movement-by-username:
+[2020-06-02T07:18:48-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:18:48-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:18:53-05:00] info read user-by-username:
+[2020-06-02T07:18:53-05:00] info read wallet-by-username:
+[2020-06-02T07:18:53-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:18:53-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:19:16-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:19:16-05:00] info read user-validate:
+[2020-06-02T07:19:16-05:00] "POST /user/login HTTP/1.1" 200 377 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:19:16-05:00] info read wallet-by-username:
+[2020-06-02T07:19:16-05:00] info read user-by-username:
+[2020-06-02T07:19:16-05:00] info read movement-by-username:
+[2020-06-02T07:19:16-05:00] "GET /user/find/new-user HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:19:16-05:00] "GET /wallet/find/all/new-user HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:19:16-05:00] "GET /movement/find/all/new-user HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:19:59-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:19:59-05:00] info read user-validate:
+[2020-06-02T07:19:59-05:00] "POST /user/login HTTP/1.1" 200 613 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:19:59-05:00] info read user-by-username:
+[2020-06-02T07:19:59-05:00] info read wallet-by-username:
+[2020-06-02T07:19:59-05:00] info read movement-by-username:
+[2020-06-02T07:19:59-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:19:59-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:19:59-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:20:08-05:00] info read user-by-username:
+[2020-06-02T07:20:08-05:00] info read wallet-by-username:
+[2020-06-02T07:20:08-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:20:08-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:20:23-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:20:23-05:00] info create movement:
+[2020-06-02T07:20:23-05:00] "POST /movement/send-money HTTP/1.1" 201 241 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:20:32-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:20:32-05:00] info create movement:
+[2020-06-02T07:20:32-05:00] "POST /movement/send-money HTTP/1.1" 400 30 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:20:37-05:00] info create movement:
+[2020-06-02T07:20:37-05:00] "POST /movement/send-money HTTP/1.1" 400 46 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:20:49-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:20:49-05:00] info create movement:
+[2020-06-02T07:20:49-05:00] "POST /movement/send-money HTTP/1.1" 400 30 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:21:01-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:21:01-05:00] info create movement:
+[2020-06-02T07:21:02-05:00] "POST /movement/send-money HTTP/1.1" 400 30 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:21:08-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:21:08-05:00] info create movement:
+[2020-06-02T07:21:09-05:00] "POST /movement/send-money HTTP/1.1" 401 43 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:21:24-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:21:24-05:00] info create movement:
+[2020-06-02T07:21:24-05:00] "POST /movement/send-money HTTP/1.1" 201 240 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:21:37-05:00] info read user-by-username:
+[2020-06-02T07:21:37-05:00] info read wallet-by-username:
+[2020-06-02T07:21:37-05:00] info read movement-by-username:
+[2020-06-02T07:21:37-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:21:37-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 200 139 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:21:37-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 200 863 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:21:56-05:00] info read user-by-username:
+[2020-06-02T07:21:56-05:00] info read movement-by-username:
+[2020-06-02T07:21:56-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:21:56-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:22:24-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:22:24-05:00] info read user-validate:
+[2020-06-02T07:22:24-05:00] "POST /user/login HTTP/1.1" 200 833 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:22:24-05:00] info read user-by-username:
+[2020-06-02T07:22:24-05:00] info read wallet-by-username:
+[2020-06-02T07:22:24-05:00] info read movement-by-username:
+[2020-06-02T07:22:24-05:00] "GET /user/find/new-user HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:22:24-05:00] "GET /wallet/find/all/new-user HTTP/1.1" 200 141 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:22:24-05:00] "GET /movement/find/all/new-user HTTP/1.1" 200 638 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:34:35-05:00] info Server on port 8000
+[2020-06-02T07:34:35-05:00] info Connection has been established successfully!
+[2020-06-02T07:34:47-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:34:47-05:00] info create user:
+[2020-06-02T07:34:47-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:35:12-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:35:12-05:00] info create user:
+[2020-06-02T07:35:12-05:00] "POST /user/signup HTTP/1.1" 400 36 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:35:21-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:35:21-05:00] info create user:
+[2020-06-02T07:35:21-05:00] "POST /user/signup HTTP/1.1" 201 313 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:35:38-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:35:38-05:00] info read user-validate:
+[2020-06-02T07:35:38-05:00] "POST /user/login HTTP/1.1" 401 43 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:35:45-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:35:45-05:00] info read user-validate:
+[2020-06-02T07:35:45-05:00] "POST /user/login HTTP/1.1" 200 375 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:35:45-05:00] info read user-by-username:
+[2020-06-02T07:35:45-05:00] info read wallet-by-username:
+[2020-06-02T07:35:45-05:00] info read movement-by-username:
+[2020-06-02T07:35:45-05:00] "GET /user/find/new-user HTTP/1.1" 200 194 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:35:45-05:00] "GET /wallet/find/all/new-user HTTP/1.1" 200 137 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:35:45-05:00] "GET /movement/find/all/new-user HTTP/1.1" 200 182 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:36:48-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:36:48-05:00] info read user-validate:
+[2020-06-02T07:36:48-05:00] "POST /user/login HTTP/1.1" 200 613 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:36:48-05:00] info read user-by-username:
+[2020-06-02T07:36:48-05:00] info read wallet-by-username:
+[2020-06-02T07:36:48-05:00] info read movement-by-username:
+[2020-06-02T07:36:48-05:00] "GET /user/find/miapenahu HTTP/1.1" 200 204 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:36:48-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 200 139 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:36:48-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 200 410 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:37:02-05:00] info read user-by-username:
+[2020-06-02T07:37:02-05:00] info read wallet-by-username:
+[2020-06-02T07:37:02-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:37:02-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:37:24-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:37:24-05:00] info create movement:
+[2020-06-02T07:37:24-05:00] "POST /movement/send-money HTTP/1.1" 201 241 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:37:37-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:37:37-05:00] info create movement:
+[2020-06-02T07:37:37-05:00] "POST /movement/send-money HTTP/1.1" 404 26 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:37:52-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:37:52-05:00] info create movement:
+[2020-06-02T07:37:52-05:00] "POST /movement/send-money HTTP/1.1" 400 30 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:38:04-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:38:04-05:00] info create movement:
+[2020-06-02T07:38:04-05:00] "POST /movement/send-money HTTP/1.1" 400 46 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:38:30-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:38:30-05:00] info create movement:
+[2020-06-02T07:38:30-05:00] "POST /movement/send-money HTTP/1.1" 400 30 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:38:40-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:38:40-05:00] info create movement:
+[2020-06-02T07:38:40-05:00] "POST /movement/send-money HTTP/1.1" 401 43 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:39:01-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:39:01-05:00] info create movement:
+[2020-06-02T07:39:01-05:00] "POST /movement/send-money HTTP/1.1" 201 240 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:39:22-05:00] info read user-by-username:
+[2020-06-02T07:39:22-05:00] info read wallet-by-username:
+[2020-06-02T07:39:22-05:00] info read movement-by-username:
+[2020-06-02T07:39:22-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:39:22-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 200 139 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:39:22-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 200 863 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:39:45-05:00] info read user-by-username:
+[2020-06-02T07:39:45-05:00] info read movement-by-username:
+[2020-06-02T07:39:45-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:39:45-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:40:25-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:40:25-05:00] info read user-validate:
+[2020-06-02T07:40:26-05:00] "POST /user/login HTTP/1.1" 200 831 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:40:26-05:00] info read user-by-username:
+[2020-06-02T07:40:26-05:00] info read wallet-by-username:
+[2020-06-02T07:40:26-05:00] info read movement-by-username:
+[2020-06-02T07:40:26-05:00] "GET /user/find/new-user HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:40:26-05:00] "GET /wallet/find/all/new-user HTTP/1.1" 200 141 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:40:26-05:00] "GET /movement/find/all/new-user HTTP/1.1" 200 638 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:44:40-05:00] info Server on port 8000
+[2020-06-02T07:44:40-05:00] info Connection has been established successfully!
+[2020-06-02T07:44:42-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:44:42-05:00] info read user-validate:
+[2020-06-02T07:44:42-05:00] "POST /user/login HTTP/1.1" 200 613 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:44:42-05:00] info read wallet-by-username:
+[2020-06-02T07:44:42-05:00] info read user-by-username:
+[2020-06-02T07:44:42-05:00] info read movement-by-username:
+[2020-06-02T07:44:42-05:00] "GET /user/find/miapenahu HTTP/1.1" 200 204 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:44:42-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 200 139 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:44:42-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 200 410 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:47:51-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:47:51-05:00] info create user:
+[2020-06-02T07:47:51-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:48:04-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:48:04-05:00] info create user:
+[2020-06-02T07:48:04-05:00] "POST /user/signup HTTP/1.1" 400 36 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:49:01-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:49:01-05:00] info create user:
+[2020-06-02T07:49:02-05:00] "POST /user/signup HTTP/1.1" 201 313 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:49:23-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:49:23-05:00] info read user-validate:
+[2020-06-02T07:49:23-05:00] "POST /user/login HTTP/1.1" 404 43 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:49:33-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:49:33-05:00] info read user-validate:
+[2020-06-02T07:49:33-05:00] "POST /user/login HTTP/1.1" 200 375 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:49:33-05:00] info read user-by-username:
+[2020-06-02T07:49:33-05:00] info read wallet-by-username:
+[2020-06-02T07:49:33-05:00] info read movement-by-username:
+[2020-06-02T07:49:33-05:00] "GET /user/find/new-user HTTP/1.1" 200 194 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:49:33-05:00] "GET /wallet/find/all/new-user HTTP/1.1" 200 137 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:49:33-05:00] "GET /movement/find/all/new-user HTTP/1.1" 200 182 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:50:25-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:50:25-05:00] info read user-validate:
+[2020-06-02T07:50:25-05:00] "POST /user/login HTTP/1.1" 200 613 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:50:25-05:00] info read user-by-username:
+[2020-06-02T07:50:25-05:00] info read wallet-by-username:
+[2020-06-02T07:50:25-05:00] info read movement-by-username:
+[2020-06-02T07:50:25-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:50:25-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:50:25-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:50:44-05:00] info read user-by-username:
+[2020-06-02T07:50:44-05:00] info read wallet-by-username:
+[2020-06-02T07:50:44-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:50:44-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:51:03-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:51:03-05:00] info create movement:
+[2020-06-02T07:51:03-05:00] "POST /movement/send-money HTTP/1.1" 201 241 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:51:09-05:00] "OPTIONS /movement/send-money HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:51:09-05:00] info create movement:
+[2020-06-02T07:51:09-05:00] "POST /movement/send-money HTTP/1.1" 404 26 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T07:54:10-05:00] info Server on port 8000
+[2020-06-02T07:54:10-05:00] info Connection has been established successfully!
+[2020-06-02T10:14:38-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T10:14:38-05:00] info read user-validate:
+[2020-06-02T10:14:38-05:00] "POST /user/login HTTP/1.1" 200 605 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T10:14:38-05:00] info read user-by-username:
+[2020-06-02T10:14:38-05:00] info read wallet-by-username:
+[2020-06-02T10:14:38-05:00] info read movement-by-username:
+[2020-06-02T10:14:38-05:00] "GET /user/find/new-user HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T10:14:38-05:00] "GET /wallet/find/all/new-user HTTP/1.1" 200 141 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-02T10:14:38-05:00] "GET /movement/find/all/new-user HTTP/1.1" 200 412 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+[2020-06-13T13:12:45-05:00] info Server on port 8000
+[2020-06-13T13:12:45-05:00] info Connection has been established successfully!
+[2020-06-13T13:25:53-05:00] "OPTIONS /user/login HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:25:53-05:00] info read user-validate:
+[2020-06-13T13:25:53-05:00] "POST /user/login HTTP/1.1" 200 840 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:25:53-05:00] info read user-by-username:
+[2020-06-13T13:25:53-05:00] info read wallet-by-username:
+[2020-06-13T13:25:53-05:00] info read movement-by-username:
+[2020-06-13T13:25:53-05:00] "GET /user/find/miapenahu HTTP/1.1" 200 204 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:25:53-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 200 139 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:25:53-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 200 637 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:27:49-05:00] info Server on port 8000
+[2020-06-13T13:27:49-05:00] info Connection has been established successfully!
+[2020-06-13T13:27:58-05:00] info read user-by-username:
+[2020-06-13T13:27:58-05:00] info read wallet-by-username:
+[2020-06-13T13:27:58-05:00] info read movement-by-username:
+[2020-06-13T13:27:58-05:00] "GET /user/find/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:27:58-05:00] "GET /wallet/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:27:58-05:00] "GET /movement/find/all/miapenahu HTTP/1.1" 304 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:29:01-05:00] info read user-by-username:
+[2020-06-13T13:29:01-05:00] info read wallet-by-username:
+[2020-06-13T13:29:01-05:00] info read movement-by-username:
+[2020-06-13T13:29:01-05:00] "GET /user/find/new-user HTTP/1.1" 200 194 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:29:01-05:00] "GET /wallet/find/all/new-user HTTP/1.1" 200 141 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:29:01-05:00] "GET /movement/find/all/new-user HTTP/1.1" 200 412 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:31:52-05:00] info Server on port 8000
+[2020-06-13T13:31:52-05:00] info Connection has been established successfully!
+[2020-06-13T13:33:43-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:33:53-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:33:58-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:34:11-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:34:12-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:34:12-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:34:12-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:34:22-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:35:13-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:35:22-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:35:23-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:35:23-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:37:08-05:00] info Server on port 8000
+[2020-06-13T13:37:08-05:00] info Connection has been established successfully!
+[2020-06-13T13:37:23-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:37:29-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:38:37-05:00] info Server on port 8000
+[2020-06-13T13:38:37-05:00] info Connection has been established successfully!
+[2020-06-13T13:40:37-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:40:40-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:40:52-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:41:10-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:41:52-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:41:56-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:42:00-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:42:01-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:42:01-05:00] "OPTIONS /user/login HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:42:57-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:42:59-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:42:59-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:43:35-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:43:36-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:43:37-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:43:37-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:43:37-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:43:37-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:43:38-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:43:38-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:43:38-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:43:38-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:43:39-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:43:39-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:43:39-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:43:40-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:44:12-05:00] info Server on port 8000
+[2020-06-13T13:44:12-05:00] info Connection has been established successfully!
+[2020-06-13T13:44:29-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:45:50-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:45:50-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:45:50-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:45:50-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:45:51-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:45:51-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:45:51-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:45:51-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:47:24-05:00] info Server on port 8000
+[2020-06-13T13:47:24-05:00] info Connection has been established successfully!
+[2020-06-13T13:47:27-05:00] info Server on port 8000
+[2020-06-13T13:47:27-05:00] info Connection has been established successfully!
+[2020-06-13T13:47:58-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:47:58-05:00] info create user:
+[2020-06-13T13:47:58-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:48:41-05:00] info Server on port 8000
+[2020-06-13T13:48:41-05:00] info Connection has been established successfully!
+[2020-06-13T13:48:44-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:48:44-05:00] info create user:
+[2020-06-13T13:48:44-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:48:55-05:00] info Server on port 8000
+[2020-06-13T13:48:55-05:00] info Connection has been established successfully!
+[2020-06-13T13:48:59-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:48:59-05:00] info create user:
+[2020-06-13T13:48:59-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:49:02-05:00] info create user:
+[2020-06-13T13:49:02-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:49:03-05:00] info create user:
+[2020-06-13T13:49:03-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:49:03-05:00] info create user:
+[2020-06-13T13:49:03-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:49:03-05:00] info create user:
+[2020-06-13T13:49:03-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:49:03-05:00] info create user:
+[2020-06-13T13:49:03-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:49:12-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:49:12-05:00] info create user:
+[2020-06-13T13:49:12-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:49:12-05:00] info create user:
+[2020-06-13T13:49:12-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:49:13-05:00] info create user:
+[2020-06-13T13:49:13-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:49:13-05:00] info create user:
+[2020-06-13T13:49:13-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:49:19-05:00] info Server on port 8000
+[2020-06-13T13:49:19-05:00] info Connection has been established successfully!
+[2020-06-13T13:49:22-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:49:22-05:00] info create user:
+[2020-06-13T13:49:22-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:49:52-05:00] info Server on port 8000
+[2020-06-13T13:49:52-05:00] info Connection has been established successfully!
+[2020-06-13T13:50:15-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:50:15-05:00] info create user:
+[2020-06-13T13:50:16-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:51:04-05:00] info Server on port 8000
+[2020-06-13T13:51:05-05:00] info Connection has been established successfully!
+[2020-06-13T13:51:12-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:51:12-05:00] info create user:
+[2020-06-13T13:51:12-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:51:17-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:51:17-05:00] info create user:
+[2020-06-13T13:51:17-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:51:47-05:00] info Server on port 8000
+[2020-06-13T13:51:47-05:00] info Connection has been established successfully!
+[2020-06-13T13:51:50-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:51:50-05:00] info create user:
+[2020-06-13T13:51:50-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:53:16-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:53:16-05:00] info create user:
+[2020-06-13T13:53:16-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:53:19-05:00] info create user:
+[2020-06-13T13:53:19-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:53:45-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:53:45-05:00] info create user:
+[2020-06-13T13:53:45-05:00] "POST /user/signup HTTP/1.1" 201 302 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:54:08-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:54:08-05:00] info create user:
+[2020-06-13T13:54:08-05:00] "POST /user/signup HTTP/1.1" 400 30 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:54:14-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:54:14-05:00] info create user:
+[2020-06-13T13:54:14-05:00] "POST /user/signup HTTP/1.1" 400 30 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:54:15-05:00] info create user:
+[2020-06-13T13:54:15-05:00] "POST /user/signup HTTP/1.1" 400 30 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:55:06-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T13:55:06-05:00] info create user:
+[2020-06-13T13:55:06-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:01:22-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:01:22-05:00] info create user:
+[2020-06-13T14:01:22-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:01:25-05:00] info create user:
+[2020-06-13T14:01:25-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:05:06-05:00] info Server on port 8000
+[2020-06-13T14:05:06-05:00] info Connection has been established successfully!
+[2020-06-13T14:06:01-05:00] info Server on port 8000
+[2020-06-13T14:06:01-05:00] info Connection has been established successfully!
+[2020-06-13T14:06:12-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:06:12-05:00] info create user:
+[2020-06-13T14:06:12-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:06:18-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:06:18-05:00] info create user:
+[2020-06-13T14:06:18-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:09:10-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:09:10-05:00] info create user:
+[2020-06-13T14:09:10-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:09:47-05:00] info Server on port 8000
+[2020-06-13T14:09:47-05:00] info Connection has been established successfully!
+[2020-06-13T14:09:52-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:09:52-05:00] info create user:
+[2020-06-13T14:09:52-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:10:18-05:00] info Server on port 8000
+[2020-06-13T14:10:18-05:00] info Connection has been established successfully!
+[2020-06-13T14:24:39-05:00] info Server on port 8000
+[2020-06-13T14:24:39-05:00] info Connection has been established successfully!
+[2020-06-13T14:25:48-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:23-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:23-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:23-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:24-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:24-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:24-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:25-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:25-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:27-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:28-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:29-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:38-05:00] info Server on port 8000
+[2020-06-13T14:26:39-05:00] info Connection has been established successfully!
+[2020-06-13T14:26:42-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:42-05:00] info create user:
+[2020-06-13T14:26:42-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:44-05:00] info create user:
+[2020-06-13T14:26:44-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:44-05:00] info create user:
+[2020-06-13T14:26:44-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:56-05:00] info Server on port 8000
+[2020-06-13T14:26:56-05:00] info Connection has been established successfully!
+[2020-06-13T14:26:59-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:59-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:26:59-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:27:14-05:00] info Server on port 8000
+[2020-06-13T14:27:14-05:00] info Connection has been established successfully!
+[2020-06-13T14:27:19-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:27:21-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:27:23-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:27:23-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:27:23-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:28:00-05:00] info Server on port 8000
+[2020-06-13T14:28:00-05:00] info Connection has been established successfully!
+[2020-06-13T14:28:07-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:28:07-05:00] info create user:
+[2020-06-13T14:28:07-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:28:23-05:00] info Server on port 8000
+[2020-06-13T14:28:23-05:00] info Connection has been established successfully!
+[2020-06-13T14:28:25-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:28:25-05:00] info create user:
+[2020-06-13T14:28:25-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:28:37-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T14:28:37-05:00] info create user:
+[2020-06-13T14:28:37-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:13:02-05:00] info Server on port 8000
+[2020-06-13T16:13:03-05:00] info Connection has been established successfully!
+[2020-06-13T16:13:28-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:13:29-05:00] info create user:
+[2020-06-13T16:13:29-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:14:49-05:00] info Server on port 8000
+[2020-06-13T16:14:49-05:00] info Connection has been established successfully!
+[2020-06-13T16:17:39-05:00] info Server on port 8000
+[2020-06-13T16:17:39-05:00] info Connection has been established successfully!
+[2020-06-13T16:19:11-05:00] info Server on port 8000
+[2020-06-13T16:19:11-05:00] info Connection has been established successfully!
+[2020-06-13T16:20:41-05:00] info Server on port 8000
+[2020-06-13T16:20:41-05:00] info Connection has been established successfully!
+[2020-06-13T16:21:17-05:00] info Server on port 8000
+[2020-06-13T16:21:17-05:00] info Connection has been established successfully!
+[2020-06-13T16:21:33-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:21:36-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:21:37-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:23:15-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:23:17-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:23:18-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:24:25-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:24:26-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:24:27-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:24:27-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:24:27-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:25:53-05:00] info Server on port 8000
+[2020-06-13T16:25:53-05:00] info Connection has been established successfully!
+[2020-06-13T16:26:10-05:00] info Server on port 8000
+[2020-06-13T16:26:10-05:00] info Connection has been established successfully!
+[2020-06-13T16:26:19-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:26:20-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:26:35-05:00] info Server on port 8000
+[2020-06-13T16:26:35-05:00] info Connection has been established successfully!
+[2020-06-13T16:26:38-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:26:40-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:26:41-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:26:50-05:00] info Server on port 8000
+[2020-06-13T16:26:50-05:00] info Connection has been established successfully!
+[2020-06-13T16:26:55-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:26:58-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:27:00-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:27:00-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:27:00-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:27:59-05:00] info Server on port 8000
+[2020-06-13T16:27:59-05:00] info Connection has been established successfully!
+[2020-06-13T16:28:06-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:28:08-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:28:09-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:28:10-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:28:34-05:00] info Server on port 8000
+[2020-06-13T16:28:34-05:00] info Connection has been established successfully!
+[2020-06-13T16:28:47-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:28:51-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:28:52-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T16:29:13-05:00] info Server on port 8000
+[2020-06-13T16:29:14-05:00] info Connection has been established successfully!
+[2020-06-13T16:29:18-05:00] info Server on port 8000
+[2020-06-13T16:29:18-05:00] info Connection has been established successfully!
+[2020-06-13T17:31:36-05:00] info Server on port 8000
+[2020-06-13T17:31:36-05:00] info Connection has been established successfully!
+[2020-06-13T17:31:43-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:31:49-05:00] "OPTIONS /user/signup HTTP/1.1" 200 4 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:31:57-05:00] info Server on port 8000
+[2020-06-13T17:31:57-05:00] info Connection has been established successfully!
+[2020-06-13T17:32:10-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:32:19-05:00] info Server on port 8000
+[2020-06-13T17:32:19-05:00] info Connection has been established successfully!
+[2020-06-13T17:32:21-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:32:21-05:00] info create user:
+[2020-06-13T17:32:21-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:32:32-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:32:32-05:00] info create user:
+[2020-06-13T17:32:32-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:32:37-05:00] info Server on port 8000
+[2020-06-13T17:32:37-05:00] info Connection has been established successfully!
+[2020-06-13T17:32:40-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:32:41-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:32:55-05:00] info Server on port 8000
+[2020-06-13T17:32:55-05:00] info Connection has been established successfully!
+[2020-06-13T17:32:58-05:00] "OPTIONS /user/signup HTTP/1.1" 204 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:34:11-05:00] info Server on port 8000
+[2020-06-13T17:34:11-05:00] info Connection has been established successfully!
+[2020-06-13T17:35:21-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:35:21-05:00] info create user:
+[2020-06-13T17:35:21-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:35:27-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:35:27-05:00] info create user:
+[2020-06-13T17:35:27-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:40:55-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:40:55-05:00] info create user:
+[2020-06-13T17:40:55-05:00] "POST /user/signup HTTP/1.1" 400 29 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:41:04-05:00] info Server on port 8000
+[2020-06-13T17:41:04-05:00] info Connection has been established successfully!
+[2020-06-13T17:41:10-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:41:10-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:41:11-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:41:19-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:41:20-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:42:58-05:00] info Server on port 8000
+[2020-06-13T17:42:58-05:00] info Connection has been established successfully!
+[2020-06-13T17:43:08-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:43:08-05:00] info create user:
+[2020-06-13T17:43:08-05:00] "POST /user/signup HTTP/1.1" 201 303 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:43:24-05:00] info Server on port 8000
+[2020-06-13T17:43:24-05:00] info Connection has been established successfully!
+[2020-06-13T17:43:28-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:43:30-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:43:30-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:43:30-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:43:30-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:43:32-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:43:35-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:43:35-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:43:36-05:00] "OPTIONS /user/signup HTTP/1.1" 200 0 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[2020-06-13T17:44:09-05:00] info Server on port 8000
+[2020-06-13T17:44:09-05:00] info Connection has been established successfully!
+[2020-06-13T17:45:54-05:00] info Server on port 8000
+[2020-06-13T17:45:54-05:00] info Connection has been established successfully!
+[2020-06-14T19:20:11-05:00] info Server on port 8000
+[2020-06-14T19:20:11-05:00] info Connection has been established successfully!
+[2020-06-14T19:20:28-05:00] info read enterprise-validate:
+[2020-06-14T19:20:29-05:00] "POST /enterprise/login HTTP/1.1" 200 438 "PostmanRuntime/7.25.0"
+[2020-06-14T19:20:36-05:00] info read enterprise-by-username:
+[2020-06-14T19:20:36-05:00] "GET /enterprise/find/enterprise1 HTTP/1.1" 200 260 "PostmanRuntime/7.25.0"
+[2020-06-14T19:20:45-05:00] info read managed-users:
+[2020-06-14T19:20:45-05:00] "GET /enterprise/find/managed/enterprise1 HTTP/1.1" 200 395 "PostmanRuntime/7.25.0"
+[2020-06-14T19:20:48-05:00] info read managed-users:
+[2020-06-14T19:20:48-05:00] "GET /enterprise/find/managed/enterprise1 HTTP/1.1" 200 395 "PostmanRuntime/7.25.0"
+[2020-06-15T03:31:40-05:00] info Server on port 8000
+[2020-06-15T03:31:40-05:00] info Connection has been established successfully!
+[2020-06-15T03:32:06-05:00] info read managed-users:
+[2020-06-15T03:32:06-05:00] DEBUG: GET /enterprise/find/managed/enterprise1 HTTP/1.1" 200 395 "PostmanRuntime/7.25.0"
+[2020-06-15T03:32:52-05:00] info Server on port 8000
+[2020-06-15T03:32:52-05:00] info Connection has been established successfully!
+[2020-06-15T03:33:14-05:00] info read managed-users:
+[2020-06-15T03:33:14-05:00] DEBUG: GET /enterprise/find/managed/enterprise1 HTTP/1.1 200 395 PostmanRuntime/7.25.0
+[2020-06-15T03:34:57-05:00] INFO: Server on port 8000
+[2020-06-15T03:34:57-05:00] INFO: Connection has been established successfully!
+[2020-06-15T03:35:08-05:00] INFO: read managed-users:
+[2020-06-15T03:35:08-05:00] DEBUG: GET /enterprise/find/managed/enterprise1 HTTP/1.1 200 395 PostmanRuntime/7.25.0
+[2020-06-15T03:35:50-05:00] INFO: read managed-users:
+[2020-06-15T03:35:50-05:00] DEBUG: GET /enterprise/find/managed/enterprise10 HTTP/1.1 500 37 PostmanRuntime/7.25.0
+[2020-06-15T03:40:08-05:00] INFO: Server on port 8000
+[2020-06-15T03:40:08-05:00] INFO: Connection has been established successfully!
+[2020-06-15T03:45:17-05:00] INFO: read managed-users:
+[2020-06-15T03:45:17-05:00] DEBUG: GET /enterprise/find/managed/enterprise10 HTTP/1.1 404 39 PostmanRuntime/7.25.0
+[2020-06-15T03:52:30-05:00] INFO: Server on port 8000
+[2020-06-15T03:52:30-05:00] INFO: Connection has been established successfully!
+[2020-06-15T03:52:46-05:00] INFO: read managed-users:
+[2020-06-15T03:52:46-05:00] DEBUG: GET /enterprise/find/managed/enterprise10 HTTP/1.1 404 39 PostmanRuntime/7.25.0
+[2020-06-15T03:53:14-05:00] INFO: read managed-users:
+[2020-06-15T03:53:14-05:00] DEBUG: GET /enterprise/find/managed/enterprise1 HTTP/1.1 200 395 PostmanRuntime/7.25.0
+[2020-06-15T03:53:59-05:00] INFO: Server on port 8000
+[2020-06-15T03:53:59-05:00] INFO: Connection has been established successfully!
+[2020-06-15T03:54:04-05:00] INFO: read managed-users:
+[2020-06-15T03:54:04-05:00] DEBUG: GET /enterprise/find/managed/enterprise1 HTTP/1.1 200 395 PostmanRuntime/7.25.0
+[2020-06-15T04:41:24-05:00] INFO: Server on port 8000
+[2020-06-15T04:41:24-05:00] INFO: Connection has been established successfully!
+[2020-06-15T04:46:31-05:00] INFO: info Server on port 8000
+[2020-06-15T04:46:31-05:00] INFO: info Connection has been established successfully!
+[2020-06-15T04:48:25-05:00] info: Server on port 8000
+[2020-06-15T04:48:25-05:00] info: Connection has been established successfully!
+[2020-06-15T04:49:00-05:00] debug: read managed-users:
+[2020-06-15T04:49:00-05:00] DEBUG: GET /enterprise/find/managed/enterprise1 HTTP/1.1 200 395 PostmanRuntime/7.25.0
+[2020-06-15T04:51:00-05:00] function toUpperCase() { [native code] }: Server on port 8000
+[2020-06-15T04:51:00-05:00] function toUpperCase() { [native code] }: Connection has been established successfully!
+[2020-06-15T04:51:48-05:00] INFO: Server on port 8000
+[2020-06-15T04:51:48-05:00] INFO: Connection has been established successfully!
+[2020-06-15T04:54:00-05:00] DEBUG: read managed-users:
+[2020-06-15T04:54:00-05:00] DEBUG: GET /enterprise/find/managed/enterprise1 HTTP/1.1 200 395 PostmanRuntime/7.25.0
+[2020-06-15T04:54:37-05:00] INFO: Server on port 8000
+[2020-06-15T04:54:37-05:00] INFO: Connection has been established successfully!
+[2020-06-15T04:54:43-05:00] DEBUG: read managed-users:
+[2020-06-15T04:54:43-05:00] DEBUG: GET /enterprise/find/managed/enterprise1 HTTP/1.1 200 395 ::1 - -  PostmanRuntime/7.25.0
+[2020-06-15T04:57:41-05:00] DEBUG: OPTIONS /user/login HTTP/1.1 200 0 ::1 - -  Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+[2020-06-15T04:57:42-05:00] DEBUG: read user-validate:
+[2020-06-15T04:57:42-05:00] DEBUG: POST /user/login HTTP/1.1 404 54 ::1 - -  Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+[2020-06-15T04:59:41-05:00] INFO: Server on port 8000
+[2020-06-15T04:59:41-05:00] INFO: Connection has been established successfully!
+[2020-06-15T04:59:45-05:00] DEBUG: OPTIONS /user/login HTTP/1.1 STATUS(200) ms-0 ::1 - -  Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+[2020-06-15T04:59:45-05:00] DEBUG: read user-validate:
+[2020-06-15T04:59:45-05:00] DEBUG: POST /user/login HTTP/1.1 STATUS(404) ms-54 ::1 - -  Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+[2020-06-15T05:06:53-05:00] INFO: Server on port 8000
+[2020-06-15T05:06:55-05:00] ERROR: Can't establish database connection:
+SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+[2020-06-15T05:14:09-05:00] INFO: Server on port 8000
+[2020-06-15T05:21:16-05:00] ERROR: Can't establish database connection:
+SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+[2020-06-15T05:21:39-05:00] ERROR: Can't establish database connection:
+SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+[2020-06-15T05:22:29-05:00] ERROR: Can't establish database connection:
+SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+[2020-06-15T06:27:59-05:00] DEBUG: OPTIONS /user/login HTTP/1.1 STATUS(200) ms-0 ::1 - -  Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+[2020-06-15T06:27:59-05:00] DEBUG: POST /user/login HTTP/1.1 STATUS(404) ms-54 ::1 - -  Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36

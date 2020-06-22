@@ -2,19 +2,78 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const morgan = require('morgan');
+const bodyParser = require('body-parser');
+const cors = require('cors')
+const logger = require('./logger/logger');
+var winstonStream = require("winston-stream");
+var loggerStream = winstonStream(logger, "debug");
 
-// setings 
-app.set('port', 8080)
-app.set('views', path.join(__dirname, 'views'));
+// Settings 
+app.set('port', process.env.PORT || 8000)
+app.engine('html', require('ejs').renderFile)
 app.set('view engine', 'ejs');
 
-// middlewares 
+//Customized morgan format for logger Stream
+morgan.format('myformat', ' :method :url STATUS::status REMOTE_ADDR::remote-addr REMOTE_USER::remote-user USER-AGENT::user-agent');
 
-// routes
-app.use(require('./routes/index'));
-// static files
+app.use(morgan('myformat', { stream: loggerStream}));
+//app.use(morgan('dev')); // console petitions
+app.use(bodyParser.urlencoded({ extended: true })); //Has to be true for the JWT
+app.use(bodyParser.json());
 
-// listening the server 
-app.listen(app.get('port'), () => {
-    console.log('Server on port', app.get('port'));
+//CORS configuration
+
+var corsOptions = {
+    origin: ['http://localhost:8080','http://localhost:8081'],
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  }
+
+app.use(cors(corsOptions));
+
+//DB Connection
+require("./database/connection");
+
+//Routes Instanciation
+const userRoutes = require("./routes/user");
+const walletRoutes = require("./routes/wallet");
+const movementRoutes = require("./routes/movement");
+const bankRoutes = require("./routes/bank");
+const transferRoutes = require("./routes/transfer");
+const enterpriseRoutes = require("./routes/enterprise");
+const wtypRoutes = require("./routes/wallettype");
+const keys = require('../config/keys');
+
+//Routes Handler
+app.use("/user", userRoutes);
+app.use("/wallet", walletRoutes);
+app.use("/movement", movementRoutes);
+app.use("/bank", bankRoutes);
+app.use("/transfer", transferRoutes);
+app.use("/enterprise", enterpriseRoutes);
+app.use("/wallet-type", wtypRoutes);
+
+//Test function for Endpoint testing
+app.get('/test', async (req, res) => {
+    res.json({message: 'pass!'})
+  })
+
+//Unknown Routes Handler
+
+app.use((req, res, next) => { //In case of a unknown route
+    logger.info("Resource not found :(");
+    const error = new Error("Resource not found :(");
+    error.status = 404;
+    next(error);
 });
+
+app.use((error, req, res, next) => {
+    res.status(error.status || 500);
+    res.json({
+        error: {
+            message: error.message
+        }
+    });
+});
+
+module.exports = app;
