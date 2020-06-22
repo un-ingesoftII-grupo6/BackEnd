@@ -64,7 +64,7 @@ async function Bank(req, res) {
 async function Wallet(req, res) {
     try {
         const { wal_id } = req.params;
-        const { wallettype, balance, NIT } = req.body;
+        const { wallettype, balance, ent_id } = req.body;
         const state = helpers.isWalletState(req.body.state); //Limited in the future with new model creation
         const findWtyp = await models.WalletType.findOne({ where: { Wtyp_id: wallettype } });
 
@@ -76,7 +76,7 @@ async function Wallet(req, res) {
 
         const [updated] = await models.Wallet.update({
             Wtyp_id: wallettype,
-            Ent_NIT: NIT,
+            Ent_id: ent_id,
             Wal_balance: balance,
             Wal_state: state
         }, {
@@ -122,12 +122,14 @@ async function WalletState(req, res) {
             } else {
                 helpers.loggerWarnAndResponse(401,res,'The User does not own this wallet'); return res;
             }
+        
         } else {
             helpers.loggerWarnAndResponse(404,res,'User not found'); return res;
         }
         var monthLimit, movementLimit;
-        monthLimit = findWallet.Wtyp_month_limit;
-        movementLimit = findWallet.Wtyp_movement_limit;
+        const findWtyp = await models.WalletType.findOne({ where: { Wtyp_id: findWallet.Wtyp_id } });
+        monthLimit = findWtyp.Wtyp_month_limit;
+        movementLimit = findWtyp.Wtyp_movement_limit;
         if (findWallet.Wtyp_id == 3) {
             const findEnterprise = await models.Enterprise.findOne({ where: { Ent_id: findWallet.Ent_id } });
             if (findEnterprise) {

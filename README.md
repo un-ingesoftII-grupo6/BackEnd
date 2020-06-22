@@ -2,6 +2,42 @@
 
 ==================================================
 
+ # Actualización 200621
+
+ Se crearon nuevos scripts, más que todo para manejar
+ mejor las pruebas y las migraciones. Ahora se puede:
+
+ Migrar a la base de datos
+
+ > npm run migrate
+
+ Reemplazar las migraciones antiguas con las que se
+ encuentren en la aplicación
+
+ > npm run migrate:reset
+
+ ### Para hacer los tests
+
+IMPORTANTE: Se debe crear la respectiva base de datos
+para los tests en mysql (el nombre que viene por
+defecto para la base es **database_test**)
+
+ Se ejecuta primero pretest
+
+> npm run pretest
+
+Y luego, se puede ejecutar un análisis de todas las
+pruebas con su /coverage con:
+
+> npm test
+
+O se puede ejecutar pruebas en tiempo real cada vez
+que se actualiza alguno de los archivos con:
+
+> npm run test:watch
+
+### Configuración .gitignore
+
 Para quitar las carpetas que ya están el el repo,
 pero deben ser quitadas de este, se usa:
 
@@ -9,6 +45,8 @@ pero deben ser quitadas de este, se usa:
 
 Con esto se asegura que, aunque se elimine del repo,
 no se borre de nuestro equipo
+
+### Configuración global
 
 Para ejecutar la base de datos, instalar sequelize:
 

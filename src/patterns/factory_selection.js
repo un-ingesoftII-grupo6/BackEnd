@@ -7,13 +7,13 @@ const keys = require('../../config/keys');
 
 
 async function User(req, res) {
-    try {
+//    try {
         const users = await models.User.findAll();
         logger.info("Successfully read.");
         return res.status(200).json({ users: users });
-    } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message);
-    }
+/*    } catch (error) {
+        helpers.loggerErrorAndResponse(res, error.message); return res;
+    }*/
 }
 
 async function UserByUsername(req, res) {
@@ -26,9 +26,9 @@ async function UserByUsername(req, res) {
             logger.info("Successfully read.");
             return res.status(200).json({ user: user });
         }
-        helpers.loggerWarnAndResponse(404,res,'User with the specified username does not exists'); return res;
+        helpers.loggerWarnAndResponse(404, res, 'User with the specified username does not exists'); return res;
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -57,11 +57,11 @@ async function ValidateUser(req, res) {
         if (user) {
             const val = await helpers.matchPassword(password, user.Usr_password);
             if (val) {
-                const token = helpers.generateToken(3600*5); //For now for testing purposes token will last 5 hours
+                const token = helpers.generateToken(3600 * 5); //For now for testing purposes token will last 5 hours
                 logger.info("Successfully read. Token generated");
                 return res.status(200).json({ user: user, token: token }); //Si se autenticó correctamente, le devuelve el user con su wallet
             } else {
-                helpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
+                helpers.loggerWarnAndResponse(401, res, 'The password is incorrect. Please try again'); return res;
             }
 
         } else {
@@ -84,21 +84,21 @@ async function ValidateUser(req, res) {
                     }
                 ]
             });
-            if(enterprise){
+            if (enterprise) {
                 const val2 = await helpers.matchPassword(password, enterprise.Ent_password);
                 if (val2) {
-                    const token = helpers.generateToken(3600*5); //For now for testing purposes token will last 5 hours
+                    const token = helpers.generateToken(3600 * 5); //For now for testing purposes token will last 5 hours
                     logger.info("Successfully read. Token generated");
                     return res.status(200).json({ enterprise: enterprise, token: token }); //Si se autenticó correctamente, le devuelve la enterprise con su wallet
                 } else {
-                    helpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
+                    helpers.loggerWarnAndResponse(401, res, 'The password is incorrect. Please try again'); return res;
                 }
             }
-             
+
         }
-        helpers.loggerWarnAndResponse(404,res,'User/Enterprise with specified username does not exist'); return res;
+        helpers.loggerWarnAndResponse(404, res, 'User/Enterprise with specified username does not exist'); return res;
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -108,7 +108,7 @@ async function Bank(req, res) {
         logger.info("Successfully read.");
         return res.status(200).json({ banks: banks });
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -119,13 +119,17 @@ async function Wallet(req, res) {
                 {
                     model: models.User,
                     as: 'possess'
+                },
+                {
+                    model: models.Enterprise,
+                    as: 'manages'
                 }
             ]
         });
         logger.info("Successfully read.");
         return res.status(200).json({ wallets: wallets });
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -139,10 +143,19 @@ async function WalletsByUsername(req, res) {
             });
             logger.info("Successfully read.");
             return res.status(200).json({ wallets: wallets });
+        } else {
+            const findEnterprise = await models.Enterprise.findOne({ where: { Ent_username: username } });
+            if (findEnterprise) {
+                const wallets = await models.Wallet.findAll({
+                    where: { Ent_id: findEnterprise.Ent_id, Usr_id: null }
+                });
+                logger.info("Successfully read.");
+                return res.status(200).json({ wallets: wallets });
+            }
         }
-        helpers.loggerWarnAndResponse(404,res,"Specified User not found"); return res;
+        helpers.loggerWarnAndResponse(404, res, "Specified User/Enterprise not found"); return res;
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -152,7 +165,7 @@ async function WalletType(req, res) {
         logger.info("Successfully read.");
         return res.status(200).json({ wallet_type: wallettype });
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -162,13 +175,13 @@ async function Transfer(req, res) {
         logger.info("Successfully read.");
         return res.status(200).json({ transfers: transfers });
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
 async function Movement(req, res) {
     try {
-        const movements = await models.User.findAll({
+        const movements_users = await models.User.findAll({
             include: [
                 {
                     model: models.Wallet,
@@ -186,10 +199,28 @@ async function Movement(req, res) {
                 },
             ]
         });
+        const movements_enterprises = await models.Enterprise.findAll({
+                include: [
+                    {
+                        model: models.Wallet,
+                        as: 'manages',
+                        include: [
+                            {
+                                model: models.Movement,
+                                as: 'modifies_sender'
+                            },
+                            {
+                                model: models.Movement,
+                                as: 'modifies_recipient'
+                            }
+                        ]
+                    },
+                ]
+            });
         logger.info("Successfully read.");
-        return res.status(200).json({ movements: movements });
+        return res.status(200).json({ movements_users: movements_users, movements_enterprises: movements_enterprises });
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -197,6 +228,7 @@ async function MovementByUsername(req, res) {
     try {
         const username = req.params.username;
         const findUser = await models.User.findOne({ where: { Usr_username: username } });
+        if(findUser){
         const movements = await models.Wallet.findAll({
             where: {
                 Usr_id: findUser.Usr_id
@@ -215,8 +247,33 @@ async function MovementByUsername(req, res) {
         });
         logger.info("Successfully read.");
         return res.status(200).json({ wallets: movements });
+    } else {
+        const findEnterprise = await models.Enterprise.findOne({ where: { Ent_username: username } });
+        if(findEnterprise){
+        const movements = await models.Wallet.findAll({
+            where: {
+                Ent_id: findEnterprise.Ent_id, 
+                Usr_id: null
+            },
+            include: [
+                {
+                    model: models.Movement,
+                    as: 'modifies_sender',
+                },
+                {
+                    model: models.Movement,
+                    as: 'modifies_recipient',
+
+                }
+            ]
+        });
+        logger.info("Successfully read.");
+        return res.status(200).json({ wallets: movements });
+        }
+        helpers.loggerWarnAndResponse(404,res,"User/Enterprise with specified username doesn't found"); return res;
+    }
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -226,7 +283,7 @@ async function Enterprise(req, res) {
         logger.info("Successfully read.");
         return res.status(200).json({ enterprises: enterprises });
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -240,9 +297,9 @@ async function EnterpriseByUsername(req, res) {
             logger.info("Successfully read.");
             return res.status(200).json({ enterprise: enterprise });
         }
-        helpers.loggerWarnAndResponse(404,res,'Enterprise username does not exist'); return res;
+        helpers.loggerWarnAndResponse(404, res, 'Enterprise username does not exist'); return res;
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -250,38 +307,38 @@ async function UserManagedByEnterprise(req, res) {
     try {
         const username = req.params.username;
         const findEnterprise = await models.Enterprise.findOne({ where: { Ent_username: username } });
-        if(findEnterprise){
-        const users = await models.Wallet.findAll({
-            where: {
-                Ent_id: findEnterprise.Ent_id
-            },
-            include: [
-                {
-                    model: models.User,
-                    as: 'possess',
+        if (findEnterprise) {
+            const users = await models.Wallet.findAll({
+                where: {
+                    Ent_id: findEnterprise.Ent_id, Wtyp_id: 3
                 },
-                {
-                    model: models.Movement,
-                    as: 'modifies_sender',
+                include: [
+                    {
+                        model: models.User,
+                        as: 'possess',
+                    },
+                    {
+                        model: models.Movement,
+                        as: 'modifies_sender',
 
-                },
-                {
-                    model: models.Movement,
-                    as: 'modifies_recipient',
+                    },
+                    {
+                        model: models.Movement,
+                        as: 'modifies_recipient',
 
-                }
-            ]
-        });
-        if(users){
-            logger.info("Successfully read.");
-            return res.status(200).json({ users: users });
+                    }
+                ]
+            });
+            if (users) {
+                logger.info("Successfully read.");
+                return res.status(200).json({ users: users });
             } else {
-                helpers.loggerWarnAndResponse(404,res,"No Managed Users found for this Enterprise"); return res;
+                helpers.loggerWarnAndResponse(404, res, "No Managed Users found for this Enterprise"); return res;
             }
-    } 
-    helpers.loggerWarnAndResponse(404,res,"This Enterprise Username does not exist"); return res;
+        }
+        helpers.loggerWarnAndResponse(404, res, "This Enterprise Username does not exist"); return res;
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -322,16 +379,16 @@ function Factory() {
                 Enterprise(req, res);
                 break;
             case "enterprise-validate":
-                    ValidateUser(req, res);
+                ValidateUser(req, res);
                 break;
             case "enterprise-by-username":
-                    EnterpriseByUsername(req, res);
+                EnterpriseByUsername(req, res);
                 break;
             case "managed-users":
-                    UserManagedByEnterprise(req, res);
+                UserManagedByEnterprise(req, res);
                 break;
             default:
-                helpers.loggerWarnAndResponse(404,res,"Unknown route"); return res;
+                helpers.loggerWarnAndResponse(404, res, "Unknown route"); return res;
         }
     }
 }

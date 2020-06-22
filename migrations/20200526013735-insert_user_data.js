@@ -24,6 +24,12 @@ module.exports = {
       Usr_email: "miapenahu@unal.edu.co",
       Usr_username: "miapenahu-enterprise1",
       Usr_password: pass3
+    },{
+      Usr_name: "Dummy",
+      Usr_surname: "Dummy",
+      Usr_email: "dummy@dummy.edu.co",
+      Usr_username: "dummy-user",
+      Usr_password: pass
     }]);
   },
 

@@ -9,7 +9,7 @@ async function User(req, res) {
         const username = helpers.hasNoSpaces(req.body.username);
 
         const findUser = await models.User.findOne({ where: { Usr_username: username } });
-        const findWtyp = await models.WalletType.findOne({ where: { Wtyp_id: wtyp_id } }); 
+        const findWtyp = await models.WalletType.findOne({ where: { Wtyp_id: wtyp_id } });
 
         if (!findUser) {
             if (username) {
@@ -26,8 +26,8 @@ async function User(req, res) {
                                 entId = ent_id;
                                 monthLimit = findEnterprise.Ent_month_limit;
                                 movementLimit = findEnterprise.Ent_movement_limit
-                            } else{
-                            helpers.loggerWarnAndResponse(404, res, 'Specified enterprise not found. Please try again'); return res;
+                            } else {
+                                helpers.loggerWarnAndResponse(404, res, "Specified enterprise not found. Please try again"); return res;
                             }
                         }
 
@@ -57,7 +57,7 @@ async function User(req, res) {
                     }
                     helpers.loggerWarnAndResponse(400, res, "Passwords inserted does not coincide"); return res;
                 }
-                helpers.loggerWarnAndResponse(404, res, 'Specified wallet type does not exists'); return res;
+                helpers.loggerWarnAndResponse(404, res, "Specified wallet type does not exists"); return res;
             }
             helpers.loggerWarnAndResponse(400, res, "Username can't contain spaces"); return res;
         }
@@ -95,22 +95,22 @@ async function Wallet(req, res) {
         if (findUser) {
             if (findWtyp) {
                 const val = await helpers.matchPassword(password, findUser.Usr_password);
-                if (val) {
-                    var entId, monthLimit, movementLimit;
-                    entId = null;
-                    monthLimit = findWtyp.Wtyp_month_limit;
-                    movementLimit = findWtyp.Wtyp_movement_limit;
+                var entId, monthLimit, movementLimit;
+                entId = null;
+                monthLimit = findWtyp.Wtyp_month_limit;
+                movementLimit = findWtyp.Wtyp_movement_limit;
 
-                    if (wallettype == 3){
-                        const findEnterprise = await models.Enterprise.findOne({ where: { Ent_id: ent_id } });
-                        if (findEnterprise) {
-                            entId = findEnterprise.Ent_id;
-                            monthLimit = findEnterprise.Ent_month_limit;
-                            movementLimit = findEnterprise.Ent_movement_limit
-                        } else{
+                if (wallettype == 3) {
+                    const findEnterprise = await models.Enterprise.findOne({ where: { Ent_id: ent_id } });
+                    if (findEnterprise) {
+                        entId = findEnterprise.Ent_id;
+                        monthLimit = findEnterprise.Ent_month_limit;
+                        movementLimit = findEnterprise.Ent_movement_limit
+                    } else {
                         helpers.loggerWarnAndResponse(404, res, 'Specified enterprise not found. Please try again'); return res;
-                        }
                     }
+                }
+                if (val) {
 
                     const wallet = await models.Wallet.create({
                         Wal_id: uuid.v4(),
@@ -173,7 +173,7 @@ async function Transfer(req, res) {
             logger.info("Successfully inserted.");
             return res.status(201).json({ transfer: transfer });
         }
-        helpers.loggerWarnAndResponse(400, res, "Route can't contain spaces"); return res;
+        helpers.loggerWarnAndResponse(400, res, "Transfer Route can't contain spaces"); return res;
     } catch (error) {
         helpers.loggerErrorAndResponse(res, error.message); return res;
     }
@@ -187,7 +187,7 @@ async function Movement(req, res) {
         const { wal_id_sender, wal_id_recipient, amount, password } = req.body;
         const findSenderWallet = await models.Wallet.findOne({ where: { Wal_id: wal_id_sender } });
         const findRecipientWallet = await models.Wallet.findOne({ where: { Wal_id: wal_id_recipient } });
-        const findSender = await models.User.findOne({
+        var findSender = await models.User.findOne({
             include: [
                 {
                     model: models.Wallet,
@@ -196,15 +196,18 @@ async function Movement(req, res) {
                 }
             ]
         });
-        const findRecipient = await models.User.findOne({
-            include: [
-                {
-                    model: models.Wallet,
-                    as: "possess",
-                    where: { Wal_id: wal_id_recipient }
-                }
-            ]
-        });
+
+        if (!findSender) {
+            findSender = await models.Enterprise.findOne({
+                include: [
+                    {
+                        model: models.Wallet,
+                        as: "manages",
+                        where: { Wal_id: wal_id_sender }
+                    }
+                ]
+            });
+        }
         const findTransfer = await models.Transfer.findOne({ where: { Tra_route: transfer_type } });
 
         //Note: This function would be customized depending of transfer_type, possible dessign pattern application
@@ -214,11 +217,13 @@ async function Movement(req, res) {
                 if (findSenderWallet.Wal_id !== findRecipientWallet.Wal_id) {
                     if (amount > 5000) {
                         if (amount % 1000 === 0) {
-                            if (findSender) {
-                                if (findRecipient) {
                                     if (findTransfer) {
-
-                                        const val = await helpers.matchPassword(password, findSender.Usr_password);
+                                        var val;
+                                        if(findSenderWallet.Wtyp_id == 2){
+                                            val = await helpers.matchPassword(password, findSender.Ent_password);
+                                        } else {
+                                            val = await helpers.matchPassword(password, findSender.Usr_password);
+                                        }
                                         if (val) {
                                             const senderNewBalance = +findSenderWallet.Wal_balance - +amount;
                                             if (senderNewBalance >= 0) {
@@ -252,13 +257,9 @@ async function Movement(req, res) {
                                             }
                                             helpers.loggerWarnAndResponse(401, res, 'The Sender Wallet has no funds for this operation'); return res;
                                         }
-                                        rhelpers.loggerWarnAndResponse(401, res, 'The password is incorrect. Please try again'); return res;
+                                        helpers.loggerWarnAndResponse(401, res, 'The password is incorrect. Please try again'); return res;
                                     }
                                     helpers.loggerWarnAndResponse(404, res, "Transfer type not found"); return res;
-                                }
-                                helpers.loggerWarnAndResponse(404, res, "Recipient Username not found"); return res;
-                            }
-                            helpers.loggerWarnAndResponse(404, res, "Sender Username not found"); return res;
                         }
                         helpers.loggerWarnAndResponse(400, res, "The minimum unit of money you can add is $1000"); return res;
                     }
@@ -277,7 +278,7 @@ async function Movement(req, res) {
 
 async function Enterprise(req, res) {
     try {
-        const { name, description, budget,movement_limit,month_limit } = req.body;
+        const { name, description, budget, movement_limit, month_limit } = req.body;
         const NIT = helpers.hasNoSpaces(req.body.NIT);
         const username = helpers.hasNoSpaces(req.body.username);
         const password = await helpers.encryptPassword(req.body.password);
@@ -304,7 +305,7 @@ async function Enterprise(req, res) {
                     Wal_movement_limit: enterprise.Ent_movement_limit,
                     Wal_month_limit: enterprise.Ent_month_limit
                 });
-                
+
                 logger.info("Successfully inserted.");
                 return res.status(201).json({ enterprise: enterprise, wallet: wallet });
             }

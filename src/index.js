@@ -8,10 +8,6 @@ const cors = require('cors')
 const logger = require('./logger/logger');
 var winstonStream = require("winston-stream");
 var loggerStream = winstonStream(logger, "debug");
-//const jwt = require('jsonwebtoken');
-//const config = require('../config/keys');
-
-//app.set('key', config.tokenKey);
 
 // Settings 
 app.set('port', process.env.PORT || 8000)
@@ -22,7 +18,7 @@ app.set('view engine', 'ejs');
 morgan.format('myformat', ' :method :url STATUS::status REMOTE_ADDR::remote-addr REMOTE_USER::remote-user USER-AGENT::user-agent');
 
 app.use(morgan('myformat', { stream: loggerStream}));
-app.use(morgan('dev')); // console petitions
+//app.use(morgan('dev')); // console petitions
 app.use(bodyParser.urlencoded({ extended: true })); //Has to be true for the JWT
 app.use(bodyParser.json());
 
@@ -34,11 +30,6 @@ var corsOptions = {
   }
 
 app.use(cors(corsOptions));
-
-// listening the server 
-app.listen(app.get('port'), () => {
-    logger.info('Server on port ' + app.get('port'));
-});
 
 //DB Connection
 require("./database/connection");
@@ -61,6 +52,11 @@ app.use("/bank", bankRoutes);
 app.use("/transfer", transferRoutes);
 app.use("/enterprise", enterpriseRoutes);
 app.use("/wallet-type", wtypRoutes);
+
+//Test function for Endpoint testing
+app.get('/test', async (req, res) => {
+    res.json({message: 'pass!'})
+  })
 
 //Unknown Routes Handler
 
