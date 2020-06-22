@@ -19,6 +19,11 @@ module.exports = {
       Wtyp_description: "This is a wallet managed by an Enterprise",
       Wtyp_movement_limit: 4000000.00,
       Wtyp_month_limit: 2000000.00
+    },{
+      Wtyp_name: "Dummy",
+      Wtyp_description: "This is Wallet Type Dummy",
+      Wtyp_movement_limit: 4000000.00,
+      Wtyp_month_limit: 2000000.00
     }]);
   },
 

@@ -8,7 +8,13 @@ module.exports = {
       Bank_is_authorized: 1,
       Bank_month_limit: 5000000.00,
       Bank_transfer_limit: 10000000.00
-    },]);
+    },{
+      Bank_name: "dummy",
+      Bank_description: "dummy",
+      Bank_is_authorized: 1,
+      Bank_month_limit: 5000000.00,
+      Bank_transfer_limit: 10000000.00
+    }]);
   },
 
   down: (queryInterface, Sequelize) => {

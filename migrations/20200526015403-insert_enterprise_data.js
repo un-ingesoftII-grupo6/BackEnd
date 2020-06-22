@@ -23,6 +23,15 @@ module.exports = {
       Ent_password: pass2,
       Ent_movement_limit: 8800000.00,
       Ent_month_limit: 4400000.00
+    },{
+      Ent_NIT: "dummy",
+      Ent_name: "dummy",
+      Ent_description: "dummy",
+      Ent_budget: 20000000.00,
+      Ent_username: "dummy-enterprise",
+      Ent_password: pass2,
+      Ent_movement_limit: 8800000.00,
+      Ent_month_limit: 4400000.00
     }]);
   },
 

@@ -243,7 +243,7 @@ describe("Update Wallet Limits and State data", () => {
                     }
                 });
             })
-            .expect(200,{
+            .expect(200, {
                 wallet: {
                     Wtyp_id: 1,
                     Wal_state: "Inactive",
@@ -253,7 +253,7 @@ describe("Update Wallet Limits and State data", () => {
             });
         done()
     });
-    
+
     it("Should update wallet with Wtyp_id 3 given data correctly", async (done) => {
         await request.put("/wallet/edit/miapenahu-enterprise1/48502bcf-87bb-4f88-a7f7-4a5978debb22")
             .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
@@ -276,7 +276,7 @@ describe("Update Wallet Limits and State data", () => {
                     }
                 });
             })
-            .expect(200,{
+            .expect(200, {
                 wallet: {
                     Wtyp_id: 3,
                     Wal_state: "Active",
@@ -284,7 +284,7 @@ describe("Update Wallet Limits and State data", () => {
                     Wal_movement_limit: 8700000
                 }
             });
-            
+
         done()
     });
     it("Should return status 400 as Wallet State is null", async (done) => {
@@ -297,7 +297,7 @@ describe("Update Wallet Limits and State data", () => {
                 "new_month_limit": 4500000
             })
             .expect('Content-Type', /text/)
-            .expect(400,"Not a valid wallet state (Active, Inactive)");
+            .expect(400, "Not a valid wallet state (Active, Inactive)");
         done()
     });
     it("Should return status 401 if the password is incorrect", async (done) => {
@@ -305,39 +305,68 @@ describe("Update Wallet Limits and State data", () => {
             .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
             .send({
                 "password": "fake-password", //The password is incorrect
-                "state": "Active", 
+                "state": "Active",
                 "new_movement_limit": 8700000,
                 "new_month_limit": 4500000
             })
             .expect('Content-Type', /text/)
-            .expect(401,"The password is incorrect. Please try again");
+            .expect(401, "The password is incorrect. Please try again");
         done()
     });
     it("Should return status 404 of the password is incorrect", async (done) => {
         await request.put("/wallet/edit/miapenahu-enterprise1/bce63b35-031b-43a3-988d-bd6600a0b5af") //This wallet doesn't belong to this user
             .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
             .send({
-                "password": "empresa1", 
-                "state": "Active", 
+                "password": "empresa1",
+                "state": "Active",
                 "new_movement_limit": 8700000,
                 "new_month_limit": 4500000
             })
             .expect('Content-Type', /text/)
-            .expect(401,"The User does not own this wallet");
+            .expect(401, "The User does not own this wallet");
         done()
     });
     it("Should return 500 if the username does not exist", async (done) => {
         await request.put("/wallet/edit/fake-username/48502bcf-87bb-4f88-a7f7-4a5978debb22") //The username here does not exist 
             .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
             .send({
-                "password": "empresa1", 
-                "state": "Active", 
+                "password": "empresa1",
+                "state": "Active",
                 "new_movement_limit": 8700000,
                 "new_month_limit": 4500000
             })
             .expect('Content-Type', /text/)
-            .expect(500,"Error: Cannot read property 'Usr_id' of null");
+            .expect(500, "Error: Cannot read property 'Usr_id' of null");
         done()
     });
 });
 
+describe("Update Transfer data", () => {
+    it("Should update transfer with given data correctly", async (done) => {
+        await request.put("/transfer/edit/1")
+            .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
+            .send({
+                "name": "Send money",
+                "description": "Updated description",
+                "interest": 10
+            })
+            .expect('Content-Type', /json/)
+            .expect((res) => {
+                const { Tra_name, Tra_interest_rate } = res.body.transfer;
+                delete res.body.transfer;
+                Object.assign(res.body,{
+                    transfer: {
+                        Tra_name: Tra_name,
+                        Tra_interest_rate: Tra_interest_rate
+                    }
+                });
+            })
+            .expect(200,{
+                transfer: {
+                    Tra_name: "Send money",
+                    Tra_interest_rate: 10
+                }
+            });
+        done()
+    });
+});

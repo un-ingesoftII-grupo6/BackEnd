@@ -50,7 +50,7 @@ describe("Register new User", () => {
             })
             .expect(201, {
                 user: {
-                    Usr_id: 4,
+                    Usr_id: 5,
                     Usr_username: "mario-bros",
                     Usr_name: "Mario"
                 },
@@ -95,7 +95,7 @@ describe("Register new User", () => {
             })
             .expect(201, {
                 user: {
-                    Usr_id: 5,
+                    Usr_id: 6,
                     Usr_username: "bob-marley",
                     Usr_name: "Bob"
                 },
@@ -281,14 +281,14 @@ describe("Insert New Wallet", () => {
         })
         .expect(201,{
             wallet: {
-                Usr_id: 5,
+                Usr_id: 6,
                 Ent_id: null,
                 Wal_state: "Active" 
             }
         });
         done()
     });
-    it("Should insert new wallet correctly", async (done) => {
+    it("Should insert new wallet  correctly", async (done) => {
         await request.post("/wallet/create/bob-marley")
         .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
         .send({
@@ -310,7 +310,7 @@ describe("Insert New Wallet", () => {
         })
         .expect(201, {
             wallet: {
-                Usr_id: 5,
+                Usr_id: 6,
                 Ent_id: 1,
                 Wal_state: "Active" 
             }
@@ -402,7 +402,7 @@ describe("Insert New Wallet Type", () => {
         })
         .expect(201, {
             wallet_type: {
-                Wtyp_id: 4,
+                Wtyp_id: 5,
                 Wtyp_name: "Admin"
             }
         });
@@ -692,7 +692,7 @@ describe("Insert New Movement", () => {
         .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
         .send({
             "wal_id_sender": "58ecb6c2-c137-418b-9b2f-01425ac7b124", //Wallet Usr_id 2 Wal_balance ~500000
-            "wal_id_recipient": "12345",  //Recipient Wallet does not exist 
+            "wal_id_recipient": "12345684749",  //Recipient Wallet does not exist 
             "amount": 10000.00,   
             "password": "123123"
         })
@@ -704,7 +704,7 @@ describe("Insert New Movement", () => {
         await request.post("/movement/send-money") 
         .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
         .send({
-            "wal_id_sender": "12345", //Sender Wallet does not exist
+            "wal_id_sender": "123451i24u4", //Sender Wallet does not exist
             "wal_id_recipient": "58ecb6c2-c137-418b-9b2f-01425ac7b124",  //Wallet Usr_id 2 Wal_balance ~500000 
             "amount": 10000.00,   
             "password": "123123"
@@ -728,3 +728,69 @@ describe("Insert New Movement", () => {
     });
 });
 
+describe("Insert New Enterprise", () => {
+    it("Should insert new Enterprise correctly", async (done) => {
+        await request.post("/enterprise/create")
+        .send({
+            "NIT": "soy-una-empresa",
+            "name": "Azúcar Manuelita",
+            "description": "Este espacio es patrocinado por azúcar manuelita, que refina el mejor azúcar del país",
+            "budget": 800000000.011,
+            "username":"manuelita",
+            "password": "azucar",
+            "month_limit": 6500000,
+            "movement_limit": 3900000
+        })
+        .expect('Content-Type', /json/)
+        .expect((res) => {
+            const { Ent_name, Ent_username } = res.body.enterprise;
+            delete res.body.enterprise;
+            delete res.body.wallet;
+            Object.assign(res.body, {
+                enterprise: {
+                    Ent_name: Ent_name,
+                    Ent_username: Ent_username
+                }
+            });
+        })
+        .expect(201, {
+            enterprise: {
+                Ent_name: "Azúcar Manuelita",
+                Ent_username: "manuelita"
+            }
+        });
+        done()
+    });
+    it("Should return status 400 if Ent_NIT has spaces", async (done) => {
+        await request.post("/enterprise/create")
+        .send({
+            "NIT": "soy una empresa",
+            "name": "Azúcar Manuelita",
+            "description": "Este espacio es patrocinado por azúcar manuelita, que refina el mejor azúcar del país",
+            "budget": 800000000.011,
+            "username":"manuelita",
+            "password": "azucar",
+            "month_limit": 6500000,
+            "movement_limit": 3900000
+        })
+        .expect('Content-Type', /text/)
+        .expect(400,"Enterprise NIT can't contain spaces");
+        done()
+    });
+    it("Should return status 400 if username has spaces", async (done) => {
+        await request.post("/enterprise/create")
+        .send({
+            "NIT": "soy-una-empresa",
+            "name": "Azúcar Manuelita",
+            "description": "Este espacio es patrocinado por azúcar manuelita, que refina el mejor azúcar del país",
+            "budget": 800000000.011,
+            "username":"manuelita con espacios", 
+            "password": "azucar",
+            "month_limit": 6500000,
+            "movement_limit": 3900000
+        })
+        .expect('Content-Type', /text/)
+        .expect(400,"Enterprise username can't contain spaces");
+        done()
+    });
+});

@@ -16,6 +16,13 @@ module.exports = {
       Tra_route: "bancolombia-consignation",
       Tra_description: "Se hace un pago a la entidad bancaria Bancolombia",
       Tra_interest_rate: 0
+    },{
+      Tra_id: 3,
+      Bank_id: 2,
+      Tra_name: "Consignar a dummy",
+      Tra_route: "dummy",
+      Tra_description: "Se hace un dummy a la entidad bancaria Bancolombia",
+      Tra_interest_rate: 0
     }]);
   },
 

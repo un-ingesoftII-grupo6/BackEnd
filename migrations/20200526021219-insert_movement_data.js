@@ -10,6 +10,14 @@ module.exports = {
       Mov_total_amount: 50000.00,
       Mov_is_successful: 0,
       Mov_timestamp: new Date()
+    },
+    {
+      Tra_id: 1,
+      Wal_id_sender: "12345",
+      Wal_id_recipient: "58ecb6c2-c137-418b-9b2f-01425ac7b124",
+      Mov_total_amount: 50000.00,
+      Mov_is_successful: 0,
+      Mov_timestamp: new Date()
     }]);
   },
 

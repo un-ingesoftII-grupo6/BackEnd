@@ -48,6 +48,15 @@ module.exports = {
       Wal_state: "Active",
       Wal_movement_limit: 8800000.00,
       Wal_month_limit: 4400000.00
+    },{
+      Wal_id: "12345", //uuid.v4(), //Wallet dummy
+      Usr_id: 4, //Dummy User
+      Wtyp_id: 1,
+      Ent_id: 3, //Dummy Enterprise
+      Wal_balance: 20000000.00,
+      Wal_state: "Active",
+      Wal_movement_limit: 8800000.00,
+      Wal_month_limit: 4400000.00
     }
   ]);
   },
