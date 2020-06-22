@@ -36,7 +36,7 @@ describe("Delete Enterprise", () => {
 
 describe("Delete Movement", () => {
     it("Should return status 401 if wallet not associated with movement and user", async (done) => {
-        await request.delete("/movement/delete/miapenahu/2") 
+        await request.delete("/movement/delete/miapenahu/2")
             .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
             .expect('Content-Type', /text/)
             .expect(401, 'This User is not associated with this Movement through Wallet');
@@ -57,7 +57,7 @@ describe("Delete Movement", () => {
         done()
     });
     it("Should remove dummy movement correctly", async (done) => {
-        await request.delete("/movement/delete/dummy-user/2") 
+        await request.delete("/movement/delete/dummy-user/2")
             .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
             .expect('Content-Type', /text/)
             .expect(200, "Movement deleted");
@@ -185,7 +185,7 @@ describe("Delete Wallet Type", () => {
 
 describe("Delete Transfer", () => {
     it("Should return 400 status as transfer has associated movements", async (done) => {
-        await request.delete("/transfer/delete/1") 
+        await request.delete("/transfer/delete/1")
             .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
             .expect('Content-Type', /text/)
             .expect(400, "This Transfer has associated Movements. Please delete them first");
@@ -195,14 +195,15 @@ describe("Delete Transfer", () => {
         await request.delete("/transfer/delete/123123123")  // This transfer doesn't exist
             .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
             .expect('Content-Type', /text/)
-            .expect(404,"Specified Transfer not found");
+            .expect(404, "Specified Transfer not found");
         done()
     });
     it("Should remove dummy transfer correctly", async (done) => {
-        await request.delete("/transfer/delete/3") 
+        await request.delete("/transfer/delete/3")
             .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
             .expect('Content-Type', /text/)
-            .expect(200,'Transfer Consignar a dummy deleted');
+            .expect(200, 'Transfer Consignar a dummy deleted');
+
         done()
     });
 });
