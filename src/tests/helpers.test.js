@@ -51,7 +51,6 @@ describe('helpers.isWalletState Tests', () => {
     });
 
     it("isWalletState should return same value", () => {
-        const mockState = jest.fn(x => "Active");
         const answer = isWalletState("Active");
         expect(answer).toBe("Active");
     });
@@ -80,6 +79,11 @@ describe("helpers.loggerInfoAndResponse Tests", () => {
     it("loggerInfoAndResponse should return determined request", async () => {
         const response = await request.get('/test')
         loggerInfoAndResponse(200, response, "Example message All Correct")
+        expect(response.status).toBe(200); //Provisional
+    });
+    it("loggerInfoAndResponse should return determined request", async () => {
+        const response = await request.get('/test')
+        loggerInfoAndResponse(404, response, "Example message All Correct")
         expect(response.status).toBe(200); //Provisional
     });
     /*it("loggerInfoAndResponse should return determined request", async (done) => {
@@ -133,19 +137,17 @@ describe("helpers.generateToken Tests", () => {
 
 describe("helpers.beginTokenValidation Tests", () => {
     it("beginTokenValidation should return token doesnt provided", async () => {
-        const response = await
-            request.get('/user/find/all')
-                .expect('Content-Type', "text/html; charset=utf-8")
-                //.expect('Content-Type', "application/json; charset=utf-8")
-                .expect(403, "Token doesn't provided");
+        await request.get('/user/find/all')
+            .expect('Content-Type', "text/html; charset=utf-8")
+            //.expect('Content-Type', "application/json; charset=utf-8")
+            .expect(403, "Token doesn't provided");
     });
     it("beginTokenValidation should return invalid token", async () => {
-        const response = await
-            request.get('/user/find/all')
-                .set("access-token", "Invalid_token")
-                .expect('Content-Type', "text/html; charset=utf-8")
-                //.expect('Content-Type', "application/json; charset=utf-8")
-                .expect(403, "Invalid token");
+        await request.get('/user/find/all')
+            .set("access-token", "Invalid_token")
+            .expect('Content-Type', "text/html; charset=utf-8")
+            //.expect('Content-Type', "application/json; charset=utf-8")
+            .expect(403, "Invalid token");
     });
 
 });

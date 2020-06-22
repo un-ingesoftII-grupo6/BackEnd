@@ -181,7 +181,7 @@ async function Transfer(req, res) {
 
 async function Movement(req, res) {
     try {
-        const movements = await models.User.findAll({
+        const movements_users = await models.User.findAll({
             include: [
                 {
                     model: models.Wallet,
@@ -199,8 +199,26 @@ async function Movement(req, res) {
                 },
             ]
         });
+        const movements_enterprises = await models.Enterprise.findAll({
+                include: [
+                    {
+                        model: models.Wallet,
+                        as: 'manages',
+                        include: [
+                            {
+                                model: models.Movement,
+                                as: 'modifies_sender'
+                            },
+                            {
+                                model: models.Movement,
+                                as: 'modifies_recipient'
+                            }
+                        ]
+                    },
+                ]
+            });
         logger.info("Successfully read.");
-        return res.status(200).json({ movements: movements });
+        return res.status(200).json({ movements_users: movements_users, movements_enterprises: movements_enterprises });
     } catch (error) {
         helpers.loggerErrorAndResponse(res, error.message); return res;
     }
@@ -210,6 +228,7 @@ async function MovementByUsername(req, res) {
     try {
         const username = req.params.username;
         const findUser = await models.User.findOne({ where: { Usr_username: username } });
+        if(findUser){
         const movements = await models.Wallet.findAll({
             where: {
                 Usr_id: findUser.Usr_id
@@ -228,6 +247,31 @@ async function MovementByUsername(req, res) {
         });
         logger.info("Successfully read.");
         return res.status(200).json({ wallets: movements });
+    } else {
+        const findEnterprise = await models.Enterprise.findOne({ where: { Ent_username: username } });
+        if(findEnterprise){
+        const movements = await models.Wallet.findAll({
+            where: {
+                Ent_id: findEnterprise.Ent_id, 
+                Usr_id: null
+            },
+            include: [
+                {
+                    model: models.Movement,
+                    as: 'modifies_sender',
+                },
+                {
+                    model: models.Movement,
+                    as: 'modifies_recipient',
+
+                }
+            ]
+        });
+        logger.info("Successfully read.");
+        return res.status(200).json({ wallets: movements });
+        }
+        helpers.loggerWarnAndResponse(404,res,"User/Enterprise with specified username doesn't found"); return res;
+    }
     } catch (error) {
         helpers.loggerErrorAndResponse(res, error.message); return res;
     }

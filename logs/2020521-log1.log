@@ -1233,3 +1233,866 @@
 [2020-06-21T19:13:33-05:00] INFO: Connection has been established successfully!
 [2020-06-21T19:13:57-05:00] INFO: Server on port 8000
 [2020-06-21T19:13:57-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:19:58-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:19:58-05:00] ERROR: data and salt arguments required
+[2020-06-21T20:19:59-05:00] ERROR: data and hash arguments required
+[2020-06-21T20:19:59-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:19:59-05:00] INFO: Example message All Correct
+[2020-06-21T20:19:59-05:00] ERROR: res.status is not a function
+[2020-06-21T20:19:59-05:00] INFO: Resource not found :(
+[2020-06-21T20:19:59-05:00] DEBUG:  GET /banco/ STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:19:59-05:00] WARNING: Example message not found
+[2020-06-21T20:19:59-05:00] ERROR: res.status is not a function
+[2020-06-21T20:19:59-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:19:59-05:00] DEBUG:  POST /bank/creation STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:19:59-05:00] ERROR: Example message not found
+[2020-06-21T20:19:59-05:00] ERROR: res.status is not a function
+[2020-06-21T20:19:59-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:19:59-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:19:59-05:00] WARNING: Invalid token
+[2020-06-21T20:19:59-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:20:05-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:20:05-05:00] ERROR: data and salt arguments required
+[2020-06-21T20:20:06-05:00] ERROR: data and hash arguments required
+[2020-06-21T20:20:06-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:20:06-05:00] INFO: Example message All Correct
+[2020-06-21T20:20:06-05:00] ERROR: res.status is not a function
+[2020-06-21T20:20:06-05:00] INFO: Resource not found :(
+[2020-06-21T20:20:06-05:00] DEBUG:  GET /banco/ STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:20:06-05:00] WARNING: Example message not found
+[2020-06-21T20:20:06-05:00] ERROR: res.status is not a function
+[2020-06-21T20:20:06-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:20:06-05:00] DEBUG:  POST /bank/creation STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:20:06-05:00] ERROR: Example message not found
+[2020-06-21T20:20:06-05:00] ERROR: res.status is not a function
+[2020-06-21T20:20:06-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:20:06-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:20:06-05:00] WARNING: Invalid token
+[2020-06-21T20:20:06-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:21:34-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:21:34-05:00] ERROR: data and salt arguments required
+[2020-06-21T20:21:34-05:00] ERROR: data and hash arguments required
+[2020-06-21T20:21:34-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:21:34-05:00] INFO: Example message All Correct
+[2020-06-21T20:21:34-05:00] ERROR: res.status is not a function
+[2020-06-21T20:21:34-05:00] INFO: Resource not found :(
+[2020-06-21T20:21:34-05:00] DEBUG:  GET /banco/ STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:21:34-05:00] WARNING: Example message not found
+[2020-06-21T20:21:34-05:00] ERROR: res.status is not a function
+[2020-06-21T20:21:34-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:21:34-05:00] DEBUG:  POST /bank/creation STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:21:34-05:00] ERROR: Example message not found
+[2020-06-21T20:21:34-05:00] ERROR: res.status is not a function
+[2020-06-21T20:21:34-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:21:34-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:21:34-05:00] WARNING: Invalid token
+[2020-06-21T20:21:34-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:22:06-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:22:06-05:00] ERROR: data and salt arguments required
+[2020-06-21T20:22:06-05:00] ERROR: data and hash arguments required
+[2020-06-21T20:22:06-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:22:06-05:00] INFO: Example message All Correct
+[2020-06-21T20:22:06-05:00] ERROR: res.status is not a function
+[2020-06-21T20:22:06-05:00] INFO: Resource not found :(
+[2020-06-21T20:22:06-05:00] DEBUG:  GET /banco/ STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:22:06-05:00] WARNING: Example message not found
+[2020-06-21T20:22:06-05:00] ERROR: res.status is not a function
+[2020-06-21T20:22:06-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:22:06-05:00] DEBUG:  POST /bank/creation STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:22:06-05:00] ERROR: Example message not found
+[2020-06-21T20:22:06-05:00] ERROR: res.status is not a function
+[2020-06-21T20:22:06-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:22:06-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:22:06-05:00] WARNING: Invalid token
+[2020-06-21T20:22:06-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:24:49-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:24:49-05:00] ERROR: data and salt arguments required
+[2020-06-21T20:24:49-05:00] INFO: Resource not found :(
+[2020-06-21T20:24:49-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:24:49-05:00] INFO: Resource not found :(
+[2020-06-21T20:24:49-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:24:49-05:00] ERROR: data and hash arguments required
+[2020-06-21T20:24:49-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:24:49-05:00] INFO: Example message All Correct
+[2020-06-21T20:24:49-05:00] ERROR: res.status is not a function
+[2020-06-21T20:24:49-05:00] INFO: Resource not found :(
+[2020-06-21T20:24:49-05:00] DEBUG:  GET /banco/ STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:24:49-05:00] WARNING: Example message not found
+[2020-06-21T20:24:49-05:00] ERROR: res.status is not a function
+[2020-06-21T20:24:49-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:24:49-05:00] DEBUG:  POST /bank/creation STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:24:49-05:00] ERROR: Example message not found
+[2020-06-21T20:24:49-05:00] ERROR: res.status is not a function
+[2020-06-21T20:24:49-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:24:49-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:24:49-05:00] WARNING: Invalid token
+[2020-06-21T20:24:49-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:26:19-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:26:19-05:00] ERROR: data and salt arguments required
+[2020-06-21T20:26:19-05:00] ERROR: data and hash arguments required
+[2020-06-21T20:26:19-05:00] INFO: Resource not found :(
+[2020-06-21T20:26:19-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:26:19-05:00] INFO: Resource not found :(
+[2020-06-21T20:26:19-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:26:19-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:26:19-05:00] INFO: Resource not found :(
+[2020-06-21T20:26:19-05:00] INFO: Example message All Correct
+[2020-06-21T20:26:19-05:00] ERROR: res.status is not a function
+[2020-06-21T20:26:19-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:26:19-05:00] INFO: Resource not found :(
+[2020-06-21T20:26:19-05:00] DEBUG:  GET /banco/ STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:26:19-05:00] WARNING: Example message not found
+[2020-06-21T20:26:19-05:00] ERROR: res.status is not a function
+[2020-06-21T20:26:19-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:26:19-05:00] DEBUG:  POST /bank/creation STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:26:19-05:00] ERROR: Example message not found
+[2020-06-21T20:26:19-05:00] ERROR: res.status is not a function
+[2020-06-21T20:26:19-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:26:19-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:26:19-05:00] WARNING: Invalid token
+[2020-06-21T20:26:19-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:27:08-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:27:08-05:00] ERROR: data and salt arguments required
+[2020-06-21T20:27:09-05:00] ERROR: data and hash arguments required
+[2020-06-21T20:27:09-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:27:09-05:00] INFO: Example message All Correct
+[2020-06-21T20:27:09-05:00] ERROR: res.status is not a function
+[2020-06-21T20:27:09-05:00] INFO: Resource not found :(
+[2020-06-21T20:27:09-05:00] DEBUG:  GET /banco/ STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:27:09-05:00] WARNING: Example message not found
+[2020-06-21T20:27:09-05:00] ERROR: res.status is not a function
+[2020-06-21T20:27:09-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:27:09-05:00] DEBUG:  POST /bank/creation STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:27:09-05:00] ERROR: Example message not found
+[2020-06-21T20:27:09-05:00] ERROR: res.status is not a function
+[2020-06-21T20:27:09-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:27:09-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:27:09-05:00] WARNING: Invalid token
+[2020-06-21T20:27:09-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:28:26-05:00] ERROR: data and salt arguments required
+[2020-06-21T20:28:26-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:28:26-05:00] ERROR: data and hash arguments required
+[2020-06-21T20:28:26-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:28:26-05:00] INFO: Example message All Correct
+[2020-06-21T20:28:26-05:00] ERROR: res.status is not a function
+[2020-06-21T20:28:26-05:00] INFO: Resource not found :(
+[2020-06-21T20:28:26-05:00] DEBUG:  GET /banco/ STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:28:26-05:00] WARNING: Example message not found
+[2020-06-21T20:28:26-05:00] ERROR: res.status is not a function
+[2020-06-21T20:28:26-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:28:26-05:00] DEBUG:  POST /bank/creation STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:28:26-05:00] ERROR: Example message not found
+[2020-06-21T20:28:26-05:00] ERROR: res.status is not a function
+[2020-06-21T20:28:26-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:28:26-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:28:26-05:00] WARNING: Invalid token
+[2020-06-21T20:28:26-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:28:27-05:00] INFO: Resource not found :(
+[2020-06-21T20:28:27-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:28:27-05:00] INFO: Resource not found :(
+[2020-06-21T20:28:27-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:28:27-05:00] INFO: Resource not found :(
+[2020-06-21T20:28:27-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:15-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:29:15-05:00] ERROR: data and salt arguments required
+[2020-06-21T20:29:16-05:00] ERROR: data and hash arguments required
+[2020-06-21T20:29:16-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:16-05:00] INFO: Example message All Correct
+[2020-06-21T20:29:16-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:16-05:00] INFO: Resource not found :(
+[2020-06-21T20:29:16-05:00] DEBUG:  GET /banco/ STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:16-05:00] WARNING: Example message not found
+[2020-06-21T20:29:16-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:16-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:29:16-05:00] INFO: Resource not found :(
+[2020-06-21T20:29:16-05:00] DEBUG:  POST /bank/creation STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:16-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:16-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:16-05:00] ERROR: Example message not found
+[2020-06-21T20:29:16-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:16-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:29:16-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:16-05:00] INFO: Resource not found :(
+[2020-06-21T20:29:16-05:00] WARNING: Invalid token
+[2020-06-21T20:29:16-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:16-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:41-05:00] INFO: Resource not found :(
+[2020-06-21T20:29:41-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:41-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:41-05:00] INFO: Resource not found :(
+[2020-06-21T20:29:41-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:41-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:29:41-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] WARNING: Unknown route
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] ERROR: Cannot read property 'username' of undefined
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] ERROR: Cannot destructure property 'username' of 'req.body' as it is undefined.
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] ERROR: Cannot read property 'username' of undefined
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] INFO: read user:
+[2020-06-21T20:29:41-05:00] ERROR: data and salt arguments required
+[2020-06-21T20:29:41-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:29:41-05:00] INFO: Successfully read.
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] INFO: Successfully read.
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] INFO: Successfully read.
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] INFO: Successfully read.
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] INFO: Successfully read.
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] INFO: Successfully read.
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:41-05:00] INFO: Successfully read.
+[2020-06-21T20:29:41-05:00] DEBUG:  GET /user/find/all STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:41-05:00] WARNING: Invalid token
+[2020-06-21T20:29:41-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:29:42-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] INFO: read user-by-username:
+[2020-06-21T20:29:42-05:00] INFO: Successfully read.
+[2020-06-21T20:29:42-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] INFO: read user-by-username:
+[2020-06-21T20:29:42-05:00] WARNING: User with the specified username does not exists
+[2020-06-21T20:29:42-05:00] DEBUG:  GET /user/find/not-registered-user STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] INFO: read user-validate:
+[2020-06-21T20:29:42-05:00] INFO: Successfully read. Token generated
+[2020-06-21T20:29:42-05:00] DEBUG:  POST /user/login STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] INFO: read user-validate:
+[2020-06-21T20:29:42-05:00] ERROR: data and hash arguments required
+[2020-06-21T20:29:42-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] INFO: Example message All Correct
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] INFO: Resource not found :(
+[2020-06-21T20:29:42-05:00] DEBUG:  GET /banco/ STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] WARNING: Example message not found
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:29:42-05:00] DEBUG:  POST /bank/creation STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] ERROR: Example message not found
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:29:42-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] WARNING: Invalid token
+[2020-06-21T20:29:42-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] WARNING: The password is incorrect. Please try again
+[2020-06-21T20:29:42-05:00] DEBUG:  POST /user/login STATUS:401 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:29:42-05:00] INFO: Successfully read. Token generated
+[2020-06-21T20:29:42-05:00] DEBUG:  POST /enterprise/login STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:29:42-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] ERROR: Cannot destructure property 'bank_id' of 'req.params' as it is undefined.
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] ERROR: Cannot destructure property 'wal_id' of 'req.params' as it is undefined.
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] ERROR: Cannot destructure property 'wtyp_id' of 'req.params' as it is undefined.
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] ERROR: Cannot destructure property 'tra_id' of 'req.params' as it is undefined.
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] ERROR: Cannot destructure property 'ent_id' of 'req.params' as it is undefined.
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] WARNING: The password is incorrect. Please try again
+[2020-06-21T20:29:42-05:00] DEBUG:  POST /enterprise/login STATUS:401 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:29:42-05:00] WARNING: User/Enterprise with specified username does not exist
+[2020-06-21T20:29:42-05:00] DEBUG:  POST /enterprise/login STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:29:42-05:00] ERROR: WHERE parameter "Usr_username" has invalid "undefined" value
+[2020-06-21T20:29:42-05:00] DEBUG:  POST /enterprise/login STATUS:500 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] INFO: read bank:
+[2020-06-21T20:29:42-05:00] INFO: Successfully read.
+[2020-06-21T20:29:42-05:00] DEBUG:  GET /bank/find/all STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] WARNING: Invalid token
+[2020-06-21T20:29:42-05:00] DEBUG:  GET /bank/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:29:42-05:00] DEBUG:  GET /bank/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:29:42-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] ERROR: Cannot destructure property 'bank_id' of 'req.params' as it is undefined.
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] ERROR: Cannot destructure property 'wtyp_id' of 'req.params' as it is undefined.
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] ERROR: Cannot destructure property 'tra_id' of 'req.params' as it is undefined.
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:42-05:00] ERROR: Cannot destructure property 'ent_id' of 'req.params' as it is undefined.
+[2020-06-21T20:29:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:43-05:00] ERROR: Cannot destructure property 'name' of 'req.body' as it is undefined.
+[2020-06-21T20:29:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:43-05:00] ERROR: Cannot destructure property 'name' of 'req.body' as it is undefined.
+[2020-06-21T20:29:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:43-05:00] ERROR: Cannot read property 'username' of undefined
+[2020-06-21T20:29:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:43-05:00] ERROR: Cannot destructure property 'description' of 'req.body' as it is undefined.
+[2020-06-21T20:29:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:43-05:00] ERROR: Cannot destructure property 'bank_id' of 'req.body' as it is undefined.
+[2020-06-21T20:29:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:43-05:00] ERROR: Cannot destructure property 'transfer_type' of 'req.params' as it is undefined.
+[2020-06-21T20:29:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:29:43-05:00] ERROR: Cannot destructure property 'name' of 'req.body' as it is undefined.
+[2020-06-21T20:29:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:09-05:00] INFO: Resource not found :(
+[2020-06-21T20:43:09-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:09-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:09-05:00] INFO: Resource not found :(
+[2020-06-21T20:43:09-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:09-05:00] ERROR: data and salt arguments required
+[2020-06-21T20:43:09-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:43:09-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:43:09-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:09-05:00] WARNING: Unknown route
+[2020-06-21T20:43:09-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:09-05:00] ERROR: Cannot read property 'username' of undefined
+[2020-06-21T20:43:09-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:09-05:00] ERROR: Cannot destructure property 'username' of 'req.body' as it is undefined.
+[2020-06-21T20:43:09-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:09-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:43:09-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:09-05:00] ERROR: Cannot read property 'username' of undefined
+[2020-06-21T20:43:09-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:09-05:00] INFO: read user:
+[2020-06-21T20:43:10-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:43:10-05:00] INFO: Successfully read.
+[2020-06-21T20:43:10-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:10-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:10-05:00] INFO: Successfully read.
+[2020-06-21T20:43:10-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:10-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:10-05:00] INFO: Successfully read.
+[2020-06-21T20:43:10-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:10-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:10-05:00] INFO: Successfully read.
+[2020-06-21T20:43:10-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:10-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:10-05:00] INFO: Successfully read.
+[2020-06-21T20:43:10-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:10-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:10-05:00] INFO: Successfully read.
+[2020-06-21T20:43:10-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:10-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:10-05:00] INFO: Successfully read.
+[2020-06-21T20:43:10-05:00] DEBUG:  GET /user/find/all STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:10-05:00] WARNING: Invalid token
+[2020-06-21T20:43:10-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:10-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:43:10-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:10-05:00] INFO: read user-by-username:
+[2020-06-21T20:43:10-05:00] INFO: Successfully read.
+[2020-06-21T20:43:10-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:10-05:00] INFO: read user-by-username:
+[2020-06-21T20:43:10-05:00] ERROR: data and hash arguments required
+[2020-06-21T20:43:10-05:00] WARNING: User with the specified username does not exists
+[2020-06-21T20:43:10-05:00] DEBUG:  GET /user/find/not-registered-user STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:10-05:00] INFO: read user-validate:
+[2020-06-21T20:43:10-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:10-05:00] INFO: Example message All Correct
+[2020-06-21T20:43:10-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:10-05:00] INFO: Resource not found :(
+[2020-06-21T20:43:10-05:00] DEBUG:  GET /banco/ STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:10-05:00] WARNING: Example message not found
+[2020-06-21T20:43:10-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:10-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:43:10-05:00] DEBUG:  POST /bank/creation STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:10-05:00] ERROR: Example message not found
+[2020-06-21T20:43:10-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:10-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:43:10-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:10-05:00] WARNING: Invalid token
+[2020-06-21T20:43:10-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:10-05:00] INFO: Successfully read. Token generated
+[2020-06-21T20:43:10-05:00] DEBUG:  POST /user/login STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:10-05:00] INFO: read user-validate:
+[2020-06-21T20:43:10-05:00] WARNING: The password is incorrect. Please try again
+[2020-06-21T20:43:10-05:00] DEBUG:  POST /user/login STATUS:401 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:10-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:43:10-05:00] INFO: Successfully read. Token generated
+[2020-06-21T20:43:10-05:00] DEBUG:  POST /enterprise/login STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:10-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:43:11-05:00] WARNING: The password is incorrect. Please try again
+[2020-06-21T20:43:11-05:00] DEBUG:  POST /enterprise/login STATUS:401 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:11-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:43:11-05:00] WARNING: User/Enterprise with specified username does not exist
+[2020-06-21T20:43:11-05:00] DEBUG:  POST /enterprise/login STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:11-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:43:11-05:00] ERROR: WHERE parameter "Usr_username" has invalid "undefined" value
+[2020-06-21T20:43:11-05:00] DEBUG:  POST /enterprise/login STATUS:500 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:11-05:00] INFO: read bank:
+[2020-06-21T20:43:11-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:43:11-05:00] INFO: Successfully read.
+[2020-06-21T20:43:11-05:00] DEBUG:  GET /bank/find/all STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:11-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:11-05:00] ERROR: Cannot destructure property 'bank_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:11-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:11-05:00] ERROR: Cannot destructure property 'wal_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:11-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:11-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:43:11-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:11-05:00] ERROR: Cannot destructure property 'wtyp_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:11-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:11-05:00] ERROR: Cannot destructure property 'tra_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:11-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:11-05:00] ERROR: Cannot destructure property 'ent_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:11-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:11-05:00] WARNING: Invalid token
+[2020-06-21T20:43:11-05:00] DEBUG:  GET /bank/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:11-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:43:11-05:00] DEBUG:  GET /bank/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:11-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:43:11-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:11-05:00] ERROR: Cannot destructure property 'bank_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:11-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:11-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:43:11-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:11-05:00] ERROR: Cannot destructure property 'wtyp_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:11-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:11-05:00] ERROR: Cannot destructure property 'tra_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:11-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:11-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:43:11-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:11-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:43:11-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:11-05:00] ERROR: Cannot destructure property 'ent_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:11-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:12-05:00] ERROR: Cannot destructure property 'name' of 'req.body' as it is undefined.
+[2020-06-21T20:43:12-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:12-05:00] ERROR: Cannot destructure property 'name' of 'req.body' as it is undefined.
+[2020-06-21T20:43:12-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:12-05:00] ERROR: Cannot read property 'username' of undefined
+[2020-06-21T20:43:12-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:12-05:00] ERROR: Cannot destructure property 'description' of 'req.body' as it is undefined.
+[2020-06-21T20:43:12-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:12-05:00] ERROR: Cannot destructure property 'bank_id' of 'req.body' as it is undefined.
+[2020-06-21T20:43:12-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:12-05:00] ERROR: Cannot destructure property 'transfer_type' of 'req.params' as it is undefined.
+[2020-06-21T20:43:12-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:12-05:00] ERROR: Cannot destructure property 'name' of 'req.body' as it is undefined.
+[2020-06-21T20:43:12-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:42-05:00] INFO: Resource not found :(
+[2020-06-21T20:43:42-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:43-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:43-05:00] INFO: Resource not found :(
+[2020-06-21T20:43:43-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:43:43-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:42-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:43:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:42-05:00] WARNING: Unknown route
+[2020-06-21T20:43:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:42-05:00] ERROR: Cannot read property 'username' of undefined
+[2020-06-21T20:43:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:42-05:00] ERROR: Cannot destructure property 'username' of 'req.body' as it is undefined.
+[2020-06-21T20:43:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:42-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:43:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:42-05:00] ERROR: Cannot read property 'username' of undefined
+[2020-06-21T20:43:42-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:43-05:00] INFO: read user:
+[2020-06-21T20:43:43-05:00] ERROR: data and salt arguments required
+[2020-06-21T20:43:43-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:43:43-05:00] INFO: Successfully read.
+[2020-06-21T20:43:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:43-05:00] INFO: Successfully read.
+[2020-06-21T20:43:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:43-05:00] INFO: Successfully read.
+[2020-06-21T20:43:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:43-05:00] INFO: Successfully read.
+[2020-06-21T20:43:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:43-05:00] INFO: Successfully read.
+[2020-06-21T20:43:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:43-05:00] INFO: Successfully read.
+[2020-06-21T20:43:43-05:00] INFO: Successfully read.
+[2020-06-21T20:43:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:43-05:00] DEBUG:  GET /user/find/all STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:43-05:00] WARNING: Invalid token
+[2020-06-21T20:43:43-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:43-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:43:43-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:43-05:00] INFO: read user-by-username:
+[2020-06-21T20:43:43-05:00] INFO: Successfully read.
+[2020-06-21T20:43:43-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:43-05:00] INFO: read user-by-username:
+[2020-06-21T20:43:43-05:00] WARNING: User with the specified username does not exists
+[2020-06-21T20:43:43-05:00] DEBUG:  GET /user/find/not-registered-user STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:43-05:00] INFO: read user-validate:
+[2020-06-21T20:43:43-05:00] INFO: Successfully read. Token generated
+[2020-06-21T20:43:43-05:00] DEBUG:  POST /user/login STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:43-05:00] INFO: read user-validate:
+[2020-06-21T20:43:43-05:00] WARNING: The password is incorrect. Please try again
+[2020-06-21T20:43:43-05:00] DEBUG:  POST /user/login STATUS:401 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:43-05:00] ERROR: data and hash arguments required
+[2020-06-21T20:43:43-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:43:43-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:43-05:00] INFO: Example message All Correct
+[2020-06-21T20:43:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:43-05:00] INFO: Resource not found :(
+[2020-06-21T20:43:43-05:00] DEBUG:  GET /banco/ STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:43-05:00] WARNING: Example message not found
+[2020-06-21T20:43:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:43-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:43:43-05:00] DEBUG:  POST /bank/creation STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:43-05:00] ERROR: Example message not found
+[2020-06-21T20:43:43-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:43-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:43:43-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:43-05:00] WARNING: Invalid token
+[2020-06-21T20:43:43-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:43-05:00] INFO: Successfully read. Token generated
+[2020-06-21T20:43:43-05:00] DEBUG:  POST /enterprise/login STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:43-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:43:44-05:00] WARNING: The password is incorrect. Please try again
+[2020-06-21T20:43:44-05:00] DEBUG:  POST /enterprise/login STATUS:401 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:44-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:43:44-05:00] WARNING: User/Enterprise with specified username does not exist
+[2020-06-21T20:43:44-05:00] DEBUG:  POST /enterprise/login STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:44-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:43:44-05:00] ERROR: WHERE parameter "Usr_username" has invalid "undefined" value
+[2020-06-21T20:43:44-05:00] DEBUG:  POST /enterprise/login STATUS:500 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:44-05:00] INFO: read bank:
+[2020-06-21T20:43:44-05:00] INFO: Successfully read.
+[2020-06-21T20:43:44-05:00] DEBUG:  GET /bank/find/all STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:44-05:00] WARNING: Invalid token
+[2020-06-21T20:43:44-05:00] DEBUG:  GET /bank/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:44-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:43:44-05:00] DEBUG:  GET /bank/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:43:44-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:43:44-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:44-05:00] ERROR: Cannot destructure property 'bank_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:44-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:44-05:00] ERROR: Cannot destructure property 'wal_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:44-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:44-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:43:44-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:44-05:00] ERROR: Cannot destructure property 'wtyp_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:44-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:44-05:00] ERROR: Cannot destructure property 'tra_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:44-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:44-05:00] ERROR: Cannot destructure property 'ent_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:44-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:45-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:43:45-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:45-05:00] ERROR: Cannot destructure property 'bank_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:45-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:45-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:43:45-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:45-05:00] ERROR: Cannot destructure property 'wtyp_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:45-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:45-05:00] ERROR: Cannot destructure property 'tra_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:45-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:45-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:43:45-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:45-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:43:45-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:45-05:00] ERROR: Cannot destructure property 'ent_id' of 'req.params' as it is undefined.
+[2020-06-21T20:43:45-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:46-05:00] ERROR: Cannot destructure property 'name' of 'req.body' as it is undefined.
+[2020-06-21T20:43:46-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:46-05:00] ERROR: Cannot destructure property 'name' of 'req.body' as it is undefined.
+[2020-06-21T20:43:46-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:46-05:00] ERROR: Cannot read property 'username' of undefined
+[2020-06-21T20:43:46-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:46-05:00] ERROR: Cannot destructure property 'description' of 'req.body' as it is undefined.
+[2020-06-21T20:43:46-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:46-05:00] ERROR: Cannot destructure property 'bank_id' of 'req.body' as it is undefined.
+[2020-06-21T20:43:46-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:46-05:00] ERROR: Cannot destructure property 'transfer_type' of 'req.params' as it is undefined.
+[2020-06-21T20:43:46-05:00] ERROR: res.status is not a function
+[2020-06-21T20:43:46-05:00] ERROR: Cannot destructure property 'name' of 'req.body' as it is undefined.
+[2020-06-21T20:43:46-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:48:23-05:00] ERROR: data and salt arguments required
+[2020-06-21T20:48:23-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] WARNING: Unknown route
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] ERROR: Cannot read property 'username' of undefined
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] ERROR: Cannot destructure property 'username' of 'req.body' as it is undefined.
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] ERROR: Cannot read property 'username' of undefined
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] INFO: read user:
+[2020-06-21T20:48:23-05:00] INFO: Resource not found :(
+[2020-06-21T20:48:23-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:23-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:23-05:00] INFO: Resource not found :(
+[2020-06-21T20:48:23-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:23-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:48:23-05:00] INFO: Successfully read.
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] INFO: Successfully read.
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] INFO: Successfully read.
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] INFO: Successfully read.
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] INFO: Successfully read.
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] INFO: Successfully read.
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] INFO: Successfully read.
+[2020-06-21T20:48:23-05:00] DEBUG:  GET /user/find/all STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:23-05:00] WARNING: Invalid token
+[2020-06-21T20:48:23-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:23-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:48:23-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:23-05:00] INFO: read user-by-username:
+[2020-06-21T20:48:23-05:00] INFO: Successfully read.
+[2020-06-21T20:48:23-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:23-05:00] INFO: read user-by-username:
+[2020-06-21T20:48:23-05:00] WARNING: User with the specified username does not exists
+[2020-06-21T20:48:23-05:00] DEBUG:  GET /user/find/not-registered-user STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:23-05:00] INFO: read user-validate:
+[2020-06-21T20:48:23-05:00] INFO: Successfully read. Token generated
+[2020-06-21T20:48:23-05:00] DEBUG:  POST /user/login STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:23-05:00] INFO: read user-validate:
+[2020-06-21T20:48:23-05:00] ERROR: data and hash arguments required
+[2020-06-21T20:48:23-05:00] WARNING: The password is incorrect. Please try again
+[2020-06-21T20:48:23-05:00] DEBUG:  POST /user/login STATUS:401 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:23-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:48:23-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:23-05:00] INFO: Example message All Correct
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:23-05:00] INFO: Resource not found :(
+[2020-06-21T20:48:23-05:00] DEBUG:  GET /banco/ STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:23-05:00] WARNING: Example message not found
+[2020-06-21T20:48:23-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:24-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:48:24-05:00] DEBUG:  POST /bank/creation STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:24-05:00] ERROR: Example message not found
+[2020-06-21T20:48:24-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:24-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:48:24-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:24-05:00] WARNING: Invalid token
+[2020-06-21T20:48:24-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:24-05:00] INFO: Successfully read. Token generated
+[2020-06-21T20:48:24-05:00] DEBUG:  POST /enterprise/login STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:24-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:48:24-05:00] WARNING: The password is incorrect. Please try again
+[2020-06-21T20:48:24-05:00] DEBUG:  POST /enterprise/login STATUS:401 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:24-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:48:24-05:00] WARNING: User/Enterprise with specified username does not exist
+[2020-06-21T20:48:24-05:00] DEBUG:  POST /enterprise/login STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:24-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:48:24-05:00] ERROR: WHERE parameter "Usr_username" has invalid "undefined" value
+[2020-06-21T20:48:24-05:00] DEBUG:  POST /enterprise/login STATUS:500 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:24-05:00] INFO: read bank:
+[2020-06-21T20:48:24-05:00] INFO: Successfully read.
+[2020-06-21T20:48:24-05:00] DEBUG:  GET /bank/find/all STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:24-05:00] WARNING: Invalid token
+[2020-06-21T20:48:24-05:00] DEBUG:  GET /bank/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:24-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:48:24-05:00] DEBUG:  GET /bank/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:24-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:48:24-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:24-05:00] ERROR: Cannot destructure property 'bank_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:24-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:24-05:00] ERROR: Cannot destructure property 'wal_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:24-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:24-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:48:24-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:24-05:00] ERROR: Cannot destructure property 'wtyp_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:24-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:24-05:00] ERROR: Cannot destructure property 'tra_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:24-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:24-05:00] ERROR: Cannot destructure property 'ent_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:24-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:25-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:48:25-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:25-05:00] ERROR: Cannot destructure property 'bank_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:25-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:25-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:48:25-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:25-05:00] ERROR: Cannot destructure property 'wtyp_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:25-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:25-05:00] ERROR: Cannot destructure property 'tra_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:25-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:25-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:48:25-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:25-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:48:25-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:25-05:00] ERROR: Cannot destructure property 'ent_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:25-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:26-05:00] ERROR: Cannot destructure property 'name' of 'req.body' as it is undefined.
+[2020-06-21T20:48:26-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:26-05:00] ERROR: Cannot destructure property 'name' of 'req.body' as it is undefined.
+[2020-06-21T20:48:26-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:26-05:00] ERROR: Cannot read property 'username' of undefined
+[2020-06-21T20:48:26-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:26-05:00] ERROR: Cannot destructure property 'description' of 'req.body' as it is undefined.
+[2020-06-21T20:48:26-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:26-05:00] ERROR: Cannot destructure property 'bank_id' of 'req.body' as it is undefined.
+[2020-06-21T20:48:26-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:26-05:00] ERROR: Cannot destructure property 'transfer_type' of 'req.params' as it is undefined.
+[2020-06-21T20:48:26-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:26-05:00] ERROR: Cannot destructure property 'name' of 'req.body' as it is undefined.
+[2020-06-21T20:48:26-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] INFO: Resource not found :(
+[2020-06-21T20:48:48-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:48-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:48-05:00] INFO: Resource not found :(
+[2020-06-21T20:48:48-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:48-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] WARNING: Unknown route
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] ERROR: Cannot read property 'username' of undefined
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] ERROR: Cannot destructure property 'username' of 'req.body' as it is undefined.
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] ERROR: Cannot read property 'username' of undefined
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] INFO: read user:
+[2020-06-21T20:48:48-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:48:48-05:00] INFO: Connection has been established successfully!
+[2020-06-21T20:48:48-05:00] ERROR: data and salt arguments required
+[2020-06-21T20:48:48-05:00] INFO: Successfully read.
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] INFO: Successfully read.
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] INFO: Successfully read.
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] INFO: Successfully read.
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] INFO: Successfully read.
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] INFO: Successfully read.
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:48-05:00] INFO: Successfully read.
+[2020-06-21T20:48:48-05:00] DEBUG:  GET /user/find/all STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:48-05:00] WARNING: Invalid token
+[2020-06-21T20:48:48-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:48-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:48:48-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:48-05:00] INFO: read user-by-username:
+[2020-06-21T20:48:48-05:00] INFO: Successfully read.
+[2020-06-21T20:48:48-05:00] DEBUG:  GET /user/find/miapenahu STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:48-05:00] INFO: read user-by-username:
+[2020-06-21T20:48:48-05:00] WARNING: User with the specified username does not exists
+[2020-06-21T20:48:48-05:00] DEBUG:  GET /user/find/not-registered-user STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:49-05:00] INFO: read user-validate:
+[2020-06-21T20:48:49-05:00] INFO: Successfully read. Token generated
+[2020-06-21T20:48:49-05:00] DEBUG:  POST /user/login STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:49-05:00] INFO: read user-validate:
+[2020-06-21T20:48:49-05:00] WARNING: The password is incorrect. Please try again
+[2020-06-21T20:48:49-05:00] DEBUG:  POST /user/login STATUS:401 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:49-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:48:49-05:00] ERROR: data and hash arguments required
+[2020-06-21T20:48:49-05:00] INFO: Successfully read. Token generated
+[2020-06-21T20:48:49-05:00] DEBUG:  POST /enterprise/login STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:49-05:00] DEBUG:  GET /test STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:49-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:48:49-05:00] INFO: Example message All Correct
+[2020-06-21T20:48:49-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:49-05:00] INFO: Resource not found :(
+[2020-06-21T20:48:49-05:00] DEBUG:  GET /banco/ STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:49-05:00] WARNING: Example message not found
+[2020-06-21T20:48:49-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:49-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:48:49-05:00] DEBUG:  POST /bank/creation STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:49-05:00] ERROR: Example message not found
+[2020-06-21T20:48:49-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:49-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:48:49-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:49-05:00] WARNING: Invalid token
+[2020-06-21T20:48:49-05:00] DEBUG:  GET /user/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:49-05:00] WARNING: The password is incorrect. Please try again
+[2020-06-21T20:48:49-05:00] DEBUG:  POST /enterprise/login STATUS:401 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:49-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:48:49-05:00] WARNING: User/Enterprise with specified username does not exist
+[2020-06-21T20:48:49-05:00] DEBUG:  POST /enterprise/login STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:49-05:00] INFO: read enterprise-validate:
+[2020-06-21T20:48:49-05:00] ERROR: WHERE parameter "Usr_username" has invalid "undefined" value
+[2020-06-21T20:48:49-05:00] DEBUG:  POST /enterprise/login STATUS:500 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:49-05:00] INFO: read bank:
+[2020-06-21T20:48:49-05:00] INFO: Successfully read.
+[2020-06-21T20:48:49-05:00] DEBUG:  GET /bank/find/all STATUS:200 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:49-05:00] WARNING: Invalid token
+[2020-06-21T20:48:49-05:00] DEBUG:  GET /bank/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:49-05:00] WARNING: Token doesn't provided
+[2020-06-21T20:48:49-05:00] DEBUG:  GET /bank/find/all STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-21T20:48:50-05:00] ERROR: Cannot destructure property 'name' of 'req.body' as it is undefined.
+[2020-06-21T20:48:50-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:50-05:00] ERROR: Cannot destructure property 'name' of 'req.body' as it is undefined.
+[2020-06-21T20:48:50-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:50-05:00] ERROR: Cannot read property 'username' of undefined
+[2020-06-21T20:48:50-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:50-05:00] ERROR: Cannot destructure property 'description' of 'req.body' as it is undefined.
+[2020-06-21T20:48:50-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:50-05:00] ERROR: Cannot destructure property 'bank_id' of 'req.body' as it is undefined.
+[2020-06-21T20:48:50-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:50-05:00] ERROR: Cannot destructure property 'transfer_type' of 'req.params' as it is undefined.
+[2020-06-21T20:48:50-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:50-05:00] ERROR: Cannot destructure property 'name' of 'req.body' as it is undefined.
+[2020-06-21T20:48:50-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:50-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:48:50-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:50-05:00] ERROR: Cannot destructure property 'bank_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:50-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:50-05:00] ERROR: Cannot destructure property 'wal_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:50-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:50-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:48:50-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:50-05:00] ERROR: Cannot destructure property 'wtyp_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:50-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:50-05:00] ERROR: Cannot destructure property 'tra_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:50-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:50-05:00] ERROR: Cannot destructure property 'ent_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:50-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:51-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:48:51-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:51-05:00] ERROR: Cannot destructure property 'bank_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:51-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:51-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:48:51-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:51-05:00] ERROR: Cannot destructure property 'wtyp_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:51-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:51-05:00] ERROR: Cannot destructure property 'tra_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:51-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:51-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:48:51-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:51-05:00] ERROR: Cannot destructure property 'username' of 'req.params' as it is undefined.
+[2020-06-21T20:48:51-05:00] ERROR: res.status is not a function
+[2020-06-21T20:48:51-05:00] ERROR: Cannot destructure property 'ent_id' of 'req.params' as it is undefined.
+[2020-06-21T20:48:51-05:00] ERROR: res.status is not a function

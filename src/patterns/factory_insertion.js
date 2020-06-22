@@ -27,7 +27,7 @@ async function User(req, res) {
                                 monthLimit = findEnterprise.Ent_month_limit;
                                 movementLimit = findEnterprise.Ent_movement_limit
                             } else {
-                                helpers.loggerWarnAndResponse(404, res, 'Specified enterprise not found. Please try again'); return res;
+                                helpers.loggerWarnAndResponse(404, res, "Specified enterprise not found. Please try again"); return res;
                             }
                         }
 
@@ -57,7 +57,7 @@ async function User(req, res) {
                     }
                     helpers.loggerWarnAndResponse(400, res, "Passwords inserted does not coincide"); return res;
                 }
-                helpers.loggerWarnAndResponse(404, res, 'Specified wallet type does not exists'); return res;
+                helpers.loggerWarnAndResponse(404, res, "Specified wallet type does not exists"); return res;
             }
             helpers.loggerWarnAndResponse(400, res, "Username can't contain spaces"); return res;
         }
@@ -95,22 +95,22 @@ async function Wallet(req, res) {
         if (findUser) {
             if (findWtyp) {
                 const val = await helpers.matchPassword(password, findUser.Usr_password);
-                if (val) {
-                    var entId, monthLimit, movementLimit;
-                    entId = null;
-                    monthLimit = findWtyp.Wtyp_month_limit;
-                    movementLimit = findWtyp.Wtyp_movement_limit;
+                var entId, monthLimit, movementLimit;
+                entId = null;
+                monthLimit = findWtyp.Wtyp_month_limit;
+                movementLimit = findWtyp.Wtyp_movement_limit;
 
-                    if (wallettype == 3) {
-                        const findEnterprise = await models.Enterprise.findOne({ where: { Ent_id: ent_id } });
-                        if (findEnterprise) {
-                            entId = findEnterprise.Ent_id;
-                            monthLimit = findEnterprise.Ent_month_limit;
-                            movementLimit = findEnterprise.Ent_movement_limit
-                        } else {
-                            helpers.loggerWarnAndResponse(404, res, 'Specified enterprise not found. Please try again'); return res;
-                        }
+                if (wallettype == 3) {
+                    const findEnterprise = await models.Enterprise.findOne({ where: { Ent_id: ent_id } });
+                    if (findEnterprise) {
+                        entId = findEnterprise.Ent_id;
+                        monthLimit = findEnterprise.Ent_month_limit;
+                        movementLimit = findEnterprise.Ent_movement_limit
+                    } else {
+                        helpers.loggerWarnAndResponse(404, res, 'Specified enterprise not found. Please try again'); return res;
                     }
+                }
+                if (val) {
 
                     const wallet = await models.Wallet.create({
                         Wal_id: uuid.v4(),
@@ -173,7 +173,7 @@ async function Transfer(req, res) {
             logger.info("Successfully inserted.");
             return res.status(201).json({ transfer: transfer });
         }
-        helpers.loggerWarnAndResponse(400, res, "Route can't contain spaces"); return res;
+        helpers.loggerWarnAndResponse(400, res, "Transfer Route can't contain spaces"); return res;
     } catch (error) {
         helpers.loggerErrorAndResponse(res, error.message); return res;
     }
@@ -237,8 +237,6 @@ async function Movement(req, res) {
                 if (findSenderWallet.Wal_id !== findRecipientWallet.Wal_id) {
                     if (amount > 5000) {
                         if (amount % 1000 === 0) {
-                            if (findSender) {
-                                if (findRecipient) {
                                     if (findTransfer) {
                                         var val;
                                         if(findSenderWallet.Wtyp_id == 2){
@@ -282,10 +280,6 @@ async function Movement(req, res) {
                                         helpers.loggerWarnAndResponse(401, res, 'The password is incorrect. Please try again'); return res;
                                     }
                                     helpers.loggerWarnAndResponse(404, res, "Transfer type not found"); return res;
-                                }
-                                helpers.loggerWarnAndResponse(404, res, "Recipient Username not found"); return res;
-                            }
-                            helpers.loggerWarnAndResponse(404, res, "Sender Username not found"); return res;
                         }
                         helpers.loggerWarnAndResponse(400, res, "The minimum unit of money you can add is $1000"); return res;
                     }
