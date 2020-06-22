@@ -12,7 +12,8 @@ helpers.encryptPassword = async (password) => {
         const hash = await bcrypt.hash(password, salt);
         return hash;
     } catch (e) {
-        console.log(e);
+        logger.error(e.message);
+        //console.log(e);
     }
 };
 
@@ -21,7 +22,8 @@ helpers.matchPassword = async (password, savedPassword) => {
     try {
         return await bcrypt.compare(password, savedPassword);
     } catch (e) {
-        console.log(e);
+        logger.error(e.message);
+        //console.log(e);
     }
 };
 
@@ -48,8 +50,8 @@ helpers.loggerInfoAndResponse = (status, res, message) => {
             return res.status(status).send(message)
         }
     } catch (e) {
-        logger.critical(e.message);
-        console.log(e.message);
+        logger.error(e.message);
+        //console.log(e.message);
     }
 }
 
@@ -58,8 +60,8 @@ helpers.loggerWarnAndResponse = (status, res, message) => {
         logger.warning(message);
         return res.status(status).send(message);
     } catch (e) {
-        logger.critical(e.message);
-        console.log(e.message);
+        logger.error(e.message);
+        //console.log(e.message);
     }
 }
 
@@ -68,8 +70,8 @@ helpers.loggerErrorAndResponse = (res, message) => {
         logger.error(message);
         return res.status(500).send("Error: " + message);
     } catch (e) {
-        logger.critical(e.message);
-        console.log(e.message);
+        logger.error(e.message);
+        //console.log(e.message);
     }
 }
 

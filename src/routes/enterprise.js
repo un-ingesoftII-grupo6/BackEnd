@@ -3,13 +3,14 @@ const router = express.Router();
 const enterpriseController = require("../controllers/enterprise");
 const helpers = require('../lib/helpers')
 
-//////////////////////Methods below this line are validated with token////////////////////////////
-router.use(helpers.beginTokenValidation);
-
 //Creates a new enterprise
 router.post("/create", enterpriseController.createEnterprise);
 //Validate user in db and return access token
 router.post('/login', enterpriseController.validateEnterprise);
+
+//////////////////////Methods below this line are validated with token////////////////////////////
+router.use(helpers.beginTokenValidation);
+
 //Finds all enterprises in the database
 router.get("/find/all",enterpriseController.getAllEnterprises);
 //Find enterprise by username

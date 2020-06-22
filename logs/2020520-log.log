@@ -179,3 +179,188 @@
 [2020-06-20T17:35:47-05:00] INFO: read wallet-by-username:
 [2020-06-20T17:35:47-05:00] INFO: Successfully read.
 [2020-06-20T17:35:47-05:00] DEBUG:  GET /wallet/find/all/enterprise1 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T18:33:44-05:00] INFO: Resource not found :(
+[2020-06-20T18:33:44-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:33:44-05:00] INFO: Resource not found :(
+[2020-06-20T18:33:44-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:33:48-05:00] INFO: Resource not found :(
+[2020-06-20T18:33:48-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:33:48-05:00] INFO: Resource not found :(
+[2020-06-20T18:33:48-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:33:52-05:00] INFO: Resource not found :(
+[2020-06-20T18:33:52-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:33:52-05:00] INFO: Resource not found :(
+[2020-06-20T18:33:52-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:43:28-05:00] INFO: Resource not found :(
+[2020-06-20T18:43:28-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:43:28-05:00] INFO: Resource not found :(
+[2020-06-20T18:43:28-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:43:48-05:00] INFO: Resource not found :(
+[2020-06-20T18:43:48-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:43:49-05:00] INFO: Resource not found :(
+[2020-06-20T18:43:49-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:45:37-05:00] INFO: Resource not found :(
+[2020-06-20T18:45:37-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:45:37-05:00] INFO: Resource not found :(
+[2020-06-20T18:45:37-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:47:43-05:00] INFO: Resource not found :(
+[2020-06-20T18:47:43-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:47:43-05:00] INFO: Resource not found :(
+[2020-06-20T18:47:43-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:48:17-05:00] INFO: Resource not found :(
+[2020-06-20T18:48:17-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:48:17-05:00] INFO: Resource not found :(
+[2020-06-20T18:48:17-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:52:06-05:00] INFO: Resource not found :(
+[2020-06-20T18:52:06-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:52:06-05:00] INFO: Resource not found :(
+[2020-06-20T18:52:06-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:53:03-05:00] INFO: Resource not found :(
+[2020-06-20T18:53:03-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T18:53:03-05:00] INFO: Resource not found :(
+[2020-06-20T18:53:03-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T19:00:10-05:00] INFO: Resource not found :(
+[2020-06-20T19:00:10-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T19:00:10-05:00] INFO: Resource not found :(
+[2020-06-20T19:00:10-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T19:00:51-05:00] INFO: Resource not found :(
+[2020-06-20T19:00:51-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T19:00:51-05:00] INFO: Resource not found :(
+[2020-06-20T19:00:51-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T19:01:53-05:00] INFO: Resource not found :(
+[2020-06-20T19:01:53-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T19:01:53-05:00] INFO: Resource not found :(
+[2020-06-20T19:01:53-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T19:02:47-05:00] INFO: Resource not found :(
+[2020-06-20T19:02:47-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T19:02:47-05:00] INFO: Resource not found :(
+[2020-06-20T19:02:47-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T19:05:26-05:00] INFO: Resource not found :(
+[2020-06-20T19:05:26-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T19:05:26-05:00] INFO: Resource not found :(
+[2020-06-20T19:05:26-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T19:08:28-05:00] INFO: Resource not found :(
+[2020-06-20T19:08:28-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T19:08:28-05:00] INFO: Resource not found :(
+[2020-06-20T19:08:28-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T19:25:36-05:00] INFO: Resource not found :(
+[2020-06-20T19:25:36-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T19:25:36-05:00] INFO: Resource not found :(
+[2020-06-20T19:25:36-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:12:46-05:00] INFO: Resource not found :(
+[2020-06-20T20:12:46-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:12:46-05:00] INFO: Resource not found :(
+[2020-06-20T20:12:46-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:12:50-05:00] INFO: Resource not found :(
+[2020-06-20T20:12:50-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:12:50-05:00] INFO: Resource not found :(
+[2020-06-20T20:12:50-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:13:20-05:00] INFO: Resource not found :(
+[2020-06-20T20:13:20-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:13:20-05:00] INFO: Resource not found :(
+[2020-06-20T20:13:20-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:28:56-05:00] INFO: Resource not found :(
+[2020-06-20T20:28:56-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:28:56-05:00] INFO: Resource not found :(
+[2020-06-20T20:28:56-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:29:26-05:00] INFO: Server on port 8000
+[2020-06-20T20:29:26-05:00] INFO: Connection has been established successfully!
+[2020-06-20T20:30:25-05:00] WARNING: Token doesn't provided
+[2020-06-20T20:30:25-05:00] DEBUG:  GET /enterprise/find/managed/enterprise1 STATUS:403 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T20:30:40-05:00] INFO: read managed-users:
+[2020-06-20T20:30:40-05:00] INFO: Successfully read.
+[2020-06-20T20:30:40-05:00] DEBUG:  GET /enterprise/find/managed/enterprise1 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T20:30:51-05:00] INFO: Server on port 8000
+[2020-06-20T20:30:51-05:00] INFO: Connection has been established successfully!
+[2020-06-20T20:30:53-05:00] INFO: read managed-users:
+[2020-06-20T20:30:53-05:00] INFO: Successfully read.
+[2020-06-20T20:30:53-05:00] DEBUG:  GET /enterprise/find/managed/enterprise1 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T20:32:52-05:00] INFO: read managed-users:
+[2020-06-20T20:32:52-05:00] INFO: Successfully read.
+[2020-06-20T20:32:52-05:00] DEBUG:  GET /enterprise/find/managed/enterprise1 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T20:32:58-05:00] INFO: Server on port 8000
+[2020-06-20T20:32:58-05:00] INFO: Connection has been established successfully!
+[2020-06-20T20:33:00-05:00] INFO: read managed-users:
+[2020-06-20T20:33:00-05:00] INFO: Successfully read.
+[2020-06-20T20:33:00-05:00] DEBUG:  GET /enterprise/find/managed/enterprise1 STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T20:36:35-05:00] INFO: Server on port 8000
+[2020-06-20T20:36:35-05:00] INFO: Connection has been established successfully!
+[2020-06-20T20:36:59-05:00] INFO: Resource not found :(
+[2020-06-20T20:36:59-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:36:59-05:00] INFO: Resource not found :(
+[2020-06-20T20:36:59-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:36:59-05:00] WARNING: Token doesn't provided
+[2020-06-20T20:36:59-05:00] DEBUG:  GET /bank/create STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:37:05-05:00] INFO: Resource not found :(
+[2020-06-20T20:37:05-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:37:06-05:00] INFO: Resource not found :(
+[2020-06-20T20:37:06-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:37:06-05:00] WARNING: Token doesn't provided
+[2020-06-20T20:37:06-05:00] DEBUG:  GET /bank/create STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:38:35-05:00] INFO: Resource not found :(
+[2020-06-20T20:38:35-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:38:35-05:00] INFO: Resource not found :(
+[2020-06-20T20:38:35-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:38:35-05:00] WARNING: Token doesn't provided
+[2020-06-20T20:38:35-05:00] DEBUG:  GET /bank/create STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:39:10-05:00] INFO: Resource not found :(
+[2020-06-20T20:39:10-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:39:10-05:00] INFO: Resource not found :(
+[2020-06-20T20:39:10-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:39:10-05:00] WARNING: Token doesn't provided
+[2020-06-20T20:39:10-05:00] DEBUG:  GET /bank/create STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:41:29-05:00] INFO: Resource not found :(
+[2020-06-20T20:41:29-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:41:29-05:00] INFO: Resource not found :(
+[2020-06-20T20:41:29-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:41:30-05:00] WARNING: Token doesn't provided
+[2020-06-20T20:41:30-05:00] DEBUG:  GET /bank/create STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:44:28-05:00] INFO: Server on port 8000
+[2020-06-20T20:44:28-05:00] INFO: Connection has been established successfully!
+[2020-06-20T20:44:51-05:00] INFO: read enterprise:
+[2020-06-20T20:44:51-05:00] INFO: Successfully read.
+[2020-06-20T20:44:51-05:00] DEBUG:  GET /enterprise/find/all STATUS:200 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T20:44:56-05:00] WARNING: Token doesn't provided
+[2020-06-20T20:44:56-05:00] DEBUG:  PUT /enterprise/edit/2 STATUS:403 REMOTE_ADDR:::1 REMOTE_USER:- USER-AGENT:PostmanRuntime/7.25.0
+[2020-06-20T20:50:45-05:00] INFO: Server on port 8000
+[2020-06-20T20:50:45-05:00] INFO: Connection has been established successfully!
+[2020-06-20T20:51:03-05:00] INFO: Resource not found :(
+[2020-06-20T20:51:03-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:51:03-05:00] INFO: Resource not found :(
+[2020-06-20T20:51:03-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:51:03-05:00] WARNING: Token doesn't provided
+[2020-06-20T20:51:03-05:00] DEBUG:  GET /bank/create STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:55:36-05:00] INFO: Resource not found :(
+[2020-06-20T20:55:36-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:55:36-05:00] INFO: Resource not found :(
+[2020-06-20T20:55:36-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:55:36-05:00] WARNING: Token doesn't provided
+[2020-06-20T20:55:36-05:00] DEBUG:  GET /bank/create STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:56:42-05:00] INFO: Resource not found :(
+[2020-06-20T20:56:42-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:56:42-05:00] INFO: Resource not found :(
+[2020-06-20T20:56:42-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:56:42-05:00] WARNING: Token doesn't provided
+[2020-06-20T20:56:42-05:00] DEBUG:  GET /bank/create STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:59:46-05:00] INFO: Resource not found :(
+[2020-06-20T20:59:46-05:00] WARNING: Token doesn't provided
+[2020-06-20T20:59:46-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:59:46-05:00] DEBUG:  GET /bank/create STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T20:59:46-05:00] INFO: Resource not found :(
+[2020-06-20T20:59:46-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T21:00:00-05:00] WARNING: Token doesn't provided
+[2020-06-20T21:00:00-05:00] INFO: Resource not found :(
+[2020-06-20T21:00:00-05:00] DEBUG:  GET /bank/create STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T21:00:00-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T21:00:00-05:00] INFO: Resource not found :(
+[2020-06-20T21:00:00-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T21:03:02-05:00] INFO: Resource not found :(
+[2020-06-20T21:03:02-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T21:03:02-05:00] INFO: Resource not found :(
+[2020-06-20T21:03:02-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T21:03:02-05:00] WARNING: Token doesn't provided
+[2020-06-20T21:03:02-05:00] DEBUG:  GET /bank/create STATUS:403 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T21:03:37-05:00] INFO: Resource not found :(
+[2020-06-20T21:03:37-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
+[2020-06-20T21:03:37-05:00] INFO: Resource not found :(
+[2020-06-20T21:03:37-05:00] DEBUG:  GET /this-is-a-unknown-route STATUS:404 REMOTE_ADDR:::ffff:127.0.0.1 REMOTE_USER:- USER-AGENT:node-superagent/3.8.3
