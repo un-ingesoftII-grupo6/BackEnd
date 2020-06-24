@@ -5,31 +5,33 @@ const logger = require("../logger/logger");
 
 async function User(req, res) {
     try {
-        const { username } = req.params;
-        const usrname = helpers.hasNoSpaces(req.body.username);
-        const { name, surname, email } = req.body;
-        const password = await helpers.encryptPassword(req.body.password);
+        const username = helpers.hasNoSpaces(req.params.username);
+        const findUser = await models.User.findOne({ where: { Usr_username: username } });
+        const { name, surname, old_password } = req.body;
+        const new_password = await helpers.encryptPassword(req.body.new_password);
 
-        if (usrname) {
-            const [updated] = await models.User.update({
-                Usr_name: name,
-                Usr_surname: surname,
-                Usr_email: email,
-                Usr_username: usrname,
-                Usr_password: password
-            }, {
-                where: { Usr_username: username }
-            });
-            if (updated) {
-                const updatedUser = await models.User.findOne({ where: { Usr_username: usrname } });
-                logger.info("Successfully updated.");
-                return res.status(200).json({ user: updatedUser });
+        if (findUser) {
+            const val = await helpers.matchPassword(old_password, findUser.Usr_password);
+            if (val) {
+                const [updated] = await models.User.update({
+                    Usr_name: name,
+                    Usr_surname: surname,
+                    Usr_password: new_password
+                }, {
+                    where: { Usr_username: username }
+                });
+                if (updated) {
+                    const updatedUser = await models.User.findOne({ where: { Usr_username: username } });
+                    logger.info("Successfully updated.");
+                    return res.status(200).json({ user: updatedUser });
+                }
+                throw new Error('User not updated');
             }
-            throw new Error('User not updated');
+            helpers.loggerWarnAndResponse(401, res, "Password is incorrect. Please try again"); return res;
         }
-        helpers.loggerWarnAndResponse(400,res,"Username can't contain spaces"); return res;
+        helpers.loggerWarnAndResponse(404, res, "Specified username doesn't exist"); return res;
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -53,11 +55,11 @@ async function Bank(req, res) {
                 logger.info("Successfully updated.");
                 return res.status(200).json({ bank: updatedBank });
             }
-            helpers.loggerWarnAndResponse(400,res,"Not updated: Update data is the same"); return res;
+            helpers.loggerWarnAndResponse(400, res, "Not updated: Update data is the same"); return res;
         }
-        helpers.loggerWarnAndResponse(404,res,"Bank not found"); return res;
+        helpers.loggerWarnAndResponse(404, res, "Bank not found"); return res;
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -69,9 +71,9 @@ async function Wallet(req, res) {
         const findWtyp = await models.WalletType.findOne({ where: { Wtyp_id: wallettype } });
 
         if (state == null) {
-            helpers.loggerWarnAndResponse(400,res,'Not a valid wallet state (Active, Inactive)'); return res;
+            helpers.loggerWarnAndResponse(400, res, 'Not a valid wallet state (Active, Inactive)'); return res;
         } else if (!findWtyp) {
-            helpers.loggerWarnAndResponse(400,res,'Not a valid wallet type'); return res;
+            helpers.loggerWarnAndResponse(400, res, 'Not a valid wallet type'); return res;
         }
 
         const [updated] = await models.Wallet.update({
@@ -88,11 +90,11 @@ async function Wallet(req, res) {
             logger.info("Successfully updated.");
             return res.status(200).json({ wallet: updatedWallet });
         } else if (updatedWallet) {
-            helpers.loggerWarnAndResponse(400,res,"Not updated: Update data is the same"); return res;
+            helpers.loggerWarnAndResponse(400, res, "Not updated: Update data is the same"); return res;
         }
-        helpers.loggerWarnAndResponse(404,res,"Wallet not found"); return res;
+        helpers.loggerWarnAndResponse(404, res, "Wallet not found"); return res;
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -102,29 +104,29 @@ async function WalletState(req, res) {
         const findUser = await models.User.findOne({ where: { Usr_username: username } });
         const findWallet = await models.Wallet.findOne({ where: { Usr_id: findUser.Usr_id, Wal_id: wal_id } });
         const state = helpers.isWalletState(req.body.state);
-        const { password, new_month_limit,new_movement_limit } = req.body;
+        const { password, new_month_limit, new_movement_limit } = req.body;
         if (findUser) {
             if (findWallet) {
-                    var val;
-                if(findWallet.Ent_id != null){
+                var val;
+                if (findWallet.Ent_id != null) {
                     const findEnterprise = await models.Enterprise.findOne({ where: { Ent_id: findWallet.Ent_id } });
                     val = await helpers.matchPassword(password, findEnterprise.Ent_password);
-                }else{
+                } else {
                     val = await helpers.matchPassword(password, findUser.Usr_password);
                 }
                 if (val) {
                     if (state == null) {
-                        helpers.loggerWarnAndResponse(400,res,'Not a valid wallet state (Active, Inactive)'); return res;
+                        helpers.loggerWarnAndResponse(400, res, 'Not a valid wallet state (Active, Inactive)'); return res;
                     }
                 } else {
-                    helpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
+                    helpers.loggerWarnAndResponse(401, res, 'The password is incorrect. Please try again'); return res;
                 }
             } else {
-                helpers.loggerWarnAndResponse(401,res,'The User does not own this wallet'); return res;
+                helpers.loggerWarnAndResponse(401, res, 'The User does not own this wallet'); return res;
             }
-        
+
         } else {
-            helpers.loggerWarnAndResponse(404,res,'User not found'); return res;
+            helpers.loggerWarnAndResponse(404, res, 'User not found'); return res;
         }
         var monthLimit, movementLimit;
         const findWtyp = await models.WalletType.findOne({ where: { Wtyp_id: findWallet.Wtyp_id } });
@@ -135,8 +137,8 @@ async function WalletState(req, res) {
             if (findEnterprise) {
                 monthLimit = new_month_limit;
                 movementLimit = new_movement_limit;
-            } else{
-            helpers.loggerWarnAndResponse(404, res, 'Enterprise registered in wallet not found. Please try again'); return res;
+            } else {
+                helpers.loggerWarnAndResponse(404, res, 'Enterprise registered in wallet not found. Please try again'); return res;
             }
         }
         const [updated] = await models.Wallet.update({
@@ -152,11 +154,11 @@ async function WalletState(req, res) {
             logger.info("Successfully updated.");
             return res.status(200).json({ wallet: updatedWallet });
         } else if (updatedWallet) {
-            helpers.loggerWarnAndResponse(400,res,"Not updated: Update data is the same"); return res;
+            helpers.loggerWarnAndResponse(400, res, "Not updated: Update data is the same"); return res;
         }
-        helpers.loggerWarnAndResponse(404,res,"Wallet not found"); return res;
+        helpers.loggerWarnAndResponse(404, res, "Wallet not found"); return res;
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -181,13 +183,13 @@ async function WalletType(req, res) {
                     logger.info("Successfully updated.");
                     return res.status(200).json({ wallet_type: updatedWalletType });
                 }
-                helpers.loggerWarnAndResponse(400,res,"Not updated: Update data is the same"); return res;
+                helpers.loggerWarnAndResponse(400, res, "Not updated: Update data is the same"); return res;
             }
-            helpers.loggerWarnAndResponse(400,res,"Wallet Type name can't contain spaces"); return res;
+            helpers.loggerWarnAndResponse(400, res, "Wallet Type name can't contain spaces"); return res;
         }
-        helpers.loggerWarnAndResponse(404,res,"Wallet Type not found"); return res;
+        helpers.loggerWarnAndResponse(404, res, "Wallet Type not found"); return res;
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -211,22 +213,20 @@ async function Transfer(req, res) {
                 logger.info("Successfully updated.");
                 return res.status(200).json({ transfer: updatedTransfer });
             }
-            helpers.loggerWarnAndResponse(400,res,"Not updated: Update data is the same"); return res;
+            helpers.loggerWarnAndResponse(400, res, "Not updated: Update data is the same"); return res;
         }
-        helpers.loggerWarnAndResponse(404,res,"Transfer not found"); return res;
+        helpers.loggerWarnAndResponse(404, res, "Transfer not found"); return res;
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
 async function Enterprise(req, res) {
     try {
-        const { ent_id } = req.params;
-        const findEnterprise = await models.Enterprise.findOne({ where: { Ent_id: ent_id } })
+        const { username } = req.params;
+        const findEnterprise = await models.Enterprise.findOne({ where: { Ent_username: username } })
         const { name, description, budget } = req.body;
         if (findEnterprise) {
-            const username = helpers.hasNoSpaces(req.body.username);
-            if (username) {
                 const val = await helpers.matchPassword(req.body.old_password, findEnterprise.Ent_password);
                 if (val) {
                     const new_password = await helpers.encryptPassword(req.body.new_password);
@@ -235,25 +235,22 @@ async function Enterprise(req, res) {
                         Ent_name: name,
                         Ent_description: description,
                         Ent_budget: budget,
-                        Ent_username: username,
                         Ent_password: new_password
                     }, {
-                        where: { Ent_id: ent_id }
+                        where: { Ent_username: username }
                     });
                     if (updated) {
-                        const updatedTransfer = await models.Enterprise.findOne({ where: { Ent_id: ent_id } });
+                        const updatedEnterprise = await models.Enterprise.findOne({ where: { Ent_username: username } });
                         logger.info("Successfully updated.");
-                        return res.status(200).json({ transfer: updatedTransfer });
+                        return res.status(200).json({ enterprise: updatedEnterprise });
                     }
-                    helpers.loggerWarnAndResponse(400,res,"Not updated: Update data is the same"); return res;
+                    helpers.loggerWarnAndResponse(400, res, "Not updated: Update data is the same"); return res;
                 }
-                helpers.loggerWarnAndResponse(401,res,'The password is incorrect. Please try again'); return res;
-            }
-            helpers.loggerWarnAndResponse(400,res,"Enterprise username can't contain spaces"); return res;
+                helpers.loggerWarnAndResponse(401, res, 'The password is incorrect. Please try again'); return res;
         }
-        helpers.loggerWarnAndResponse(404,res,"Enterprise not found"); return res;
+        helpers.loggerWarnAndResponse(404, res, "Enterprise not found"); return res;
     } catch (error) {
-        helpers.loggerErrorAndResponse(res,error.message); return res;
+        helpers.loggerErrorAndResponse(res, error.message); return res;
     }
 }
 
@@ -285,7 +282,7 @@ function Factory() {
                 Enterprise(req, res);
                 break;
             default:
-                helpers.loggerWarnAndResponse(404,res,"Unknown route"); return res;
+                helpers.loggerWarnAndResponse(404, res, "Unknown route"); return res;
         }
     }
 }

@@ -18,7 +18,7 @@ router.get('/find/:username', enterpriseController.getEnterpriseByUsername);
 //Find users managed by an Enterprise
 router.get('/find/managed/:username', enterpriseController.getUsersByEnterprise);
 //Updates an Enterprise
-router.put("/edit/:ent_id", enterpriseController.updateEnterprise);
+router.put("/edit/:username", enterpriseController.updateEnterprise);
 //Delete enterprise by NIT
 router.delete("/delete/:ent_id", enterpriseController.deleteEnterprise);
 //Managed wallets for enterprise

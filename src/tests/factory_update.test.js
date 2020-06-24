@@ -18,62 +18,79 @@ it("Initial coverage of insertion.Factory", () => {
 
 describe("Update User data", () => {
     it("Should update user with given data correctly", async (done) => {
-        await request.put("/user/edit/miapenahu")
+        await request.put("/user/edit/nicrodriguezval")
             .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
             .send({
-                "name": "Miguel",
-                "surname": "Peña",
-                "email": "miapenahu@example.com",
-                "username": "miapenahu",
-                "password": "Abcd1234"
+                "name": "Nicolas",
+                "surname": "Rodriguez(Updated)",
+                "new_password": "123123",
+                "old_password": "123123"
             })
             .expect('Content-Type', /json/)
             .expect((res) => {
-                const { Usr_id, Usr_username, Usr_name } = res.body.user;
+                const { Usr_id, Usr_username, Usr_name, Usr_surname } = res.body.user;
                 delete res.body.user;
                 Object.assign(res.body, {
                     user: {
                         Usr_id: Usr_id,
                         Usr_username: Usr_username,
-                        Usr_name: Usr_name
+                        Usr_name: Usr_name,
+                        Usr_surname: Usr_surname
                     }
                 });
             })
             .expect(200, {
                 user: {
-                    Usr_id: 1,
-                    Usr_username: "miapenahu",
-                    Usr_name: "Miguel"
+                    Usr_id: 2,
+                    Usr_username: "nicrodriguezval",
+                    Usr_name: "Nicolas",
+                    Usr_surname: "Rodriguez(Updated)"
                 }
             });
         done()
     });
-    it("Should return 400 as new username contains spaces", async (done) => {
-        await request.put("/user/edit/mario-bros")
-            .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
-            .send({ //Same data as previous test
-                "name": "Mario-Bros",
-                "surname": "64",
-                "email": "new-email@example.com",
-                "username": "mario bros", //Username with spaces
-                "password": "its_a_me"
-            })
-            .expect('Content-Type', /text/)
-            .expect(400, "Username can't contain spaces");
-        done()
-    });
-    it("Should return 500 if there is no users to update", async (done) => {
-        await request.put("/user/edit/mario-bros2") //
+    it("Should update only one of the parameters correctly", async (done) => {
+        await request.put("/user/edit/nicrodriguezval")
             .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
             .send({
-                "name": "Mario-Bros",
-                "surname": "64",
-                "email": "new-email@example.com",
-                "username": "mario-bros",
-                "password": "its_a_me"
+                "surname": "Rodriguez(Updt.2)", //Is the same as old_password for forward testing purposes
+                "old_password": "123123"
+            })
+            .expect('Content-Type', /json/)
+            .expect((res) => {
+                const { Usr_id, Usr_username, Usr_name, Usr_surname } = res.body.user;
+                delete res.body.user;
+                Object.assign(res.body, {
+                    user: {
+                        Usr_id: Usr_id,
+                        Usr_username: Usr_username,
+                        Usr_name: Usr_name,
+                        Usr_surname: Usr_surname
+                    }
+                });
+            })
+            .expect(200, {
+                user: {
+                    Usr_id: 2,
+                    Usr_username: "nicrodriguezval",
+                    Usr_name: "Nicolas",
+                    Usr_surname: "Rodriguez(Updt.2)"
+                }
+            });
+            //.expect(500,"Hola");
+        done()
+    });
+    it("Should return 401 as previous password does not coincide with the stored one", async (done) => {
+        await request.put("/user/edit/miapenahu")
+            .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
+            .send({
+                "name": "Miguel",
+                "surname": "Rojas",
+                "password": "Abcd1234",
+                "old_password": "not-the-old-password" //This is no the stored password
             })
             .expect('Content-Type', /text/)
-            .expect(500, "Error: User not updated");
+            .expect(401, "Password is incorrect. Please try again");
         done()
     });
 });
@@ -208,13 +225,13 @@ describe("Update Wallet data", () => {
         done()
     });
     it("Should return 400 if the update data is the same", async (done) => {
-        await request.put("/wallet/edit/bce63b35-031b-43a3-988d-bd6600a0b5af")
+        await request.put("/wallet/edit/48502bcf-87bb-4f88-a7f7-4a5978debb22")
             .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
             .send({
-                "wallettype": 1,
-                "balance": 5000000,
+                "wallettype": 3,
+                "balance": 0,
                 "state": "Active",
-                "ent_id": null
+                "ent_id": 1
             })
             .expect('Content-Type', /text/)
             .expect(400, "Not updated: Update data is the same");
@@ -367,6 +384,105 @@ describe("Update Transfer data", () => {
                     Tra_interest_rate: 10
                 }
             });
+        done()
+    });
+});
+
+describe("Update Enterprise data", () => {
+    it("Should update enterprise with given data correctly", async (done) => {
+        await request.put("/enterprise/edit/enterprise2")
+            .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
+            .send({
+                "name": "Empresa 2(Updated)",
+                "description": "Mejor eslogan",
+                "budget": 45000000.00,
+                "new_password": "empresa2", 
+                "old_password": "empresa2"
+            })
+            .expect('Content-Type', /json/)
+            .expect((res) => {
+                const { Ent_id, Ent_name, Ent_budget } = res.body.enterprise;
+                delete res.body.enterprise;
+                Object.assign(res.body, {
+                    enterprise: {
+                        Ent_id: Ent_id,
+                        Ent_name: Ent_name,
+                        Ent_budget: Ent_budget
+                    }
+                });
+            })
+            .expect(200, {
+                enterprise: {
+                    Ent_id: 2,
+                    Ent_name: "Empresa 2(Updated)",
+                    Ent_budget: 45000000.00
+                }
+            });
+            //.expect(500, "Hola");
+        done()
+    });
+    it("Should update only one parameter from enterprise correctly", async (done) => {
+        await request.put("/enterprise/edit/enterprise2")
+            .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
+            .send({
+                "name": "Empresa 2(Upd.2)",
+                "old_password": "empresa2"
+            })
+            .expect('Content-Type', /json/)
+            .expect((res) => {
+                const { Ent_id, Ent_name, Ent_budget } = res.body.enterprise;
+                delete res.body.enterprise;
+                Object.assign(res.body, {
+                    enterprise: {
+                        Ent_id: Ent_id,
+                        Ent_name: Ent_name,
+                        Ent_budget: Ent_budget
+                    }
+                });
+            })
+            .expect(200, {
+                enterprise: {
+                    Ent_id: 2,
+                    Ent_name: "Empresa 2(Upd.2)",
+                    Ent_budget: 45000000.00
+                }
+            });
+            //.expect(500, "Hola");
+        done()
+    });
+    it("Should return 400 status if enterprise data is the same", async (done) => {
+        await request.put("/enterprise/edit/enterprise1") 
+            .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
+            .send({
+                "old_password": "empresa1"
+            })
+            .expect('Content-Type', /text/)
+            .expect(400,"Not updated: Update data is the same");
+            //.expect(500, "Hola");
+        done()
+    });
+    it("Should return 401 status if password is incorrect", async (done) => {
+        await request.put("/enterprise/edit/enterprise2") 
+            .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
+            .send({
+                "name": "Empresa 2(Upd.2)",
+                "old_password": "not-correct-password" //This is not the correct password
+            })
+            .expect('Content-Type', /text/)
+            .expect(401,"The password is incorrect. Please try again");
+            //.expect(500, "Hola");
+        done()
+    });
+    it("Should return 404 status if enterprise was not found", async (done) => {
+        await request.put("/enterprise/edit/enterprise-not-existant") //This enterprise does not exist
+            .set("access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI2OTAxNzUsImV4cCI6MTU5NTI4MjE3NX0.a1iGSFPz8wBt1JtJLIt6GUs9Ewelv-KHIyhC8r6_OHk")
+            .send({
+                "name": "Empresa 2(Upd.2)",
+                "old_password": "empresa2"
+            })
+            .expect('Content-Type', /text/)
+            .expect(404,"Enterprise not found");
+            //.expect(500, "Hola");
         done()
     });
 });
